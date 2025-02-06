@@ -1,2 +1,5 @@
 # LapTrinhUngDung
-Applied programming course project
+Đồ án môn học 
+Thành viên nhóm: 
+  + Đặng Dương Huy
+  + Ngô Trường Giang
