@@ -21,5 +21,15 @@ namespace du_an_qlvt
         {
 
         }
+
+        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void nightControlBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
