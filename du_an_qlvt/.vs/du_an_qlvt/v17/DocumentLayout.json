@@ -1,5 +1,6 @@
 {
   "Version": 1,
+<<<<<<< HEAD
   "WorkspaceRootPath": "D:\\taiLieuHocTap\\2025\\L\u1EADp tr\u00ECnh \u1EE9ng d\u1EE5ng\\Project\\LapTrinhUngDung\\du_an_qlvt\\",
   "Documents": [
     {
@@ -8,6 +9,12 @@
     },
     {
       "AbsoluteMoniker": "D:0:0:{74628422-30D6-4AC5-803F-0657860ADA23}|du_an_qlvt\\du_an_qlvt.csproj|d:\\tailieuhoctap\\2025\\l\u1EADp tr\u00ECnh \u1EE9ng d\u1EE5ng\\project\\laptrinhungdung\\du_an_qlvt\\du_an_qlvt\\staff.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+=======
+  "WorkspaceRootPath": "D:\\lap_trinh_ung_dung\\LapTrinhUngDung\\du_an_qlvt\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{74628422-30D6-4AC5-803F-0657860ADA23}|du_an_qlvt\\du_an_qlvt.csproj|d:\\lap_trinh_ung_dung\\laptrinhungdung\\du_an_qlvt\\du_an_qlvt\\staff.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+>>>>>>> main
       "RelativeMoniker": "D:0:0:{74628422-30D6-4AC5-803F-0657860ADA23}|du_an_qlvt\\du_an_qlvt.csproj|solutionrelative:du_an_qlvt\\staff.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
@@ -18,6 +25,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
+<<<<<<< HEAD
           "SelectedChildIndex": 0,
           "Children": [
             {
@@ -44,6 +52,21 @@
               "DocumentMoniker": "D:\\taiLieuHocTap\\2025\\L\u1EADp tr\u00ECnh \u1EE9ng d\u1EE5ng\\Project\\LapTrinhUngDung\\du_an_qlvt\\du_an_qlvt\\staff.cs",
               "RelativeDocumentMoniker": "du_an_qlvt\\staff.cs",
               "ToolTip": "D:\\taiLieuHocTap\\2025\\L\u1EADp tr\u00ECnh \u1EE9ng d\u1EE5ng\\Project\\LapTrinhUngDung\\du_an_qlvt\\du_an_qlvt\\staff.cs [Design]",
+=======
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "staff.cs [Design]",
+              "DocumentMoniker": "D:\\lap_trinh_ung_dung\\LapTrinhUngDung\\du_an_qlvt\\du_an_qlvt\\staff.cs",
+              "RelativeDocumentMoniker": "du_an_qlvt\\staff.cs",
+              "ToolTip": "D:\\lap_trinh_ung_dung\\LapTrinhUngDung\\du_an_qlvt\\du_an_qlvt\\staff.cs [Design]",
+>>>>>>> main
               "RelativeToolTip": "du_an_qlvt\\staff.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-05T16:01:48.677Z",
