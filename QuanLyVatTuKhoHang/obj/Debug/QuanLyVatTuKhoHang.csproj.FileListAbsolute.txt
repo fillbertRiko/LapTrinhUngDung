@@ -1,0 +1,12 @@
+D:\Lap_trinh_ung_dung\LapTrinhUngDung\QuanLyVatTuKhoHang\bin\Debug\QuanLyVatTuKhoHang.exe.config
+D:\Lap_trinh_ung_dung\LapTrinhUngDung\QuanLyVatTuKhoHang\bin\Debug\QuanLyVatTuKhoHang.exe
+D:\Lap_trinh_ung_dung\LapTrinhUngDung\QuanLyVatTuKhoHang\bin\Debug\QuanLyVatTuKhoHang.pdb
+D:\Lap_trinh_ung_dung\LapTrinhUngDung\QuanLyVatTuKhoHang\obj\Debug\QuanLyVatTuKhoHang.csproj.AssemblyReference.cache
+D:\Lap_trinh_ung_dung\LapTrinhUngDung\QuanLyVatTuKhoHang\obj\Debug\QuanLyVatTuKhoHang.Form1.resources
+D:\Lap_trinh_ung_dung\LapTrinhUngDung\QuanLyVatTuKhoHang\obj\Debug\QuanLyVatTuKhoHang.Properties.Resources.resources
+D:\Lap_trinh_ung_dung\LapTrinhUngDung\QuanLyVatTuKhoHang\obj\Debug\QuanLyVatTuKhoHang.csproj.GenerateResource.cache
+D:\Lap_trinh_ung_dung\LapTrinhUngDung\QuanLyVatTuKhoHang\obj\Debug\QuanLyVatTuKhoHang.csproj.CoreCompileInputs.cache
+D:\Lap_trinh_ung_dung\LapTrinhUngDung\QuanLyVatTuKhoHang\obj\Debug\QuanLyVatTuKhoHang.exe
+D:\Lap_trinh_ung_dung\LapTrinhUngDung\QuanLyVatTuKhoHang\obj\Debug\QuanLyVatTuKhoHang.pdb
+D:\Lap_trinh_ung_dung\LapTrinhUngDung\QuanLyVatTuKhoHang\bin\Debug\Guna.UI2.dll
+D:\Lap_trinh_ung_dung\LapTrinhUngDung\QuanLyVatTuKhoHang\obj\Debug\QuanLyVa.703B9819.Up2Date
