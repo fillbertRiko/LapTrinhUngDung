@@ -21,5 +21,10 @@ namespace du_an_qlvt
         {
 
         }
+
+        private void nightControlBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

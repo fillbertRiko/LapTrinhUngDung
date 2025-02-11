@@ -5,6 +5,14 @@
     {
       "AbsoluteMoniker": "D:0:0:{74628422-30D6-4AC5-803F-0657860ADA23}|du_an_qlvt\\du_an_qlvt.csproj|d:\\lap_trinh_ung_dung\\laptrinhungdung\\du_an_qlvt\\du_an_qlvt\\staff.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{74628422-30D6-4AC5-803F-0657860ADA23}|du_an_qlvt\\du_an_qlvt.csproj|solutionrelative:du_an_qlvt\\staff.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74628422-30D6-4AC5-803F-0657860ADA23}|du_an_qlvt\\du_an_qlvt.csproj|D:\\lap_trinh_ung_dung\\LapTrinhUngDung\\du_an_qlvt\\du_an_qlvt\\log in.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{74628422-30D6-4AC5-803F-0657860ADA23}|du_an_qlvt\\du_an_qlvt.csproj|solutionrelative:du_an_qlvt\\log in.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74628422-30D6-4AC5-803F-0657860ADA23}|du_an_qlvt\\du_an_qlvt.csproj|d:\\lap_trinh_ung_dung\\laptrinhungdung\\du_an_qlvt\\du_an_qlvt\\log in.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{74628422-30D6-4AC5-803F-0657860ADA23}|du_an_qlvt\\du_an_qlvt.csproj|solutionrelative:du_an_qlvt\\log in.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,11 +22,36 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "log in.cs",
+              "DocumentMoniker": "D:\\lap_trinh_ung_dung\\LapTrinhUngDung\\du_an_qlvt\\du_an_qlvt\\log in.cs",
+              "RelativeDocumentMoniker": "du_an_qlvt\\log in.cs",
+              "ToolTip": "D:\\lap_trinh_ung_dung\\LapTrinhUngDung\\du_an_qlvt\\du_an_qlvt\\log in.cs",
+              "RelativeToolTip": "du_an_qlvt\\log in.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAAAQwDEAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-09T08:14:43.845Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "log in.cs [Design]",
+              "DocumentMoniker": "D:\\lap_trinh_ung_dung\\LapTrinhUngDung\\du_an_qlvt\\du_an_qlvt\\log in.cs",
+              "RelativeDocumentMoniker": "du_an_qlvt\\log in.cs",
+              "ToolTip": "D:\\lap_trinh_ung_dung\\LapTrinhUngDung\\du_an_qlvt\\du_an_qlvt\\log in.cs [Design]",
+              "RelativeToolTip": "du_an_qlvt\\log in.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-08T07:18:35.947Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
