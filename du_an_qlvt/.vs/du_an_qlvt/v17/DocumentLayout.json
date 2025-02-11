@@ -1,14 +1,23 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\lap_trinh_ung_dung\\LapTrinhUngDung\\du_an_qlvt\\",
+  "WorkspaceRootPath": "D:\\taiLieuHocTap\\2025\\L\u1EADp tr\u00ECnh \u1EE9ng d\u1EE5ng\\Project\\LapTrinhUngDung\\du_an_qlvt\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{74628422-30D6-4AC5-803F-0657860ADA23}|du_an_qlvt\\du_an_qlvt.csproj|d:\\lap_trinh_ung_dung\\laptrinhungdung\\du_an_qlvt\\du_an_qlvt\\staff.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{74628422-30D6-4AC5-803F-0657860ADA23}|du_an_qlvt\\du_an_qlvt.csproj|d:\\tailieuhoctap\\2025\\l\u1EADp tr\u00ECnh \u1EE9ng d\u1EE5ng\\project\\laptrinhungdung\\du_an_qlvt\\du_an_qlvt\\staff.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{74628422-30D6-4AC5-803F-0657860ADA23}|du_an_qlvt\\du_an_qlvt.csproj|solutionrelative:du_an_qlvt\\staff.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
+<<<<<<< Updated upstream
       "AbsoluteMoniker": "D:0:0:{74628422-30D6-4AC5-803F-0657860ADA23}|du_an_qlvt\\du_an_qlvt.csproj|D:\\lap_trinh_ung_dung\\LapTrinhUngDung\\du_an_qlvt\\du_an_qlvt\\log in.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{74628422-30D6-4AC5-803F-0657860ADA23}|du_an_qlvt\\du_an_qlvt.csproj|solutionrelative:du_an_qlvt\\log in.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+=======
+      "AbsoluteMoniker": "D:0:0:{74628422-30D6-4AC5-803F-0657860ADA23}|du_an_qlvt\\du_an_qlvt.csproj|d:\\tailieuhoctap\\2025\\l\u1EADp tr\u00ECnh \u1EE9ng d\u1EE5ng\\project\\laptrinhungdung\\du_an_qlvt\\du_an_qlvt\\staff.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{74628422-30D6-4AC5-803F-0657860ADA23}|du_an_qlvt\\du_an_qlvt.csproj|solutionrelative:du_an_qlvt\\staff.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74628422-30D6-4AC5-803F-0657860ADA23}|du_an_qlvt\\du_an_qlvt.csproj|d:\\tailieuhoctap\\2025\\l\u1EADp tr\u00ECnh \u1EE9ng d\u1EE5ng\\project\\laptrinhungdung\\du_an_qlvt\\du_an_qlvt\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{74628422-30D6-4AC5-803F-0657860ADA23}|du_an_qlvt\\du_an_qlvt.csproj|solutionrelative:du_an_qlvt\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+>>>>>>> Stashed changes
     }
   ],
   "DocumentGroupContainers": [
@@ -18,11 +27,41 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
+<<<<<<< Updated upstream
           "SelectedChildIndex": 2,
+=======
+          "SelectedChildIndex": 3,
+>>>>>>> Stashed changes
           "Children": [
             {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "staff.cs",
+              "DocumentMoniker": "D:\\taiLieuHocTap\\2025\\L\u1EADp tr\u00ECnh \u1EE9ng d\u1EE5ng\\Project\\LapTrinhUngDung\\du_an_qlvt\\du_an_qlvt\\staff.cs",
+              "RelativeDocumentMoniker": "du_an_qlvt\\staff.cs",
+              "ToolTip": "D:\\taiLieuHocTap\\2025\\L\u1EADp tr\u00ECnh \u1EE9ng d\u1EE5ng\\Project\\LapTrinhUngDung\\du_an_qlvt\\du_an_qlvt\\staff.cs",
+              "RelativeToolTip": "du_an_qlvt\\staff.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAMwCMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-10T00:36:19.649Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\taiLieuHocTap\\2025\\L\u1EADp tr\u00ECnh \u1EE9ng d\u1EE5ng\\Project\\LapTrinhUngDung\\du_an_qlvt\\du_an_qlvt\\Program.cs",
+              "RelativeDocumentMoniker": "du_an_qlvt\\Program.cs",
+              "ToolTip": "D:\\taiLieuHocTap\\2025\\L\u1EADp tr\u00ECnh \u1EE9ng d\u1EE5ng\\Project\\LapTrinhUngDung\\du_an_qlvt\\du_an_qlvt\\Program.cs",
+              "RelativeToolTip": "du_an_qlvt\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-10T00:35:45.913Z",
+              "EditorCaption": ""
+            },
+            {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
             },
             {
               "$type": "Document",
@@ -40,9 +79,9 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "staff.cs [Design]",
-              "DocumentMoniker": "D:\\lap_trinh_ung_dung\\LapTrinhUngDung\\du_an_qlvt\\du_an_qlvt\\staff.cs",
+              "DocumentMoniker": "D:\\taiLieuHocTap\\2025\\L\u1EADp tr\u00ECnh \u1EE9ng d\u1EE5ng\\Project\\LapTrinhUngDung\\du_an_qlvt\\du_an_qlvt\\staff.cs",
               "RelativeDocumentMoniker": "du_an_qlvt\\staff.cs",
-              "ToolTip": "D:\\lap_trinh_ung_dung\\LapTrinhUngDung\\du_an_qlvt\\du_an_qlvt\\staff.cs [Design]",
+              "ToolTip": "D:\\taiLieuHocTap\\2025\\L\u1EADp tr\u00ECnh \u1EE9ng d\u1EE5ng\\Project\\LapTrinhUngDung\\du_an_qlvt\\du_an_qlvt\\staff.cs [Design]",
               "RelativeToolTip": "du_an_qlvt\\staff.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-05T16:01:48.677Z",
