@@ -1,4 +1,4 @@
-﻿-- TẠO CƠ SỞ DỮ LIỆU
+﻿ -- TẠO CƠ SỞ DỮ LIỆU
 DROP DATABASE IF EXISTS SalesManagement;
 CREATE DATABASE SalesManagement;
 USE SalesManagement;
@@ -128,3 +128,6 @@ CREATE TABLE ImportInvoiceDetails (
     FOREIGN KEY (ImportID) REFERENCES ImportInvoice(ImportID),
     FOREIGN KEY (MaterialID) REFERENCES Material(MaterialID)
 );
+
+go
+ALTER TABLE Product IDENTITY(1,1);
