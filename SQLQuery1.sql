@@ -85,6 +85,24 @@ CREATE TABLE Material (
     FOREIGN KEY (WarehouseID) REFERENCES Warehouse(WarehouseID)
 );
 
+ALTER TABLE Material
+ADD Thickness float;
+ALTER TABLE Material
+ADD Density float;
+ALTER TABLE Material
+ADD FinishedProductDensity float;
+
+ALTER TABLE Material
+ALTER COLUMN Thickness float NOT NULL;
+ALTER TABLE Material
+ALTER COLUMN Density float NOT NULL;
+ALTER TABLE Material
+ALTER COLUMN FinishedProductDensity float NOT NULL;
+ALTER TABLE Material
+ALTER COLUMN WarehouseID INT NOT NULL;
+ALTER TABLE Material
+ALTER COLUMN MaterialID NVARCHAR(100) PRIMARY KEY;
+
 CREATE TABLE SaleInvoice (
     InvoiceID INT PRIMARY KEY,
     CustomerID INT,
@@ -130,4 +148,3 @@ CREATE TABLE ImportInvoiceDetails (
 );
 
 go
-ALTER TABLE Product IDENTITY(1,1);
