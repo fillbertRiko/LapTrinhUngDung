@@ -77,7 +77,8 @@ jobs:
       run: dotnet Restore
 
     - name: Build the project
-      run: dotnet build --configuration Release
+      run: dotnet build ${{ env.Solution_Name }} --configuration Release
+    
         
 
     # Add  MSBuild to the PATH: https://github.com/microsoft/setup-msbuild
