@@ -3,11 +3,20 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace QuanLyVatTuKhoHang
 {
     internal static class Program
     {
+        /*private SqlConnection Connect
+        {
+            try
+            {
+
+            }
+        }
+        */
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
@@ -17,6 +26,14 @@ namespace QuanLyVatTuKhoHang
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
+            /*
+             * string strCon = @"Data Source=DESKTOP-P7SFE1O\DDHUY;"
+                                + "Initial Catalog=SalesManagement;"
+                                + "Integrated Security=True;"
+                                + "Trust Server Certificate=True";
+            SqlConnection sqlCon = null;
+            */
         }
+        
     }
 }

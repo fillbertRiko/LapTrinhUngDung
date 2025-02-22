@@ -51,50 +51,93 @@
             this.button5 = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.tabPage4 = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.bigLabel5 = new ReaLTaiizor.Controls.BigLabel();
             this.bigLabel4 = new ReaLTaiizor.Controls.BigLabel();
             this.bigLabel1 = new ReaLTaiizor.Controls.BigLabel();
-            this.bigLabel2 = new ReaLTaiizor.Controls.BigLabel();
             this.bigLabel3 = new ReaLTaiizor.Controls.BigLabel();
+            this.bigLabel2 = new ReaLTaiizor.Controls.BigLabel();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.tabPage4 = new System.Windows.Forms.TabPage();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.label34 = new System.Windows.Forms.Label();
+            this.label33 = new System.Windows.Forms.Label();
+            this.label32 = new System.Windows.Forms.Label();
+            this.label31 = new System.Windows.Forms.Label();
+            this.label30 = new System.Windows.Forms.Label();
+            this.label29 = new System.Windows.Forms.Label();
+            this.label27 = new System.Windows.Forms.Label();
+            this.label26 = new System.Windows.Forms.Label();
+            this.label25 = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.textBox12 = new System.Windows.Forms.TextBox();
+            this.label21 = new System.Windows.Forms.Label();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.textBox11 = new System.Windows.Forms.TextBox();
+            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.textBox9 = new System.Windows.Forms.TextBox();
             this.label20 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.label28 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.label35 = new System.Windows.Forms.Label();
+            this.label36 = new System.Windows.Forms.Label();
+            this.textBox13 = new System.Windows.Forms.TextBox();
+            this.label37 = new System.Windows.Forms.Label();
+            this.label38 = new System.Windows.Forms.Label();
+            this.textBox14 = new System.Windows.Forms.TextBox();
+            this.textBox15 = new System.Windows.Forms.TextBox();
+            this.label39 = new System.Windows.Forms.Label();
+            this.label40 = new System.Windows.Forms.Label();
+            this.label41 = new System.Windows.Forms.Label();
+            this.label42 = new System.Windows.Forms.Label();
+            this.label43 = new System.Windows.Forms.Label();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.label44 = new System.Windows.Forms.Label();
+            this.panel9 = new System.Windows.Forms.Panel();
             this.hopeTabPage1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.tabPage2.SuspendLayout();
-            this.tabPage4.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
+            this.tabPage4.SuspendLayout();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.panel2.SuspendLayout();
-            this.panel3.SuspendLayout();
+            this.panel5.SuspendLayout();
+            this.tableLayoutPanel2.SuspendLayout();
             this.panel4.SuspendLayout();
+            this.panel3.SuspendLayout();
+            this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel6.SuspendLayout();
+            this.panel7.SuspendLayout();
+            this.panel8.SuspendLayout();
             this.SuspendLayout();
             // 
             // hopeTabPage1
@@ -114,7 +157,7 @@
             this.hopeTabPage1.Name = "hopeTabPage1";
             this.hopeTabPage1.PixelOffsetType = System.Drawing.Drawing2D.PixelOffsetMode.HighQuality;
             this.hopeTabPage1.SelectedIndex = 0;
-            this.hopeTabPage1.Size = new System.Drawing.Size(1924, 1105);
+            this.hopeTabPage1.Size = new System.Drawing.Size(1920, 954);
             this.hopeTabPage1.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
             this.hopeTabPage1.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
             this.hopeTabPage1.TabIndex = 0;
@@ -131,7 +174,7 @@
             this.tabPage1.Location = new System.Drawing.Point(0, 40);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(1924, 822);
+            this.tabPage1.Size = new System.Drawing.Size(1920, 1082);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "hệ thống";
             this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
@@ -341,32 +384,10 @@
             this.tabPage2.Location = new System.Drawing.Point(0, 40);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(1924, 699);
+            this.tabPage2.Size = new System.Drawing.Size(1920, 1016);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "nhập hàng";
             this.tabPage2.UseVisualStyleBackColor = true;
-            // 
-            // tabPage3
-            // 
-            this.tabPage3.Location = new System.Drawing.Point(0, 40);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(1924, 699);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "thông báo";
-            this.tabPage3.UseVisualStyleBackColor = true;
-            // 
-            // tabPage4
-            // 
-            this.tabPage4.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.tabPage4.Controls.Add(this.panel1);
-            this.tabPage4.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.tabPage4.Location = new System.Drawing.Point(0, 40);
-            this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(1924, 1065);
-            this.tabPage4.TabIndex = 3;
-            this.tabPage4.Text = "in hóa đơn";
             // 
             // tableLayoutPanel1
             // 
@@ -378,7 +399,7 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 404F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 335F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 326F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 586F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 602F));
             this.tableLayoutPanel1.Controls.Add(this.bigLabel5, 5, 0);
             this.tableLayoutPanel1.Controls.Add(this.bigLabel4, 4, 0);
             this.tableLayoutPanel1.Controls.Add(this.bigLabel1, 1, 0);
@@ -401,9 +422,9 @@
             this.bigLabel5.BackColor = System.Drawing.Color.Transparent;
             this.bigLabel5.Font = new System.Drawing.Font("Microsoft JhengHei UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bigLabel5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            this.bigLabel5.Location = new System.Drawing.Point(1337, 11);
+            this.bigLabel5.Location = new System.Drawing.Point(1321, 11);
             this.bigLabel5.Name = "bigLabel5";
-            this.bigLabel5.Size = new System.Drawing.Size(581, 28);
+            this.bigLabel5.Size = new System.Drawing.Size(597, 28);
             this.bigLabel5.TabIndex = 4;
             this.bigLabel5.Text = "số lượng";
             // 
@@ -414,7 +435,7 @@
             this.bigLabel4.BackColor = System.Drawing.Color.Transparent;
             this.bigLabel4.Font = new System.Drawing.Font("Microsoft JhengHei UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bigLabel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            this.bigLabel4.Location = new System.Drawing.Point(1008, 11);
+            this.bigLabel4.Location = new System.Drawing.Point(992, 11);
             this.bigLabel4.Name = "bigLabel4";
             this.bigLabel4.Size = new System.Drawing.Size(320, 28);
             this.bigLabel4.TabIndex = 3;
@@ -427,25 +448,11 @@
             this.bigLabel1.BackColor = System.Drawing.Color.Transparent;
             this.bigLabel1.Font = new System.Drawing.Font("Microsoft JhengHei UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bigLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            this.bigLabel1.Location = new System.Drawing.Point(113, 11);
+            this.bigLabel1.Location = new System.Drawing.Point(107, 3);
             this.bigLabel1.Name = "bigLabel1";
-            this.bigLabel1.Size = new System.Drawing.Size(141, 28);
+            this.bigLabel1.Size = new System.Drawing.Size(131, 45);
             this.bigLabel1.TabIndex = 0;
             this.bigLabel1.Text = "mã hóa đơn";
-            // 
-            // bigLabel2
-            // 
-            this.bigLabel2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.bigLabel2.AutoSize = true;
-            this.bigLabel2.BackColor = System.Drawing.Color.Transparent;
-            this.bigLabel2.Font = new System.Drawing.Font("Microsoft JhengHei UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bigLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            this.bigLabel2.Location = new System.Drawing.Point(263, 11);
-            this.bigLabel2.Name = "bigLabel2";
-            this.bigLabel2.Size = new System.Drawing.Size(398, 28);
-            this.bigLabel2.TabIndex = 1;
-            this.bigLabel2.Text = "thời gian";
-            this.bigLabel2.Click += new System.EventHandler(this.bigLabel2_Click);
             // 
             // bigLabel3
             // 
@@ -454,83 +461,402 @@
             this.bigLabel3.BackColor = System.Drawing.Color.Transparent;
             this.bigLabel3.Font = new System.Drawing.Font("Microsoft JhengHei UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bigLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            this.bigLabel3.Location = new System.Drawing.Point(670, 11);
+            this.bigLabel3.Location = new System.Drawing.Point(654, 11);
             this.bigLabel3.Name = "bigLabel3";
             this.bigLabel3.Size = new System.Drawing.Size(329, 28);
             this.bigLabel3.TabIndex = 2;
             this.bigLabel3.Text = "thành tiền";
             // 
+            // bigLabel2
+            // 
+            this.bigLabel2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.bigLabel2.AutoSize = true;
+            this.bigLabel2.BackColor = System.Drawing.Color.Transparent;
+            this.bigLabel2.Font = new System.Drawing.Font("Microsoft JhengHei UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bigLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            this.bigLabel2.Location = new System.Drawing.Point(247, 11);
+            this.bigLabel2.Name = "bigLabel2";
+            this.bigLabel2.Size = new System.Drawing.Size(398, 28);
+            this.bigLabel2.TabIndex = 1;
+            this.bigLabel2.Text = "thời gian";
+            this.bigLabel2.Click += new System.EventHandler(this.bigLabel2_Click);
+            // 
+            // tabPage3
+            // 
+            this.tabPage3.Location = new System.Drawing.Point(0, 40);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage3.Size = new System.Drawing.Size(1920, 914);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "thông báo";
+            this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // tabPage4
+            // 
+            this.tabPage4.AutoScroll = true;
+            this.tabPage4.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.tabPage4.Controls.Add(this.panel1);
+            this.tabPage4.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.tabPage4.Location = new System.Drawing.Point(0, 40);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage4.Size = new System.Drawing.Size(1920, 914);
+            this.tabPage4.TabIndex = 3;
+            this.tabPage4.Text = "hóa đơn";
+            // 
             // panel1
             // 
+            this.panel1.AutoScroll = true;
+            this.panel1.BackColor = System.Drawing.Color.LightYellow;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.panel9);
+            this.panel1.Controls.Add(this.panel8);
+            this.panel1.Controls.Add(this.panel7);
+            this.panel1.Controls.Add(this.panel6);
+            this.panel1.Controls.Add(this.panel5);
+            this.panel1.Controls.Add(this.tableLayoutPanel2);
             this.panel1.Controls.Add(this.panel4);
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Location = new System.Drawing.Point(296, 3);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1484, 1059);
+            this.panel1.Size = new System.Drawing.Size(1484, 1420);
             this.panel1.TabIndex = 0;
             // 
-            // pictureBox1
+            // panel5
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(-1, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(269, 237);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.panel5.BackColor = System.Drawing.Color.White;
+            this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel5.Controls.Add(this.textBox15);
+            this.panel5.Controls.Add(this.textBox14);
+            this.panel5.Controls.Add(this.label38);
+            this.panel5.Controls.Add(this.label37);
+            this.panel5.Controls.Add(this.textBox13);
+            this.panel5.Controls.Add(this.label36);
+            this.panel5.Controls.Add(this.label35);
+            this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel5.Location = new System.Drawing.Point(0, 1142);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(1456, 171);
+            this.panel5.TabIndex = 5;
             // 
-            // panel2
+            // tableLayoutPanel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.White;
-            this.panel2.Controls.Add(this.label9);
-            this.panel2.Controls.Add(this.label7);
-            this.panel2.Controls.Add(this.dateTimePicker1);
-            this.panel2.Controls.Add(this.label1);
-            this.panel2.Controls.Add(this.pictureBox1);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1482, 240);
-            this.panel2.TabIndex = 1;
+            this.tableLayoutPanel2.BackColor = System.Drawing.Color.White;
+            this.tableLayoutPanel2.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Inset;
+            this.tableLayoutPanel2.ColumnCount = 6;
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12.38532F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 87.61468F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 207F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 177F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 160F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 250F));
+            this.tableLayoutPanel2.Controls.Add(this.label34, 5, 1);
+            this.tableLayoutPanel2.Controls.Add(this.label33, 4, 1);
+            this.tableLayoutPanel2.Controls.Add(this.label32, 3, 1);
+            this.tableLayoutPanel2.Controls.Add(this.label31, 2, 1);
+            this.tableLayoutPanel2.Controls.Add(this.label30, 1, 1);
+            this.tableLayoutPanel2.Controls.Add(this.label29, 0, 1);
+            this.tableLayoutPanel2.Controls.Add(this.label27, 5, 0);
+            this.tableLayoutPanel2.Controls.Add(this.label26, 4, 0);
+            this.tableLayoutPanel2.Controls.Add(this.label25, 3, 0);
+            this.tableLayoutPanel2.Controls.Add(this.label24, 2, 0);
+            this.tableLayoutPanel2.Controls.Add(this.label23, 1, 0);
+            this.tableLayoutPanel2.Controls.Add(this.label22, 0, 0);
+            this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 768);
+            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
+            this.tableLayoutPanel2.RowCount = 10;
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 70F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(1456, 374);
+            this.tableLayoutPanel2.TabIndex = 4;
             // 
-            // label1
+            // label34
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label1.Location = new System.Drawing.Point(545, 18);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(361, 32);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "HÓA ĐƠN GIÁ TRỊ GIA TĂNG ";
+            this.label34.AutoSize = true;
+            this.label34.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label34.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label34.Location = new System.Drawing.Point(1206, 74);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(245, 30);
+            this.label34.TabIndex = 11;
+            this.label34.Text = "6=4x5";
+            this.label34.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // dateTimePicker1
+            // label33
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(532, 69);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(385, 34);
-            this.dateTimePicker1.TabIndex = 2;
+            this.label33.AutoSize = true;
+            this.label33.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label33.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label33.Location = new System.Drawing.Point(1044, 74);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(154, 30);
+            this.label33.TabIndex = 10;
+            this.label33.Text = "5";
+            this.label33.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label7
+            // label32
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label7.Location = new System.Drawing.Point(527, 126);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(401, 56);
-            this.label7.TabIndex = 3;
-            this.label7.Text = "                   Mã của cơ quan thuế:\r\n 00197B3F1C640C4BED8C76D48A7976EFD2";
+            this.label32.AutoSize = true;
+            this.label32.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label32.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label32.Location = new System.Drawing.Point(865, 74);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(171, 30);
+            this.label32.TabIndex = 9;
+            this.label32.Text = "4";
+            this.label32.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label9
+            // label31
             // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label9.Location = new System.Drawing.Point(1064, 47);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(238, 56);
-            this.label9.TabIndex = 4;
-            this.label9.Text = " Ký hiệu (Series): 1C25TXH\r\n Số (No): 00000063\r\n";
+            this.label31.AutoSize = true;
+            this.label31.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label31.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label31.Location = new System.Drawing.Point(656, 74);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(201, 30);
+            this.label31.TabIndex = 8;
+            this.label31.Text = "3";
+            this.label31.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label30.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label30.Location = new System.Drawing.Point(87, 74);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(561, 30);
+            this.label30.TabIndex = 7;
+            this.label30.Text = "2";
+            this.label30.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label29.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label29.Location = new System.Drawing.Point(5, 74);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(74, 30);
+            this.label29.TabIndex = 6;
+            this.label29.Text = "1";
+            this.label29.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label27.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label27.Location = new System.Drawing.Point(1206, 2);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(245, 70);
+            this.label27.TabIndex = 5;
+            this.label27.Text = " Thành tiền \r\n(Amount)";
+            this.label27.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label26.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label26.Location = new System.Drawing.Point(1044, 2);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(154, 70);
+            this.label26.TabIndex = 4;
+            this.label26.Text = " Đơn giá \r\n(Unit Price)";
+            this.label26.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label25.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label25.Location = new System.Drawing.Point(865, 2);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(171, 70);
+            this.label25.TabIndex = 3;
+            this.label25.Text = "Số lượng \r\n(Quantity)";
+            this.label25.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label24.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label24.Location = new System.Drawing.Point(656, 2);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(201, 70);
+            this.label24.TabIndex = 2;
+            this.label24.Text = "Đơn vị tính \r\n(Unit)";
+            this.label24.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label23.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label23.Location = new System.Drawing.Point(87, 2);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(561, 70);
+            this.label23.TabIndex = 1;
+            this.label23.Text = " Tên hàng hóa, dịch vụ \r\n(Description)\r\n";
+            this.label23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label22.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label22.Location = new System.Drawing.Point(5, 2);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(74, 70);
+            this.label22.TabIndex = 0;
+            this.label22.Text = "STT";
+            this.label22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.White;
+            this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel4.Controls.Add(this.textBox12);
+            this.panel4.Controls.Add(this.label21);
+            this.panel4.Controls.Add(this.comboBox2);
+            this.panel4.Controls.Add(this.textBox11);
+            this.panel4.Controls.Add(this.textBox10);
+            this.panel4.Controls.Add(this.textBox9);
+            this.panel4.Controls.Add(this.label20);
+            this.panel4.Controls.Add(this.comboBox1);
+            this.panel4.Controls.Add(this.label19);
+            this.panel4.Controls.Add(this.label18);
+            this.panel4.Controls.Add(this.label17);
+            this.panel4.Controls.Add(this.label16);
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel4.Location = new System.Drawing.Point(0, 516);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(1456, 252);
+            this.panel4.TabIndex = 3;
+            // 
+            // textBox12
+            // 
+            this.textBox12.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.textBox12.Location = new System.Drawing.Point(881, 146);
+            this.textBox12.Name = "textBox12";
+            this.textBox12.Size = new System.Drawing.Size(359, 30);
+            this.textBox12.TabIndex = 12;
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label21.Location = new System.Drawing.Point(677, 146);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(198, 28);
+            this.label21.TabIndex = 11;
+            this.label21.Text = "Số tài khoản(AC No.):";
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Items.AddRange(new object[] {
+            "Thanh toán chuyển khoản",
+            "Tiền mặt"});
+            this.comboBox2.Location = new System.Drawing.Point(200, 193);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(275, 36);
+            this.comboBox2.TabIndex = 10;
+            // 
+            // textBox11
+            // 
+            this.textBox11.Location = new System.Drawing.Point(200, 98);
+            this.textBox11.Name = "textBox11";
+            this.textBox11.Size = new System.Drawing.Size(1207, 34);
+            this.textBox11.TabIndex = 9;
+            // 
+            // textBox10
+            // 
+            this.textBox10.Location = new System.Drawing.Point(244, 57);
+            this.textBox10.Name = "textBox10";
+            this.textBox10.Size = new System.Drawing.Size(359, 34);
+            this.textBox10.TabIndex = 8;
+            // 
+            // textBox9
+            // 
+            this.textBox9.Location = new System.Drawing.Point(411, 17);
+            this.textBox9.Name = "textBox9";
+            this.textBox9.Size = new System.Drawing.Size(720, 34);
+            this.textBox9.TabIndex = 7;
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label20.Location = new System.Drawing.Point(4, 193);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(167, 28);
+            this.label20.TabIndex = 6;
+            this.label20.Text = "Ngân hàng(Bank):";
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Thanh toán chuyển khoản",
+            "Tiền mặt",
+            "Séc"});
+            this.comboBox1.Location = new System.Drawing.Point(411, 143);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(192, 36);
+            this.comboBox1.TabIndex = 5;
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label19.Location = new System.Drawing.Point(4, 93);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(162, 28);
+            this.label19.TabIndex = 4;
+            this.label19.Text = "Địa chỉ (Address):";
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label18.Location = new System.Drawing.Point(4, 146);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(367, 28);
+            this.label18.TabIndex = 3;
+            this.label18.Text = "Hình thức thanh toán (Payment method):";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label17.Location = new System.Drawing.Point(4, 53);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(207, 28);
+            this.label17.TabIndex = 2;
+            this.label17.Text = "Mã số thuế(TAX code):";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label16.Location = new System.Drawing.Point(3, 16);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(391, 28);
+            this.label16.TabIndex = 1;
+            this.label16.Text = "Họ tên người mua hàng (Customer\'s name):";
             // 
             // panel3
             // 
@@ -548,39 +874,52 @@
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(0, 240);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1482, 276);
+            this.panel3.Size = new System.Drawing.Size(1456, 276);
             this.panel3.TabIndex = 2;
             // 
-            // label10
+            // textBox8
             // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label10.Location = new System.Drawing.Point(3, 14);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(236, 28);
-            this.label10.TabIndex = 0;
-            this.label10.Text = "Đơn vị bán hàng (Issued) :\r\n";
+            this.textBox8.Location = new System.Drawing.Point(154, 133);
+            this.textBox8.Name = "textBox8";
+            this.textBox8.Size = new System.Drawing.Size(321, 34);
+            this.textBox8.TabIndex = 8;
             // 
-            // label11
+            // textBox7
             // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label11.Location = new System.Drawing.Point(3, 53);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(322, 28);
-            this.label11.TabIndex = 1;
-            this.label11.Text = "Mã số thuế(TAX code): 2700282593\r\n";
-            this.label11.Click += new System.EventHandler(this.label11_Click);
+            this.textBox7.Location = new System.Drawing.Point(171, 88);
+            this.textBox7.Name = "textBox7";
+            this.textBox7.Size = new System.Drawing.Size(1208, 34);
+            this.textBox7.TabIndex = 7;
+            this.textBox7.Text = "Số nhà 143, Đường Lê Đại Hành, Phố Trần Phú, Phường Vân Giang, Thành phố Hoa Lư, " +
+    "Tỉnh Ninh Bình, Việt Nam";
             // 
-            // label12
+            // textBox6
             // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label12.Location = new System.Drawing.Point(3, 91);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(162, 28);
-            this.label12.TabIndex = 2;
-            this.label12.Text = "Địa chỉ (Address):";
+            this.textBox6.Location = new System.Drawing.Point(245, 11);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(757, 34);
+            this.textBox6.TabIndex = 6;
+            this.textBox6.Text = "CÔNG TY TNHH THƯƠNG MẠI VÀ XÂY DỰNG XUÂN HIỂN";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label15.Location = new System.Drawing.Point(3, 207);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(726, 28);
+            this.label15.TabIndex = 5;
+            this.label15.Text = "Ngân hàng(Bank):Ngân hàng TMCP Công Thương Việt Nam - Chi nhánh Ninh Bình";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label14.Location = new System.Drawing.Point(2, 170);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(335, 28);
+            this.label14.TabIndex = 4;
+            this.label14.Text = "Số tài khoản(AC No.): 114000028018";
             // 
             // label13
             // 
@@ -593,136 +932,293 @@
             this.label13.Text = "Điện thoại (Tel):";
             this.label13.Click += new System.EventHandler(this.label13_Click_1);
             // 
-            // label14
+            // label12
             // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label14.Location = new System.Drawing.Point(2, 170);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(335, 28);
-            this.label14.TabIndex = 4;
-            this.label14.Text = "Số tài khoản(AC No.): 114000028018";
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label12.Location = new System.Drawing.Point(3, 91);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(162, 28);
+            this.label12.TabIndex = 2;
+            this.label12.Text = "Địa chỉ (Address):";
             // 
-            // label15
+            // label11
             // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label15.Location = new System.Drawing.Point(3, 207);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(726, 28);
-            this.label15.TabIndex = 5;
-            this.label15.Text = "Ngân hàng(Bank):Ngân hàng TMCP Công Thương Việt Nam - Chi nhánh Ninh Bình";
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label11.Location = new System.Drawing.Point(3, 53);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(322, 28);
+            this.label11.TabIndex = 1;
+            this.label11.Text = "Mã số thuế(TAX code): 2700282593\r\n";
+            this.label11.Click += new System.EventHandler(this.label11_Click);
             // 
-            // textBox6
+            // label10
             // 
-            this.textBox6.Location = new System.Drawing.Point(245, 11);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(757, 34);
-            this.textBox6.TabIndex = 6;
-            this.textBox6.Text = "CÔNG TY TNHH THƯƠNG MẠI VÀ XÂY DỰNG XUÂN HIỂN";
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label10.Location = new System.Drawing.Point(3, 14);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(236, 28);
+            this.label10.TabIndex = 0;
+            this.label10.Text = "Đơn vị bán hàng (Issued) :\r\n";
             // 
-            // textBox7
+            // panel2
             // 
-            this.textBox7.Location = new System.Drawing.Point(171, 88);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(1208, 34);
-            this.textBox7.TabIndex = 7;
-            this.textBox7.Text = "Số nhà 143, Đường Lê Đại Hành, Phố Trần Phú, Phường Vân Giang, Thành phố Hoa Lư, " +
-    "Tỉnh Ninh Bình, Việt Nam";
+            this.panel2.AutoScroll = true;
+            this.panel2.BackColor = System.Drawing.Color.White;
+            this.panel2.Controls.Add(this.label28);
+            this.panel2.Controls.Add(this.label9);
+            this.panel2.Controls.Add(this.label7);
+            this.panel2.Controls.Add(this.dateTimePicker1);
+            this.panel2.Controls.Add(this.label1);
+            this.panel2.Controls.Add(this.pictureBox1);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1456, 240);
+            this.panel2.TabIndex = 1;
             // 
-            // textBox8
+            // label28
             // 
-            this.textBox8.Location = new System.Drawing.Point(154, 133);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(321, 34);
-            this.textBox8.TabIndex = 8;
+            this.label28.AutoSize = true;
+            this.label28.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label28.Location = new System.Drawing.Point(1064, 80);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(85, 22);
+            this.label28.TabIndex = 5;
+            this.label28.Text = " Số (No):";
             // 
-            // panel4
+            // label9
             // 
-            this.panel4.BackColor = System.Drawing.Color.White;
-            this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel4.Controls.Add(this.label20);
-            this.panel4.Controls.Add(this.comboBox1);
-            this.panel4.Controls.Add(this.label19);
-            this.panel4.Controls.Add(this.label18);
-            this.panel4.Controls.Add(this.label17);
-            this.panel4.Controls.Add(this.label16);
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel4.Location = new System.Drawing.Point(0, 516);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(1482, 252);
-            this.panel4.TabIndex = 3;
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label9.Location = new System.Drawing.Point(1064, 47);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(240, 22);
+            this.label9.TabIndex = 4;
+            this.label9.Text = " Ký hiệu (Series): 1C25TXH";
             // 
-            // label16
+            // label7
             // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label16.Location = new System.Drawing.Point(3, 16);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(391, 28);
-            this.label16.TabIndex = 1;
-            this.label16.Text = "Họ tên người mua hàng (Customer\'s name):";
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label7.Location = new System.Drawing.Point(527, 126);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(401, 56);
+            this.label7.TabIndex = 3;
+            this.label7.Text = "                   Mã của cơ quan thuế:\r\n 00197B3F1C640C4BED8C76D48A7976EFD2";
             // 
-            // label17
+            // dateTimePicker1
             // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label17.Location = new System.Drawing.Point(4, 53);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(207, 28);
-            this.label17.TabIndex = 2;
-            this.label17.Text = "Mã số thuế(TAX code):";
+            this.dateTimePicker1.Location = new System.Drawing.Point(532, 69);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(385, 34);
+            this.dateTimePicker1.TabIndex = 2;
             // 
-            // label18
+            // label1
             // 
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label18.Location = new System.Drawing.Point(4, 135);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(367, 28);
-            this.label18.TabIndex = 3;
-            this.label18.Text = "Hình thức thanh toán (Payment method):";
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label1.Location = new System.Drawing.Point(545, 18);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(361, 32);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "HÓA ĐƠN GIÁ TRỊ GIA TĂNG ";
             // 
-            // label19
+            // pictureBox1
             // 
-            this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label19.Location = new System.Drawing.Point(4, 93);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(162, 28);
-            this.label19.TabIndex = 4;
-            this.label19.Text = "Địa chỉ (Address):";
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(-1, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(269, 237);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
-            // comboBox1
+            // panel6
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "Thanh toán chuyển khoản",
-            "Tiền mặt"});
-            this.comboBox1.Location = new System.Drawing.Point(382, 135);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(192, 36);
-            this.comboBox1.TabIndex = 5;
+            this.panel6.BackColor = System.Drawing.Color.White;
+            this.panel6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel6.Controls.Add(this.label39);
+            this.panel6.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel6.Location = new System.Drawing.Point(0, 1313);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(1456, 65);
+            this.panel6.TabIndex = 6;
             // 
-            // label20
+            // panel7
             // 
-            this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label20.Location = new System.Drawing.Point(4, 174);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(167, 28);
-            this.label20.TabIndex = 6;
-            this.label20.Text = "Ngân hàng(Bank):";
+            this.panel7.BackColor = System.Drawing.Color.White;
+            this.panel7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel7.Controls.Add(this.label43);
+            this.panel7.Controls.Add(this.label42);
+            this.panel7.Controls.Add(this.label41);
+            this.panel7.Controls.Add(this.label40);
+            this.panel7.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel7.Location = new System.Drawing.Point(0, 1378);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(1456, 312);
+            this.panel7.TabIndex = 7;
+            // 
+            // label35
+            // 
+            this.label35.AutoSize = true;
+            this.label35.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label35.Location = new System.Drawing.Point(4, 52);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(390, 27);
+            this.label35.TabIndex = 1;
+            this.label35.Text = "Thuế suất thuế GTGT (VAT rate):  10%";
+            this.label35.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label36
+            // 
+            this.label36.AutoSize = true;
+            this.label36.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label36.Location = new System.Drawing.Point(814, 15);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(317, 27);
+            this.label36.TabIndex = 2;
+            this.label36.Text = " Cộng tiền hàng (Total amount):";
+            this.label36.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // textBox13
+            // 
+            this.textBox13.Location = new System.Drawing.Point(1149, 15);
+            this.textBox13.Name = "textBox13";
+            this.textBox13.ReadOnly = true;
+            this.textBox13.Size = new System.Drawing.Size(301, 34);
+            this.textBox13.TabIndex = 3;
+            // 
+            // label37
+            // 
+            this.label37.AutoSize = true;
+            this.label37.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label37.Location = new System.Drawing.Point(703, 119);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(428, 27);
+            this.label37.TabIndex = 4;
+            this.label37.Text = "Tổng cộng tiền thanh toán (Total payment):";
+            this.label37.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label38
+            // 
+            this.label38.AutoSize = true;
+            this.label38.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label38.Location = new System.Drawing.Point(814, 65);
+            this.label38.Name = "label38";
+            this.label38.Size = new System.Drawing.Size(317, 27);
+            this.label38.TabIndex = 5;
+            this.label38.Text = "Tiền thuế GTGT (VAT amount):";
+            this.label38.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // textBox14
+            // 
+            this.textBox14.Location = new System.Drawing.Point(1149, 114);
+            this.textBox14.Name = "textBox14";
+            this.textBox14.ReadOnly = true;
+            this.textBox14.Size = new System.Drawing.Size(301, 34);
+            this.textBox14.TabIndex = 6;
+            // 
+            // textBox15
+            // 
+            this.textBox15.Location = new System.Drawing.Point(1149, 66);
+            this.textBox15.Name = "textBox15";
+            this.textBox15.ReadOnly = true;
+            this.textBox15.Size = new System.Drawing.Size(301, 34);
+            this.textBox15.TabIndex = 7;
+            // 
+            // label39
+            // 
+            this.label39.AutoSize = true;
+            this.label39.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label39.Location = new System.Drawing.Point(26, 21);
+            this.label39.Name = "label39";
+            this.label39.Size = new System.Drawing.Size(414, 27);
+            this.label39.TabIndex = 0;
+            this.label39.Text = " Số tiền viết bằng chữ (Amount in words):";
+            // 
+            // label40
+            // 
+            this.label40.AutoSize = true;
+            this.label40.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label40.Location = new System.Drawing.Point(129, 22);
+            this.label40.Name = "label40";
+            this.label40.Size = new System.Drawing.Size(181, 26);
+            this.label40.TabIndex = 0;
+            this.label40.Text = "Người mua hàng";
+            // 
+            // label41
+            // 
+            this.label41.AutoSize = true;
+            this.label41.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label41.Location = new System.Drawing.Point(129, 64);
+            this.label41.Name = "label41";
+            this.label41.Size = new System.Drawing.Size(190, 27);
+            this.label41.TabIndex = 1;
+            this.label41.Text = "(Ký, ghi rõ họ tên)";
+            // 
+            // label42
+            // 
+            this.label42.AutoSize = true;
+            this.label42.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label42.Location = new System.Drawing.Point(1062, 22);
+            this.label42.Name = "label42";
+            this.label42.Size = new System.Drawing.Size(185, 26);
+            this.label42.TabIndex = 2;
+            this.label42.Text = " Đơn vị bán hàng";
+            // 
+            // label43
+            // 
+            this.label43.AutoSize = true;
+            this.label43.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label43.Location = new System.Drawing.Point(1062, 64);
+            this.label43.Name = "label43";
+            this.label43.Size = new System.Drawing.Size(190, 27);
+            this.label43.TabIndex = 3;
+            this.label43.Text = "(Ký, ghi rõ họ tên)";
+            // 
+            // panel8
+            // 
+            this.panel8.BackColor = System.Drawing.Color.White;
+            this.panel8.Controls.Add(this.label44);
+            this.panel8.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel8.Location = new System.Drawing.Point(0, 1690);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(1456, 91);
+            this.panel8.TabIndex = 8;
+            // 
+            // label44
+            // 
+            this.label44.AutoSize = true;
+            this.label44.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label44.Location = new System.Drawing.Point(180, 14);
+            this.label44.Name = "label44";
+            this.label44.Size = new System.Drawing.Size(952, 44);
+            this.label44.TabIndex = 0;
+            this.label44.Text = resources.GetString("label44.Text");
+            // 
+            // panel9
+            // 
+            this.panel9.BackColor = System.Drawing.Color.White;
+            this.panel9.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel9.Location = new System.Drawing.Point(0, 1781);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(1456, 270);
+            this.panel9.TabIndex = 9;
             // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(1924, 1170);
+            this.ClientSize = new System.Drawing.Size(1920, 1170);
             this.Controls.Add(this.hopeTabPage1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Form2";
-            this.Text = "Form2";
+            this.Text = "trang chủ";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.hopeTabPage1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
@@ -731,17 +1227,27 @@
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.tabPage2.ResumeLayout(false);
-            this.tabPage4.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
+            this.tabPage4.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
+            this.panel5.ResumeLayout(false);
+            this.panel5.PerformLayout();
+            this.tableLayoutPanel2.ResumeLayout(false);
+            this.tableLayoutPanel2.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel6.ResumeLayout(false);
+            this.panel6.PerformLayout();
+            this.panel7.ResumeLayout(false);
+            this.panel7.PerformLayout();
+            this.panel8.ResumeLayout(false);
+            this.panel8.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -802,5 +1308,43 @@
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.TextBox textBox11;
+        private System.Windows.Forms.TextBox textBox10;
+        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.TextBox textBox12;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
+        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.Label label27;
+        private System.Windows.Forms.Label label26;
+        private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.Label label28;
+        private System.Windows.Forms.Label label34;
+        private System.Windows.Forms.Label label33;
+        private System.Windows.Forms.Label label32;
+        private System.Windows.Forms.Label label31;
+        private System.Windows.Forms.Label label30;
+        private System.Windows.Forms.Label label29;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Panel panel7;
+        private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.TextBox textBox13;
+        private System.Windows.Forms.Label label36;
+        private System.Windows.Forms.Label label35;
+        private System.Windows.Forms.Label label38;
+        private System.Windows.Forms.Label label37;
+        private System.Windows.Forms.TextBox textBox15;
+        private System.Windows.Forms.TextBox textBox14;
+        private System.Windows.Forms.Label label39;
+        private System.Windows.Forms.Label label41;
+        private System.Windows.Forms.Label label40;
+        private System.Windows.Forms.Panel panel8;
+        private System.Windows.Forms.Label label43;
+        private System.Windows.Forms.Label label42;
+        private System.Windows.Forms.Label label44;
+        private System.Windows.Forms.Panel panel9;
     }
 }
