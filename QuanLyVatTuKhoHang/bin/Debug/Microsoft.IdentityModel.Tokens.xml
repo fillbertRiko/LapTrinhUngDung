@@ -70,11 +70,9 @@
             is used for `kid` and the public portion of <see cref="P:Microsoft.IdentityModel.Tokens.EncryptingCredentials.Key"/> is used for `epk`.
             </remarks>
         </member>
-        <member name="F:Microsoft.IdentityModel.Tokens.AppContextSwitches.UpdateConfigAsBlockingSwitch">
+        <member name="P:Microsoft.IdentityModel.Tokens.AppContextSwitches.UpdateConfigAsBlocking">
             <summary>
-            Enabling this switch will cause the configuration manager to block other requests to GetConfigurationAsync if a request is already in progress.
-            The default configuration refresh behavior is if a request is already in progress, the current configuration will be returned until the ongoing request is completed on
-            a background thread.
+            Unused, part of a previous release. This is a friend, so we cannot remove.
             </summary>
         </member>
         <member name="M:Microsoft.IdentityModel.Tokens.AppContextSwitches.ResetAllSwitches">
@@ -5484,10 +5482,13 @@
             <summary>
             Gets or sets the <see cref="T:Microsoft.IdentityModel.Tokens.SecurityKey"/> that is to be used for decryption.
             </summary>
+            <remarks>
+            This <see cref="P:Microsoft.IdentityModel.Tokens.TokenValidationParameters.TokenDecryptionKey"/> will only be used if its <see cref="P:Microsoft.IdentityModel.Tokens.SecurityKey.KeyId"/> matches the 'kid' parameter in the token.
+            </remarks>
         </member>
         <member name="P:Microsoft.IdentityModel.Tokens.TokenValidationParameters.TokenDecryptionKeyResolver">
             <summary>
-            Gets or sets a delegate that will be called to retreive a <see cref="T:Microsoft.IdentityModel.Tokens.SecurityKey"/> used for decryption.
+            Gets or sets a delegate that will be called to retrieve a <see cref="T:Microsoft.IdentityModel.Tokens.SecurityKey"/> used for decryption.
             </summary>
             <remarks>
             This <see cref="T:Microsoft.IdentityModel.Tokens.SecurityKey"/> will be used to decrypt the token. This can be helpful when the <see cref="T:Microsoft.IdentityModel.Tokens.SecurityToken"/> does not contain a key identifier.
@@ -5497,6 +5498,9 @@
             <summary>
             Gets or sets the <see cref="T:System.Collections.Generic.IEnumerable`1"/> that is to be used for decrypting inbound tokens.
             </summary>
+            <remarks>
+            The decryption keys in this <see cref="P:Microsoft.IdentityModel.Tokens.TokenValidationParameters.TokenDecryptionKeys"/> collection will only be used if their <see cref="P:Microsoft.IdentityModel.Tokens.SecurityKey.KeyId"/> matches the 'kid' parameter in the token.
+            </remarks>
         </member>
         <member name="P:Microsoft.IdentityModel.Tokens.TokenValidationParameters.TokenReader">
             <summary>
@@ -5522,9 +5526,15 @@
             Even if <see cref="P:Microsoft.IdentityModel.Tokens.TokenValidationParameters.ValidateTokenReplay"/> is false, this delegate will still be called.
             </remarks>
         </member>
+        <member name="P:Microsoft.IdentityModel.Tokens.TokenValidationParameters.TryAllDecryptionKeys">
+            <summary>
+            Gets or sets a value indicating whether all <see cref="P:Microsoft.IdentityModel.Tokens.TokenValidationParameters.TokenDecryptionKeys"/> should be tried during token decryption when a key is not matched to token 'kid' or if token 'kid' is empty.
+            The default is <c>true</c>.
+            </summary>
+        </member>
         <member name="P:Microsoft.IdentityModel.Tokens.TokenValidationParameters.TryAllIssuerSigningKeys">
             <summary>
-            Gets or sets a value indicating whether all <see cref="P:Microsoft.IdentityModel.Tokens.TokenValidationParameters.IssuerSigningKeys"/> should be tried during signature validation when a key is not matched to token kid or if token kid is empty.
+            Gets or sets a value indicating whether all <see cref="P:Microsoft.IdentityModel.Tokens.TokenValidationParameters.IssuerSigningKeys"/> should be tried during signature validation when a key is not matched to token 'kid' or if token 'kid' is empty.
             The default is <c>true</c>.
             </summary>
         </member>
@@ -7254,6 +7264,9 @@
             <summary>
             Gets the <see cref="T:System.Collections.Generic.IList`1"/> that is to be used for decrypting inbound tokens.
             </summary>
+            <remarks>
+            The decryption keys in this <see cref="P:Microsoft.IdentityModel.Tokens.ValidationParameters.TokenDecryptionKeys"/> collection will only be used if their <see cref="P:Microsoft.IdentityModel.Tokens.SecurityKey.KeyId"/> matches the 'kid' parameter in the token.
+            </remarks>
         </member>
         <member name="P:Microsoft.IdentityModel.Tokens.ValidationParameters.TokenReplayCache">
             <summary>
@@ -7271,6 +7284,12 @@
             </remarks>
             <exception cref="T:System.ArgumentNullException">Thrown when the value is set as null.</exception>
             <returns>The <see cref="T:Microsoft.IdentityModel.Tokens.TokenReplayValidationDelegate"/> used to validate the token replay of the token.</returns>
+        </member>
+        <member name="P:Microsoft.IdentityModel.Tokens.ValidationParameters.TryAllDecryptionKeys">
+            <summary>
+            Gets or sets a value indicating whether all <see cref="P:Microsoft.IdentityModel.Tokens.ValidationParameters.TokenDecryptionKeys"/> should be tried during token decryption when a key is not matched to token 'kid' or if token 'kid' is empty.
+            The default is <c>true</c>.
+            </summary>
         </member>
         <member name="P:Microsoft.IdentityModel.Tokens.ValidationParameters.TryAllIssuerSigningKeys">
             <summary>
@@ -7917,7 +7936,7 @@
             The meter responsible for creating instruments.
             </summary>
         </member>
-        <member name="F:Microsoft.IdentityModel.Telemetry.TelemetryDataRecorder.ConfigurationManagerCounter">
+        <member name="F:Microsoft.IdentityModel.Telemetry.TelemetryDataRecorder.IdentityModelConfigurationManagerCounterName">
             <summary>
             Counter to capture configuration refresh requests to ConfigurationManager.
             </summary>

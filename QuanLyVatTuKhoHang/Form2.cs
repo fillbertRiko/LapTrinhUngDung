@@ -52,9 +52,17 @@ namespace QuanLyVatTuKhoHang
 
         }
 
-        private void label13_Click_1(object sender, EventArgs e)
+        private void button7_Click(object sender, EventArgs e)
         {
-
+            txttel.Text = string.Empty;
+            cbxPay.Text = string.Empty;
+            txtSo.Text = string.Empty;
+            txtnameKH.Text = string.Empty;
+            txtcodeKH.Text = string.Empty;
+            txtAddress.Text = string.Empty;
+            txtAC.Text = string.Empty;
+            cbxBank.Text = string.Empty;
+            txtWords.Text = string.Empty;
         }
     }
 }
