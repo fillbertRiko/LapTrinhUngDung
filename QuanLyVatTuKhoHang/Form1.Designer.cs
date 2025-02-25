@@ -1,4 +1,6 @@
-﻿namespace QuanLyVatTuKhoHang
+﻿using System;
+
+namespace QuanLyVatTuKhoHang
 {
     partial class Form1
     {
@@ -101,6 +103,11 @@
             this.Name = "Form1";
             this.ResumeLayout(false);
 
+        }
+
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
         }
 
         #endregion
