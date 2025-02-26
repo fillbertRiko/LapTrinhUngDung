@@ -243,10 +243,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="ILLink\ILLink.Descriptors.LibraryBuild.xml" />
-    <Content Include="WarehouseManagement.mdf">
+    <Content Include="Class\WarehouseManagement.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="WarehouseManagement_log.ldf">
+    <Content Include="Class\WarehouseManagement_log.ldf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>WarehouseManagement.mdf</DependentUpon>
     </Content>

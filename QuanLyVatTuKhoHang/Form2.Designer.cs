@@ -405,7 +405,7 @@
             this.tabPage2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tabPage2.Size = new System.Drawing.Size(1707, 830);
+            this.tabPage2.Size = new System.Drawing.Size(1686, 830);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "nhập hàng";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -420,7 +420,7 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 359F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 298F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 290F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 549F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 553F));
             this.tableLayoutPanel1.Controls.Add(this.bigLabel5, 5, 0);
             this.tableLayoutPanel1.Controls.Add(this.bigLabel4, 4, 0);
             this.tableLayoutPanel1.Controls.Add(this.bigLabel1, 1, 0);
@@ -444,9 +444,9 @@
             this.bigLabel5.BackColor = System.Drawing.Color.Transparent;
             this.bigLabel5.Font = new System.Drawing.Font("Microsoft JhengHei UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bigLabel5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            this.bigLabel5.Location = new System.Drawing.Point(1160, 8);
+            this.bigLabel5.Location = new System.Drawing.Point(1156, 8);
             this.bigLabel5.Name = "bigLabel5";
-            this.bigLabel5.Size = new System.Drawing.Size(544, 24);
+            this.bigLabel5.Size = new System.Drawing.Size(548, 24);
             this.bigLabel5.TabIndex = 4;
             this.bigLabel5.Text = "số lượng";
             // 
@@ -457,7 +457,7 @@
             this.bigLabel4.BackColor = System.Drawing.Color.Transparent;
             this.bigLabel4.Font = new System.Drawing.Font("Microsoft JhengHei UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bigLabel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            this.bigLabel4.Location = new System.Drawing.Point(867, 8);
+            this.bigLabel4.Location = new System.Drawing.Point(863, 8);
             this.bigLabel4.Name = "bigLabel4";
             this.bigLabel4.Size = new System.Drawing.Size(284, 24);
             this.bigLabel4.TabIndex = 3;
@@ -470,9 +470,9 @@
             this.bigLabel1.BackColor = System.Drawing.Color.Transparent;
             this.bigLabel1.Font = new System.Drawing.Font("Microsoft JhengHei UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bigLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            this.bigLabel1.Location = new System.Drawing.Point(89, 3);
+            this.bigLabel1.Location = new System.Drawing.Point(87, 3);
             this.bigLabel1.Name = "bigLabel1";
-            this.bigLabel1.Size = new System.Drawing.Size(106, 35);
+            this.bigLabel1.Size = new System.Drawing.Size(104, 35);
             this.bigLabel1.TabIndex = 0;
             this.bigLabel1.Text = "mã hóa đơn";
             // 
@@ -483,7 +483,7 @@
             this.bigLabel3.BackColor = System.Drawing.Color.Transparent;
             this.bigLabel3.Font = new System.Drawing.Font("Microsoft JhengHei UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bigLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            this.bigLabel3.Location = new System.Drawing.Point(566, 8);
+            this.bigLabel3.Location = new System.Drawing.Point(562, 8);
             this.bigLabel3.Name = "bigLabel3";
             this.bigLabel3.Size = new System.Drawing.Size(292, 24);
             this.bigLabel3.TabIndex = 2;
@@ -496,7 +496,7 @@
             this.bigLabel2.BackColor = System.Drawing.Color.Transparent;
             this.bigLabel2.Font = new System.Drawing.Font("Microsoft JhengHei UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bigLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            this.bigLabel2.Location = new System.Drawing.Point(204, 8);
+            this.bigLabel2.Location = new System.Drawing.Point(200, 8);
             this.bigLabel2.Name = "bigLabel2";
             this.bigLabel2.Size = new System.Drawing.Size(353, 24);
             this.bigLabel2.TabIndex = 1;
@@ -509,7 +509,7 @@
             this.tabPage3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tabPage3.Size = new System.Drawing.Size(1707, 830);
+            this.tabPage3.Size = new System.Drawing.Size(1686, 830);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "thông báo";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -783,7 +783,7 @@
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 184F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 157F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 142F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 233F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 236F));
             this.tableLayoutPanel2.Controls.Add(this.label34, 5, 1);
             this.tableLayoutPanel2.Controls.Add(this.label33, 4, 1);
             this.tableLayoutPanel2.Controls.Add(this.label32, 3, 1);
@@ -819,9 +819,9 @@
             this.label34.AutoSize = true;
             this.label34.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label34.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label34.Location = new System.Drawing.Point(1063, 60);
+            this.label34.Location = new System.Drawing.Point(1060, 60);
             this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(228, 24);
+            this.label34.Size = new System.Drawing.Size(231, 24);
             this.label34.TabIndex = 11;
             this.label34.Text = "6=4x5";
             this.label34.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -831,7 +831,7 @@
             this.label33.AutoSize = true;
             this.label33.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label33.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label33.Location = new System.Drawing.Point(919, 60);
+            this.label33.Location = new System.Drawing.Point(916, 60);
             this.label33.Name = "label33";
             this.label33.Size = new System.Drawing.Size(136, 24);
             this.label33.TabIndex = 10;
@@ -843,7 +843,7 @@
             this.label32.AutoSize = true;
             this.label32.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label32.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label32.Location = new System.Drawing.Point(760, 60);
+            this.label32.Location = new System.Drawing.Point(757, 60);
             this.label32.Name = "label32";
             this.label32.Size = new System.Drawing.Size(151, 24);
             this.label32.TabIndex = 9;
@@ -855,7 +855,7 @@
             this.label31.AutoSize = true;
             this.label31.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label31.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label31.Location = new System.Drawing.Point(574, 60);
+            this.label31.Location = new System.Drawing.Point(571, 60);
             this.label31.Name = "label31";
             this.label31.Size = new System.Drawing.Size(178, 24);
             this.label31.TabIndex = 8;
@@ -867,9 +867,9 @@
             this.label30.AutoSize = true;
             this.label30.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label30.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label30.Location = new System.Drawing.Point(77, 60);
+            this.label30.Location = new System.Drawing.Point(76, 60);
             this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(489, 24);
+            this.label30.Size = new System.Drawing.Size(487, 24);
             this.label30.TabIndex = 7;
             this.label30.Text = "2";
             this.label30.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -881,7 +881,7 @@
             this.label29.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.label29.Location = new System.Drawing.Point(5, 60);
             this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(64, 24);
+            this.label29.Size = new System.Drawing.Size(63, 24);
             this.label29.TabIndex = 6;
             this.label29.Text = "1";
             this.label29.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -891,9 +891,9 @@
             this.label27.AutoSize = true;
             this.label27.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label27.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label27.Location = new System.Drawing.Point(1063, 2);
+            this.label27.Location = new System.Drawing.Point(1060, 2);
             this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(228, 56);
+            this.label27.Size = new System.Drawing.Size(231, 56);
             this.label27.TabIndex = 5;
             this.label27.Text = " Thành tiền \r\n(Amount)";
             this.label27.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -903,7 +903,7 @@
             this.label26.AutoSize = true;
             this.label26.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label26.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label26.Location = new System.Drawing.Point(919, 2);
+            this.label26.Location = new System.Drawing.Point(916, 2);
             this.label26.Name = "label26";
             this.label26.Size = new System.Drawing.Size(136, 56);
             this.label26.TabIndex = 4;
@@ -915,7 +915,7 @@
             this.label25.AutoSize = true;
             this.label25.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label25.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label25.Location = new System.Drawing.Point(760, 2);
+            this.label25.Location = new System.Drawing.Point(757, 2);
             this.label25.Name = "label25";
             this.label25.Size = new System.Drawing.Size(151, 56);
             this.label25.TabIndex = 3;
@@ -927,7 +927,7 @@
             this.label24.AutoSize = true;
             this.label24.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label24.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label24.Location = new System.Drawing.Point(574, 2);
+            this.label24.Location = new System.Drawing.Point(571, 2);
             this.label24.Name = "label24";
             this.label24.Size = new System.Drawing.Size(178, 56);
             this.label24.TabIndex = 2;
@@ -939,9 +939,9 @@
             this.label23.AutoSize = true;
             this.label23.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label23.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label23.Location = new System.Drawing.Point(77, 2);
+            this.label23.Location = new System.Drawing.Point(76, 2);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(489, 56);
+            this.label23.Size = new System.Drawing.Size(487, 56);
             this.label23.TabIndex = 1;
             this.label23.Text = " Tên hàng hóa, dịch vụ \r\n(Description)\r\n";
             this.label23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -953,7 +953,7 @@
             this.label22.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.label22.Location = new System.Drawing.Point(5, 2);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(64, 56);
+            this.label22.Size = new System.Drawing.Size(63, 56);
             this.label22.TabIndex = 0;
             this.label22.Text = "STT";
             this.label22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
