@@ -30,6 +30,7 @@ namespace QuanLyVatTuKhoHang
         {
             Form2 frm = new Form2();
             frm.ShowDialog();
+            this.Close();
         }
     }
 }
