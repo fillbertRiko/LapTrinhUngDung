@@ -206,7 +206,6 @@ D:\taiLieuHocTap\2025\Lập trình ứng dụng\Project\LapTrinhUngDung\QuanLyVa
 D:\taiLieuHocTap\2025\Lập trình ứng dụng\Project\LapTrinhUngDung\QuanLyVatTuKhoHang\bin\Debug\zh-Hans\Microsoft.Data.SqlClient.resources.dll
 D:\taiLieuHocTap\2025\Lập trình ứng dụng\Project\LapTrinhUngDung\QuanLyVatTuKhoHang\bin\Debug\zh-Hant\Microsoft.Data.SqlClient.resources.dll
 D:\taiLieuHocTap\2025\Lập trình ứng dụng\Project\LapTrinhUngDung\QuanLyVatTuKhoHang\obj\Debug\QuanLyVatTuKhoHang.csproj.AssemblyReference.cache
-D:\taiLieuHocTap\2025\Lập trình ứng dụng\Project\LapTrinhUngDung\QuanLyVatTuKhoHang\obj\Debug\QuanLyVatTuKhoHang.Form1.resources
 D:\taiLieuHocTap\2025\Lập trình ứng dụng\Project\LapTrinhUngDung\QuanLyVatTuKhoHang\obj\Debug\QuanLyVatTuKhoHang.Form2.resources
 D:\taiLieuHocTap\2025\Lập trình ứng dụng\Project\LapTrinhUngDung\QuanLyVatTuKhoHang\obj\Debug\QuanLyVatTuKhoHang.Properties.Resources.resources
 D:\taiLieuHocTap\2025\Lập trình ứng dụng\Project\LapTrinhUngDung\QuanLyVatTuKhoHang\obj\Debug\QuanLyVatTuKhoHang.csproj.GenerateResource.cache
@@ -214,3 +213,6 @@ D:\taiLieuHocTap\2025\Lập trình ứng dụng\Project\LapTrinhUngDung\QuanLyVa
 D:\taiLieuHocTap\2025\Lập trình ứng dụng\Project\LapTrinhUngDung\QuanLyVatTuKhoHang\obj\Debug\QuanLyVa.703B9819.Up2Date
 D:\taiLieuHocTap\2025\Lập trình ứng dụng\Project\LapTrinhUngDung\QuanLyVatTuKhoHang\obj\Debug\QuanLyVatTuKhoHang.exe
 D:\taiLieuHocTap\2025\Lập trình ứng dụng\Project\LapTrinhUngDung\QuanLyVatTuKhoHang\obj\Debug\QuanLyVatTuKhoHang.pdb
+D:\taiLieuHocTap\2025\Lập trình ứng dụng\Project\LapTrinhUngDung\QuanLyVatTuKhoHang\bin\Debug\WarehouseManagement.mdf
+D:\taiLieuHocTap\2025\Lập trình ứng dụng\Project\LapTrinhUngDung\QuanLyVatTuKhoHang\bin\Debug\WarehouseManagement_log.ldf
+D:\taiLieuHocTap\2025\Lập trình ứng dụng\Project\LapTrinhUngDung\QuanLyVatTuKhoHang\obj\Debug\QuanLyVatTuKhoHang.FormMainLoad.resources

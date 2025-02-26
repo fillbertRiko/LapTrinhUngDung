@@ -1,8 +1,9 @@
 ﻿using System;
+using System.Data;
 
 namespace QuanLyVatTuKhoHang
 {
-    partial class Form1
+    partial class FormMainLoad
     {
         /// <summary>
         /// Required designer variable.
@@ -92,22 +93,28 @@ namespace QuanLyVatTuKhoHang
             this.btnLogin.Size = new System.Drawing.Size(180, 45);
             this.btnLogin.TabIndex = 2;
             this.btnLogin.Text = "LOG IN";
-            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click_1);
             // 
-            // Form1
+            // FormMainLoad
             // 
             this.ClientSize = new System.Drawing.Size(1007, 503);
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.lblPassword);
             this.Controls.Add(this.lblUsername);
-            this.Name = "Form1";
+            this.Name = "FormMainLoad";
+            this.Load += new System.EventHandler(this.FormMainLoad_Load);
             this.ResumeLayout(false);
 
         }
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            throw new NotImplementedException();
+            /*
+            if(btnLogin.Enabled.GetTypeCode() == TypeCode.String)
+            {
+                LoadOption.OverwriteChanges.CompareTo(btnLogin.Enabled);
+            }
+            */
         }
 
         #endregion

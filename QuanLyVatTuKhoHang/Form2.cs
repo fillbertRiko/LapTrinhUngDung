@@ -13,10 +13,7 @@ namespace QuanLyVatTuKhoHang
 {
     public partial class Form2 : Form
     {
-        //Tao bien cuc bo
-        string strCon = @"Data Source=DESKTOP-P7SFE1O\DDHUY;Initial Catalog=SalesManagement;Integrated Security=True;Trust Server Certificate=True";
-        //Doi tuong ket noi
-        SqlConnection sqlCon = null;
+        
         public Form2()
         {
             InitializeComponent();

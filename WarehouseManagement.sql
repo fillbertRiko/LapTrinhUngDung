@@ -1,7 +1,7 @@
 ﻿ -- TẠO CƠ SỞ DỮ LIỆU
-DROP DATABASE IF EXISTS SalesManagement;
-CREATE DATABASE SalesManagement;
-USE SalesManagement;
+DROP DATABASE IF EXISTS WarehouseManagement;
+CREATE DATABASE WarehouseManagement;
+USE WarehouseManagement;
 
 -- XÓA BẢNG (THEO THỨ TỰ PHỤ THUỘC)
 DROP TABLE IF EXISTS SaleInvoiceDetails;
@@ -19,6 +19,12 @@ DROP TABLE IF EXISTS UnitOfMeasure;
 DROP TABLE IF EXISTS Permission;
 
 -- TẠO BẢNG
+CREATE TABLE UserAccount (
+    AccountID INT PRIMARY KEY,
+    UsernameAcc NVARCHAR(100) NOT NULL UNIQUE,
+    PasswordAcc NVARCHAR(100) NOT NULL UNIQUE
+);
+
 CREATE TABLE Permission (
     PermissionID INT PRIMARY KEY,
     PermissionName VARCHAR(50) NOT NULL UNIQUE
