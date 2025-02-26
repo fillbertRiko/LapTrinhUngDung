@@ -18,8 +18,6 @@ namespace QuanLyVatTuKhoHang
             InitializeComponent();
         }
 
-        
-
         private void FormMainLoad_Load(object sender, EventArgs e)
         {
             //mo ket noi
@@ -28,8 +26,24 @@ namespace QuanLyVatTuKhoHang
 
         private void btnLogin_Click_1(object sender, EventArgs e)
         {
-            Form2 frm = new Form2();
-            frm.ShowDialog();
+            Form2 f2 = new Form2();
+            int flag = 0;
+            string u, p;
+            u = lblUsername.Text;
+            p = lblPassword.Text;
+            if (u == "username" && p == "password")
+            {
+                flag = 1;
+            }
+            else
+            {
+                MessageBox.Show("Tài khoản hoặc mật khẩu sai!");
+            }
+            if (flag == 1)
+            {
+                f2.Show();
+                this.Hide();
+            }
         }
     }
 }
