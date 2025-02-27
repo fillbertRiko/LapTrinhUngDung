@@ -5,10 +5,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{51AE4604-DD78-4903-99C6-01C36C905A50}|QuanLyVatTuKhoHang.csproj|d:\\lap_trinh_ung_dung\\laptrinhungdung\\laptrinhungdung\\quanlyvattukhohang\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{51AE4604-DD78-4903-99C6-01C36C905A50}|QuanLyVatTuKhoHang.csproj|solutionrelative:form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{51AE4604-DD78-4903-99C6-01C36C905A50}|QuanLyVatTuKhoHang.csproj|d:\\lap_trinh_ung_dung\\laptrinhungdung\\laptrinhungdung\\quanlyvattukhohang\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{51AE4604-DD78-4903-99C6-01C36C905A50}|QuanLyVatTuKhoHang.csproj|solutionrelative:form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +14,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -30,25 +26,12 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Form2.cs",
-              "DocumentMoniker": "D:\\lap_trinh_ung_dung\\laptrinhungdung\\LapTrinhUngDung\\QuanLyVatTuKhoHang\\Form2.cs",
-              "RelativeDocumentMoniker": "Form2.cs",
-              "ToolTip": "D:\\lap_trinh_ung_dung\\laptrinhungdung\\LapTrinhUngDung\\QuanLyVatTuKhoHang\\Form2.cs",
-              "RelativeToolTip": "Form2.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-26T16:35:05.135Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Form2.cs [Design]",
               "DocumentMoniker": "D:\\lap_trinh_ung_dung\\laptrinhungdung\\LapTrinhUngDung\\QuanLyVatTuKhoHang\\Form2.cs",
               "RelativeDocumentMoniker": "Form2.cs",
-              "ToolTip": "D:\\lap_trinh_ung_dung\\laptrinhungdung\\LapTrinhUngDung\\QuanLyVatTuKhoHang\\Form2.cs [Design]",
-              "RelativeToolTip": "Form2.cs [Design]",
+              "ToolTip": "D:\\lap_trinh_ung_dung\\laptrinhungdung\\LapTrinhUngDung\\QuanLyVatTuKhoHang\\Form2.cs [Design]*",
+              "RelativeToolTip": "Form2.cs [Design]*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-26T09:03:25.676Z",
               "EditorCaption": " [Design]"
