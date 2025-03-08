@@ -28,7 +28,7 @@ namespace QuanLyVatTuKhoHang
 
         private void btnLogin_Click_1(object sender, EventArgs e)
         {
-            Form2 frm = new Form2();
+            Form3 frm = new Form3();
             frm.ShowDialog();
             this.Close();
         }
