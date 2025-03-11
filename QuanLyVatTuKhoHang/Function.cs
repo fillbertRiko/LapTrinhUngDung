@@ -18,7 +18,7 @@ namespace QuanLyVatTuKhoHang.Class
             //khoi tao doi tuong
             Con = new SqlConnection();
 
-            Con.ConnectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\lap_trinh_ung_dung\laptrinhungdung\LapTrinhUngDung\QuanLyVatTuKhoHang\Class\WarehouseManagement.mdf;Integrated Security=True;Connect Timeout=30";
+            Con.ConnectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""H:\Tài liệu học tập\2025\Lập trình ứng dụng\Project\LapTrinhUngDung\QuanLyVatTuKhoHang\Class\Warehouse.mdf"";Integrated Security=True;Connect Timeout=30";
 
             //mo ket noi
             Con.Open();
