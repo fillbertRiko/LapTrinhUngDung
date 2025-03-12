@@ -216,8 +216,6 @@ D:\taiLieuHocTap\2025\Lập trình ứng dụng\Project\LapTrinhUngDung\QuanLyVa
 D:\taiLieuHocTap\2025\Lập trình ứng dụng\Project\LapTrinhUngDung\QuanLyVatTuKhoHang\obj\Debug\QuanLyVatTuKhoHang.FormMainLoad.resources
 D:\taiLieuHocTap\2025\Lập trình ứng dụng\Project\LapTrinhUngDung\QuanLyVatTuKhoHang\bin\Debug\Class\WarehouseManagement.mdf
 D:\taiLieuHocTap\2025\Lập trình ứng dụng\Project\LapTrinhUngDung\QuanLyVatTuKhoHang\bin\Debug\Class\WarehouseManagement_log.ldf
-D:\lap_trinh_ung_dung\laptrinhungdung\LapTrinhUngDung\QuanLyVatTuKhoHang\bin\Debug\Class\WarehouseManagement.mdf
-D:\lap_trinh_ung_dung\laptrinhungdung\LapTrinhUngDung\QuanLyVatTuKhoHang\bin\Debug\Class\WarehouseManagement_log.ldf
 D:\lap_trinh_ung_dung\laptrinhungdung\LapTrinhUngDung\QuanLyVatTuKhoHang\bin\Debug\QuanLyVatTuKhoHang.exe.config
 D:\lap_trinh_ung_dung\laptrinhungdung\LapTrinhUngDung\QuanLyVatTuKhoHang\bin\Debug\QuanLyVatTuKhoHang.exe
 D:\lap_trinh_ung_dung\laptrinhungdung\LapTrinhUngDung\QuanLyVatTuKhoHang\bin\Debug\QuanLyVatTuKhoHang.pdb
@@ -326,6 +324,7 @@ D:\lap_trinh_ung_dung\laptrinhungdung\LapTrinhUngDung\QuanLyVatTuKhoHang\obj\Deb
 D:\lap_trinh_ung_dung\laptrinhungdung\LapTrinhUngDung\QuanLyVatTuKhoHang\obj\Debug\QuanLyVatTuKhoHang.exe
 D:\lap_trinh_ung_dung\laptrinhungdung\LapTrinhUngDung\QuanLyVatTuKhoHang\obj\Debug\QuanLyVatTuKhoHang.pdb
 D:\lap_trinh_ung_dung\laptrinhungdung\LapTrinhUngDung\QuanLyVatTuKhoHang\obj\Debug\QuanLyVatTuKhoHang.Form3.resources
+<<<<<<< HEAD
 H:\Tài liệu học tập\2025\Lập trình ứng dụng\Project\LapTrinhUngDung\QuanLyVatTuKhoHang\bin\Debug\Class\Warehouse.mdf
 H:\Tài liệu học tập\2025\Lập trình ứng dụng\Project\LapTrinhUngDung\QuanLyVatTuKhoHang\bin\Debug\Class\Warehouse_log.ldf
 H:\Tài liệu học tập\2025\Lập trình ứng dụng\Project\LapTrinhUngDung\QuanLyVatTuKhoHang\bin\Debug\QuanLyVatTuKhoHang.exe.config
@@ -438,3 +437,9 @@ H:\Tài liệu học tập\2025\Lập trình ứng dụng\Project\LapTrinhUngDun
 H:\Tài liệu học tập\2025\Lập trình ứng dụng\Project\LapTrinhUngDung\QuanLyVatTuKhoHang\obj\Debug\QuanLyVa.703B9819.Up2Date
 H:\Tài liệu học tập\2025\Lập trình ứng dụng\Project\LapTrinhUngDung\QuanLyVatTuKhoHang\obj\Debug\QuanLyVatTuKhoHang.exe
 H:\Tài liệu học tập\2025\Lập trình ứng dụng\Project\LapTrinhUngDung\QuanLyVatTuKhoHang\obj\Debug\QuanLyVatTuKhoHang.pdb
+=======
+D:\lap_trinh_ung_dung\laptrinhungdung\LapTrinhUngDung\QuanLyVatTuKhoHang\bin\Debug\Class\Warehouse.mdf
+D:\lap_trinh_ung_dung\laptrinhungdung\LapTrinhUngDung\QuanLyVatTuKhoHang\bin\Debug\Class\Warehouse_log.ldf
+D:\lap_trinh_ung_dung\laptrinhungdung\LapTrinhUngDung\QuanLyVatTuKhoHang\obj\Debug\QuanLyVatTuKhoHang.Form2.resources
+D:\lap_trinh_ung_dung\laptrinhungdung\LapTrinhUngDung\QuanLyVatTuKhoHang\obj\Debug\QuanLyVatTuKhoHang.Form4.resources
+>>>>>>> 03fc491c26dd0b1c5860c5761307ffaff71680ab

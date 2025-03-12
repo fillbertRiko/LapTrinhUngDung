@@ -18,10 +18,14 @@ namespace QuanLyVatTuKhoHang.Class
             //khoi tao doi tuong
             Con = new SqlConnection();
 
+<<<<<<< HEAD
             //dung de truy van cac cau lenh insert, update, delete
             SqlCommand cmd;
 
             Con.ConnectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""H:\Tài liệu học tập\2025\Lập trình ứng dụng\Project\LapTrinhUngDung\QuanLyVatTuKhoHang\Class\Warehouse.mdf"";Integrated Security=True;Connect Timeout=30";
+=======
+            Con.ConnectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\lap_trinh_ung_dung\laptrinhungdung\LapTrinhUngDung\QuanLyVatTuKhoHang\Class\Warehouse.mdf;Integrated Security=True;Connect Timeout=30";
+>>>>>>> 03fc491c26dd0b1c5860c5761307ffaff71680ab
 
             //mo ket noi
             Con.Open();

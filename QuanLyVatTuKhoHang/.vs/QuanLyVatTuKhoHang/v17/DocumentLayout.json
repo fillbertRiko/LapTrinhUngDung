@@ -1,8 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "H:\\T\u00E0i li\u1EC7u h\u1ECDc t\u1EADp\\2025\\L\u1EADp tr\u00ECnh \u1EE9ng d\u1EE5ng\\Project\\LapTrinhUngDung\\QuanLyVatTuKhoHang\\",
+  "WorkspaceRootPath": "D:\\lap_trinh_ung_dung\\laptrinhungdung\\LapTrinhUngDung\\QuanLyVatTuKhoHang\\",
   "Documents": [
     {
+<<<<<<< HEAD
       "AbsoluteMoniker": "D:0:0:{51AE4604-DD78-4903-99C6-01C36C905A50}|QuanLyVatTuKhoHang.csproj|h:\\t\u00E0i li\u1EC7u h\u1ECDc t\u1EADp\\2025\\l\u1EADp tr\u00ECnh \u1EE9ng d\u1EE5ng\\project\\laptrinhungdung\\quanlyvattukhohang\\auth\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{51AE4604-DD78-4903-99C6-01C36C905A50}|QuanLyVatTuKhoHang.csproj|solutionrelative:auth\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -17,6 +18,14 @@
     {
       "AbsoluteMoniker": "D:0:0:{51AE4604-DD78-4903-99C6-01C36C905A50}|QuanLyVatTuKhoHang.csproj|h:\\t\u00E0i li\u1EC7u h\u1ECDc t\u1EADp\\2025\\l\u1EADp tr\u00ECnh \u1EE9ng d\u1EE5ng\\project\\laptrinhungdung\\quanlyvattukhohang\\auth\\welcome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{51AE4604-DD78-4903-99C6-01C36C905A50}|QuanLyVatTuKhoHang.csproj|solutionrelative:auth\\welcome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+=======
+      "AbsoluteMoniker": "D:0:0:{51AE4604-DD78-4903-99C6-01C36C905A50}|QuanLyVatTuKhoHang.csproj|d:\\lap_trinh_ung_dung\\laptrinhungdung\\laptrinhungdung\\quanlyvattukhohang\\form4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{51AE4604-DD78-4903-99C6-01C36C905A50}|QuanLyVatTuKhoHang.csproj|solutionrelative:form4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51AE4604-DD78-4903-99C6-01C36C905A50}|QuanLyVatTuKhoHang.csproj|D:\\lap_trinh_ung_dung\\laptrinhungdung\\LapTrinhUngDung\\QuanLyVatTuKhoHang\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{51AE4604-DD78-4903-99C6-01C36C905A50}|QuanLyVatTuKhoHang.csproj|solutionrelative:form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+>>>>>>> 03fc491c26dd0b1c5860c5761307ffaff71680ab
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +35,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -38,6 +47,7 @@
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 3,
               "Title": "Welcome.cs [Design]",
               "DocumentMoniker": "H:\\T\u00E0i li\u1EC7u h\u1ECDc t\u1EADp\\2025\\L\u1EADp tr\u00ECnh \u1EE9ng d\u1EE5ng\\Project\\LapTrinhUngDung\\QuanLyVatTuKhoHang\\Auth\\Welcome.cs",
@@ -83,6 +93,28 @@
               "RelativeToolTip": "Auth\\Login.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-12T15:17:17.279Z",
+=======
+              "DocumentIndex": 0,
+              "Title": "Form4.cs [Design]",
+              "DocumentMoniker": "D:\\lap_trinh_ung_dung\\laptrinhungdung\\LapTrinhUngDung\\QuanLyVatTuKhoHang\\Form4.cs",
+              "RelativeDocumentMoniker": "Form4.cs",
+              "ToolTip": "D:\\lap_trinh_ung_dung\\laptrinhungdung\\LapTrinhUngDung\\QuanLyVatTuKhoHang\\Form4.cs [Design]",
+              "RelativeToolTip": "Form4.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T16:08:30.601Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form3.cs [Design]",
+              "DocumentMoniker": "D:\\lap_trinh_ung_dung\\laptrinhungdung\\LapTrinhUngDung\\QuanLyVatTuKhoHang\\Form3.cs",
+              "RelativeDocumentMoniker": "Form3.cs",
+              "ToolTip": "D:\\lap_trinh_ung_dung\\laptrinhungdung\\LapTrinhUngDung\\QuanLyVatTuKhoHang\\Form3.cs [Design]",
+              "RelativeToolTip": "Form3.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T09:38:52.571Z",
+>>>>>>> 03fc491c26dd0b1c5860c5761307ffaff71680ab
               "EditorCaption": " [Design]"
             }
           ]
