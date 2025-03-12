@@ -25,7 +25,7 @@ namespace QuanLyVatTuKhoHang
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormMainLoad());
+            Application.Run(new FormLogin());
             /*
              * string strCon = @"Data Source=DESKTOP-P7SFE1O\DDHUY;"
                                 + "Initial Catalog=SalesManagement;"
