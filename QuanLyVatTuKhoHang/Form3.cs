@@ -21,5 +21,17 @@ namespace QuanLyVatTuKhoHang
         {
             this.Close();
         }
+
+        private void btnThemSP_Click(object sender, EventArgs e)
+        {
+            Form2 form2 = new Form2();
+            form2.ShowDialog();
+        }
+
+        private void btnDuyethoadon_Click(object sender, EventArgs e)
+        {
+            Form4 form4 = new Form4();
+            form4.ShowDialog();
+        }
     }
 }
