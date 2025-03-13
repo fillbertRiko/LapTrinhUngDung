@@ -443,3 +443,7 @@ D:\lap_trinh_ung_dung\laptrinhungdung\LapTrinhUngDung\QuanLyVatTuKhoHang\bin\Deb
 D:\lap_trinh_ung_dung\laptrinhungdung\LapTrinhUngDung\QuanLyVatTuKhoHang\obj\Debug\QuanLyVatTuKhoHang.Form2.resources
 D:\lap_trinh_ung_dung\laptrinhungdung\LapTrinhUngDung\QuanLyVatTuKhoHang\obj\Debug\QuanLyVatTuKhoHang.Form4.resources
 >>>>>>> 03fc491c26dd0b1c5860c5761307ffaff71680ab
+H:\Tài liệu học tập\2025\Lập trình ứng dụng\Project\LapTrinhUngDung\QuanLyVatTuKhoHang\obj\Debug\QuanLyVatTuKhoHang.csproj.SuggestedBindingRedirects.cache
+H:\Tài liệu học tập\2025\Lập trình ứng dụng\Project\LapTrinhUngDung\QuanLyVatTuKhoHang\obj\Debug\QuanLyVatTuKhoHang.exe.config
+H:\Tài liệu học tập\2025\Lập trình ứng dụng\Project\LapTrinhUngDung\QuanLyVatTuKhoHang\obj\Debug\QuanLyVatTuKhoHang.Form2.resources
+H:\Tài liệu học tập\2025\Lập trình ứng dụng\Project\LapTrinhUngDung\QuanLyVatTuKhoHang\obj\Debug\QuanLyVatTuKhoHang.Form4.resources
