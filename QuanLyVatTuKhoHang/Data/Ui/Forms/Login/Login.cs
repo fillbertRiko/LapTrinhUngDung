@@ -1,13 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Data.SqlClient;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using System.Windows.Forms;
-using QuanLyVatTuKhoHang.QuanLyVatTuKhoHang.Database;
-using QuanLyVatTuKhoHang.QuanLyVatTuKhoHang.Models;
 
-namespace QuanLyVatTuKhoHang.Ui.Forms.Login
+namespace Data.Ui.Forms.Login
 {
-    
     public partial class FormLogin : Form
     {
         public FormLogin()
@@ -64,7 +66,7 @@ namespace QuanLyVatTuKhoHang.Ui.Forms.Login
 
         private void lkbForgetPassword_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            QuanVatTuKhoHang.Ui.Forms.Login.FormRecover forgetPassword = new FormRecover();
+            FormRecover forgetPassword = new FormRecover();
             forgetPassword.ShowDialog();
         }
     }

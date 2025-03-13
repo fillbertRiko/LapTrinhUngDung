@@ -8,13 +8,18 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace QuanLyVatTuKhoHang.Auth
+namespace Data.Ui.Forms.Login
 {
     public partial class FormRecover: Form
     {
         public FormRecover()
         {
             InitializeComponent();
+        }
+
+        private void FormRecover_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

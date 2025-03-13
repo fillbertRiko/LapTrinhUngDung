@@ -1,7 +1,7 @@
 ﻿using System.Data.SqlClient;
 using System.Data;
 
-namespace QuanLyVatTuKhoHang.QuanLyVatTuKhoHang.Database
+namespace Data.Database
 {
     public static class Connection
     {
@@ -10,7 +10,7 @@ namespace QuanLyVatTuKhoHang.QuanLyVatTuKhoHang.Database
         public static void Connect()
         {
             //Tao chuoi ket noi
-            string conStr = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""H:\Tài liệu học tập\2025\Lập trình ứng dụng\Project\LapTrinhUngDung\QuanLyVatTuKhoHang\QuanLyVatTuKhoHang\Database\Warehouse.mdf"";Integrated Security=True";
+            string conStr = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""H:\Tài liệu học tập\2025\Lập trình ứng dụng\Project\LapTrinhUngDung\QuanLyVatTuKhoHang\Data\Database\Warehouse.mdf"";Integrated Security=True;Connect Timeout=30";
             connec = new SqlConnection(conStr);
             connec.Open();
         }

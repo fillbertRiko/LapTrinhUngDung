@@ -50,7 +50,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>QuanLyVatTuKhoHang.UI.Forms.Login.FormLogin</StartupObject>
+    <StartupObject>
+    </StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Azure.Core, Version=1.45.0.0, Culture=neutral, PublicKeyToken=92742159e12e44c8, processorArchitecture=MSIL">
@@ -206,73 +207,76 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="QuanLyVatTuKhoHang\Auth\AuthManager.cs" />
-    <Compile Include="QuanLyVatTuKhoHang\Controllers\EmployeeController.cs" />
-    <Compile Include="QuanLyVatTuKhoHang\Controllers\InventoryController.cs" />
-    <Compile Include="QuanLyVatTuKhoHang\Controllers\ProductController.cs" />
-    <Compile Include="QuanLyVatTuKhoHang\Database\Connection.cs" />
-    <Compile Include="QuanLyVatTuKhoHang\Ui\Forms\Login\Login.cs">
+    <Compile Include="Data\Auth\AuthManager.cs" />
+    <Compile Include="Data\Controllers\EmployeeController.cs" />
+    <Compile Include="Data\Controllers\InventoryController.cs" />
+    <Compile Include="Data\Controllers\ProductController.cs" />
+    <Compile Include="Data\Database\Connection.cs" />
+    <Compile Include="Data\Ui\Forms\Login\Login.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="QuanLyVatTuKhoHang\Ui\Forms\Login\Login.Designer.cs">
+    <Compile Include="Data\Ui\Forms\Login\Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
-    <Compile Include="QuanLyVatTuKhoHang\Database\Modify.cs" />
-    <Compile Include="QuanLyVatTuKhoHang\Ui\Forms\Login\RecoverPassword.cs">
+    <Compile Include="Data\Database\Modify.cs" />
+    <Compile Include="Data\Ui\Forms\Login\RecoverPassword.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="QuanLyVatTuKhoHang\Ui\Forms\Login\.Designer.cs">
+    <Compile Include="Data\Ui\Forms\Login\.Designer.cs">
       <DependentUpon>RecoverPassword.cs</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="QuanLyVatTuKhoHang\Models\Customer.cs" />
-    <Compile Include="QuanLyVatTuKhoHang\Models\Employee.cs" />
-    <Compile Include="QuanLyVatTuKhoHang\Ui\Forms\Login\Welcome.cs">
+    <Compile Include="Data\Models\Customer.cs" />
+    <Compile Include="Data\Models\Employee.cs" />
+    <Compile Include="Data\Ui\Forms\Login\Welcome.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="QuanLyVatTuKhoHang\Ui\Forms\Login\Welcome.Designer.cs">
+    <Compile Include="Data\Ui\Forms\Login\Welcome.Designer.cs">
       <DependentUpon>Welcome.cs</DependentUpon>
     </Compile>
-    <Compile Include="QuanLyVatTuKhoHang\Ui\Forms\Import goods\Extend.cs">
+    <Compile Include="Data\Ui\Forms\Import goods\Extend.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="QuanLyVatTuKhoHang\Ui\Forms\Import goods\Extend.Designer.cs">
+    <Compile Include="Data\Ui\Forms\Import goods\Extend.Designer.cs">
       <DependentUpon>Extend.cs</DependentUpon>
     </Compile>
-    <Compile Include="QuanLyVatTuKhoHang\Ui\Forms\Main\MainForm.cs">
+    <Compile Include="Data\Ui\Forms\Main\MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="QuanLyVatTuKhoHang\Ui\Forms\Main\MainForm.Designer.cs">
+    <Compile Include="Data\Ui\Forms\Main\MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="QuanLyVatTuKhoHang\Ui\Forms\Product delivery\Extend.cs">
+    <Compile Include="Data\Ui\Forms\Product delivery\Extend.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="QuanLyVatTuKhoHang\Ui\Forms\Product delivery\Extend.Designer.cs">
+    <Compile Include="Data\Ui\Forms\Product delivery\Extend.Designer.cs">
       <DependentUpon>Extend.cs</DependentUpon>
     </Compile>
-    <Compile Include="QuanLyVatTuKhoHang\Models\Product.cs" />
-    <Compile Include="QuanLyVatTuKhoHang\Program.cs">
+    <Compile Include="Data\Models\Product.cs" />
+    <Compile Include="Program.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="QuanLyVatTuKhoHang\Ui\Forms\Login\Login.resx">
+    <EmbeddedResource Include="Data\Ui\Forms\Login\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="QuanLyVatTuKhoHang\Ui\Forms\Login\RecoverPassword.resx">
+    <EmbeddedResource Include="Data\Ui\Forms\Login\RecoverPassword.resx">
       <DependentUpon>RecoverPassword.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="QuanLyVatTuKhoHang\Ui\Forms\Login\Welcome.resx">
+    <EmbeddedResource Include="Data\Ui\Forms\Login\Welcome.resx">
       <DependentUpon>Welcome.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="QuanLyVatTuKhoHang\Ui\Forms\Import goods\Extend.resx">
+    <EmbeddedResource Include="Data\Ui\Forms\Import goods\Extend.resx">
       <DependentUpon>Extend.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="QuanLyVatTuKhoHang\Ui\Forms\Main\MainForm.resx">
+    <EmbeddedResource Include="Data\Ui\Forms\Main\MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="QuanLyVatTuKhoHang\Ui\Forms\Product delivery\Extend.resx">
+    <EmbeddedResource Include="Data\Ui\Forms\Product delivery\Extend.resx">
       <DependentUpon>Extend.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Program.resx">
+      <DependentUpon>Program.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -295,21 +299,19 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="QuanLyVatTuKhoHang\App.config" />
+    <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="QuanLyVatTuKhoHang\Database\Warehouse.mdf">
+    <Content Include="Data\Database\Warehouse.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="QuanLyVatTuKhoHang\Database\Warehouse_log.ldf">
+    <Content Include="Data\Database\Warehouse_log.ldf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>Warehouse.mdf</DependentUpon>
     </Content>
     <Content Include="ILLink\ILLink.Descriptors.LibraryBuild.xml" />
-    <Content Include="QuanLyVatTuKhoHang\Properties\bin\README.txt" />
-    <Content Include="QuanLyVatTuKhoHang\Properties\obj\README.txt" />
-    <Content Include="QuanLyVatTuKhoHang\Resources\Pickeball\README.txt" />
-    <Content Include="QuanLyVatTuKhoHang\Utils\README.txt" />
+    <Content Include="Data\Resources\Pickeball\README.txt" />
+    <Content Include="Data\Utils\README.txt" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.8">

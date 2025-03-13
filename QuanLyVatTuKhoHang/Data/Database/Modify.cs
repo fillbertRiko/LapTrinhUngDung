@@ -2,10 +2,9 @@
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
-using QuanLyVatTuKhoHang.QuanLyVatTuKhoHang.Database;
-using QuanLyVatTuKhoHang.QuanLyVatTuKhoHang.Models;
+using Data.Database;
 
-namespace QuanLyVatTuKhoHang.QuanLyVatTuKhoHang.Database
+namespace Data.Database
 {
     public class Modify
     {

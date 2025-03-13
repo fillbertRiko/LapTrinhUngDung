@@ -1,4 +1,4 @@
-﻿namespace QuanLyVatTuKhoHang.Auth
+﻿namespace Data.Ui.Forms.Login
 {
     partial class FormRecover
     {
@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormRecover));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lblUsername = new System.Windows.Forms.Label();
             this.lblEmail = new System.Windows.Forms.Label();
@@ -44,11 +43,9 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(313, 13);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.pictureBox1.Location = new System.Drawing.Point(278, 10);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(320, 213);
+            this.pictureBox1.Size = new System.Drawing.Size(284, 170);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -57,9 +54,9 @@
             // 
             this.lblUsername.AutoSize = true;
             this.lblUsername.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUsername.Location = new System.Drawing.Point(159, 280);
+            this.lblUsername.Location = new System.Drawing.Point(141, 224);
             this.lblUsername.Name = "lblUsername";
-            this.lblUsername.Size = new System.Drawing.Size(163, 32);
+            this.lblUsername.Size = new System.Drawing.Size(131, 28);
             this.lblUsername.TabIndex = 1;
             this.lblUsername.Text = "Tên tài khoản:";
             // 
@@ -67,9 +64,9 @@
             // 
             this.lblEmail.AutoSize = true;
             this.lblEmail.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEmail.Location = new System.Drawing.Point(159, 478);
+            this.lblEmail.Location = new System.Drawing.Point(141, 382);
             this.lblEmail.Name = "lblEmail";
-            this.lblEmail.Size = new System.Drawing.Size(76, 32);
+            this.lblEmail.Size = new System.Drawing.Size(63, 28);
             this.lblEmail.TabIndex = 2;
             this.lblEmail.Text = "Email:";
             // 
@@ -77,9 +74,9 @@
             // 
             this.lblRePassword.AutoSize = true;
             this.lblRePassword.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRePassword.Location = new System.Drawing.Point(159, 412);
+            this.lblRePassword.Location = new System.Drawing.Point(141, 330);
             this.lblRePassword.Name = "lblRePassword";
-            this.lblRePassword.Size = new System.Drawing.Size(215, 32);
+            this.lblRePassword.Size = new System.Drawing.Size(175, 28);
             this.lblRePassword.TabIndex = 3;
             this.lblRePassword.Text = "Nhập lại mật khẩu:";
             // 
@@ -87,46 +84,42 @@
             // 
             this.lblPassword.AutoSize = true;
             this.lblPassword.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPassword.Location = new System.Drawing.Point(159, 346);
+            this.lblPassword.Location = new System.Drawing.Point(141, 277);
             this.lblPassword.Name = "lblPassword";
-            this.lblPassword.Size = new System.Drawing.Size(120, 32);
+            this.lblPassword.Size = new System.Drawing.Size(98, 28);
             this.lblPassword.TabIndex = 4;
             this.lblPassword.Text = "Mật khẩu:";
             // 
             // txtName
             // 
             this.txtName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.txtName.Location = new System.Drawing.Point(416, 283);
-            this.txtName.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtName.Location = new System.Drawing.Point(370, 226);
             this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(296, 30);
+            this.txtName.Size = new System.Drawing.Size(264, 26);
             this.txtName.TabIndex = 5;
             // 
             // txtEmail
             // 
             this.txtEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.txtEmail.Location = new System.Drawing.Point(416, 481);
-            this.txtEmail.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtEmail.Location = new System.Drawing.Point(370, 385);
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(296, 30);
+            this.txtEmail.Size = new System.Drawing.Size(264, 26);
             this.txtEmail.TabIndex = 6;
             // 
             // txtRePassword
             // 
             this.txtRePassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.txtRePassword.Location = new System.Drawing.Point(416, 415);
-            this.txtRePassword.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtRePassword.Location = new System.Drawing.Point(370, 332);
             this.txtRePassword.Name = "txtRePassword";
-            this.txtRePassword.Size = new System.Drawing.Size(296, 30);
+            this.txtRePassword.Size = new System.Drawing.Size(264, 26);
             this.txtRePassword.TabIndex = 7;
             // 
             // txtPassword
             // 
             this.txtPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.txtPassword.Location = new System.Drawing.Point(416, 349);
-            this.txtPassword.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtPassword.Location = new System.Drawing.Point(370, 279);
             this.txtPassword.Name = "txtPassword";
-            this.txtPassword.Size = new System.Drawing.Size(296, 30);
+            this.txtPassword.Size = new System.Drawing.Size(264, 26);
             this.txtPassword.TabIndex = 8;
             // 
             // btnQuenmk
@@ -138,17 +131,18 @@
             this.btnQuenmk.FillColor = System.Drawing.Color.Blue;
             this.btnQuenmk.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.btnQuenmk.ForeColor = System.Drawing.Color.White;
-            this.btnQuenmk.Location = new System.Drawing.Point(366, 556);
+            this.btnQuenmk.Location = new System.Drawing.Point(325, 445);
+            this.btnQuenmk.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnQuenmk.Name = "btnQuenmk";
-            this.btnQuenmk.Size = new System.Drawing.Size(245, 62);
+            this.btnQuenmk.Size = new System.Drawing.Size(218, 50);
             this.btnQuenmk.TabIndex = 9;
             this.btnQuenmk.Text = "Quên mật khẩu ";
             // 
             // FormRecover
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1004, 639);
+            this.ClientSize = new System.Drawing.Size(892, 511);
             this.Controls.Add(this.btnQuenmk);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.txtPassword);
@@ -159,9 +153,9 @@
             this.Controls.Add(this.lblRePassword);
             this.Controls.Add(this.lblEmail);
             this.Controls.Add(this.lblUsername);
-            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "FormRecover";
             this.Text = "Lấy lại mật khẩu";
+            this.Load += new System.EventHandler(this.FormRecover_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
