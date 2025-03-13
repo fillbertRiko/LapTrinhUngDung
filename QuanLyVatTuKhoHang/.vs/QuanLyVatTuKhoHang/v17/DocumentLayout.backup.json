@@ -4,6 +4,12 @@
   "Documents": [
     {
 <<<<<<< HEAD
+      "AbsoluteMoniker": "D:0:0:{51AE4604-DD78-4903-99C6-01C36C905A50}|QuanLyVatTuKhoHang.csproj|D:\\lap_trinh_ung_dung\\laptrinhungdung\\LapTrinhUngDung\\QuanLyVatTuKhoHang\\auth\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{51AE4604-DD78-4903-99C6-01C36C905A50}|QuanLyVatTuKhoHang.csproj|solutionrelative:auth\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+=======
+<<<<<<< HEAD
       "AbsoluteMoniker": "D:0:0:{51AE4604-DD78-4903-99C6-01C36C905A50}|QuanLyVatTuKhoHang.csproj|h:\\t\u00E0i li\u1EC7u h\u1ECDc t\u1EADp\\2025\\l\u1EADp tr\u00ECnh \u1EE9ng d\u1EE5ng\\project\\laptrinhungdung\\quanlyvattukhohang\\quanlyvattukhohang\\ui\\forms\\login\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{51AE4604-DD78-4903-99C6-01C36C905A50}|QuanLyVatTuKhoHang.csproj|solutionrelative:quanlyvattukhohang\\ui\\forms\\login\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
@@ -31,10 +37,14 @@
       "AbsoluteMoniker": "D:0:0:{51AE4604-DD78-4903-99C6-01C36C905A50}|QuanLyVatTuKhoHang.csproj|H:\\T\u00E0i li\u1EC7u h\u1ECDc t\u1EADp\\2025\\L\u1EADp tr\u00ECnh \u1EE9ng d\u1EE5ng\\Project\\LapTrinhUngDung\\QuanLyVatTuKhoHang\\quanlyvattukhohang\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{51AE4604-DD78-4903-99C6-01C36C905A50}|QuanLyVatTuKhoHang.csproj|solutionrelative:quanlyvattukhohang\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
 =======
+<<<<<<< HEAD
       "AbsoluteMoniker": "D:0:0:{51AE4604-DD78-4903-99C6-01C36C905A50}|QuanLyVatTuKhoHang.csproj|D:\\lap_trinh_ung_dung\\laptrinhungdung\\LapTrinhUngDung\\QuanLyVatTuKhoHang\\auth\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{51AE4604-DD78-4903-99C6-01C36C905A50}|QuanLyVatTuKhoHang.csproj|solutionrelative:auth\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
+=======
+>>>>>>> d432442cfc84916709dd72db60a28780cc952120
+>>>>>>> 8ad610f3b2411bc33a329f2d01eb261678186b52
       "AbsoluteMoniker": "D:0:0:{51AE4604-DD78-4903-99C6-01C36C905A50}|QuanLyVatTuKhoHang.csproj|d:\\lap_trinh_ung_dung\\laptrinhungdung\\laptrinhungdung\\quanlyvattukhohang\\auth\\welcome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{51AE4604-DD78-4903-99C6-01C36C905A50}|QuanLyVatTuKhoHang.csproj|solutionrelative:auth\\welcome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
@@ -45,7 +55,17 @@
     {
       "AbsoluteMoniker": "D:0:0:{51AE4604-DD78-4903-99C6-01C36C905A50}|QuanLyVatTuKhoHang.csproj|D:\\lap_trinh_ung_dung\\laptrinhungdung\\LapTrinhUngDung\\QuanLyVatTuKhoHang\\auth\\recoverpassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{51AE4604-DD78-4903-99C6-01C36C905A50}|QuanLyVatTuKhoHang.csproj|solutionrelative:auth\\recoverpassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51AE4604-DD78-4903-99C6-01C36C905A50}|QuanLyVatTuKhoHang.csproj|D:\\lap_trinh_ung_dung\\laptrinhungdung\\LapTrinhUngDung\\QuanLyVatTuKhoHang\\auth\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{51AE4604-DD78-4903-99C6-01C36C905A50}|QuanLyVatTuKhoHang.csproj|solutionrelative:auth\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+>>>>>>> 8ad610f3b2411bc33a329f2d01eb261678186b52
 >>>>>>> b9786a8c8ee4299ae5bba99f70942f7345d47816
+>>>>>>> d432442cfc84916709dd72db60a28780cc952120
     }
   ],
   "DocumentGroupContainers": [
@@ -56,10 +76,18 @@
         {
           "DockedWidth": 200,
 <<<<<<< HEAD
+<<<<<<< HEAD
           "SelectedChildIndex": 2,
 =======
           "SelectedChildIndex": 5,
+=======
+<<<<<<< HEAD
+          "SelectedChildIndex": 1,
+>>>>>>> 8ad610f3b2411bc33a329f2d01eb261678186b52
+=======
+          "SelectedChildIndex": 5,
 >>>>>>> b9786a8c8ee4299ae5bba99f70942f7345d47816
+>>>>>>> d432442cfc84916709dd72db60a28780cc952120
           "Children": [
             {
               "$type": "Bookmark",
@@ -69,12 +97,27 @@
               "$type": "Document",
               "DocumentIndex": 2,
 <<<<<<< HEAD
+<<<<<<< HEAD
               "Title": "RecoverPassword.cs [Design]",
               "DocumentMoniker": "H:\\T\u00E0i li\u1EC7u h\u1ECDc t\u1EADp\\2025\\L\u1EADp tr\u00ECnh \u1EE9ng d\u1EE5ng\\Project\\LapTrinhUngDung\\QuanLyVatTuKhoHang\\QuanLyVatTuKhoHang\\Ui\\Forms\\Login\\RecoverPassword.cs",
               "RelativeDocumentMoniker": "QuanLyVatTuKhoHang\\Ui\\Forms\\Login\\RecoverPassword.cs",
               "ToolTip": "H:\\T\u00E0i li\u1EC7u h\u1ECDc t\u1EADp\\2025\\L\u1EADp tr\u00ECnh \u1EE9ng d\u1EE5ng\\Project\\LapTrinhUngDung\\QuanLyVatTuKhoHang\\QuanLyVatTuKhoHang\\Ui\\Forms\\Login\\RecoverPassword.cs [Design]",
               "RelativeToolTip": "QuanLyVatTuKhoHang\\Ui\\Forms\\Login\\RecoverPassword.cs [Design]",
 =======
+=======
+              "DocumentIndex": 2,
+=======
+<<<<<<< HEAD
+              "DocumentIndex": 0,
+              "Title": "Login.cs [Design]",
+              "DocumentMoniker": "H:\\T\u00E0i li\u1EC7u h\u1ECDc t\u1EADp\\2025\\L\u1EADp tr\u00ECnh \u1EE9ng d\u1EE5ng\\Project\\LapTrinhUngDung\\QuanLyVatTuKhoHang\\QuanLyVatTuKhoHang\\Ui\\Forms\\Login\\Login.cs",
+              "RelativeDocumentMoniker": "QuanLyVatTuKhoHang\\Ui\\Forms\\Login\\Login.cs",
+              "ToolTip": "H:\\T\u00E0i li\u1EC7u h\u1ECDc t\u1EADp\\2025\\L\u1EADp tr\u00ECnh \u1EE9ng d\u1EE5ng\\Project\\LapTrinhUngDung\\QuanLyVatTuKhoHang\\QuanLyVatTuKhoHang\\Ui\\Forms\\Login\\Login.cs [Design]",
+              "RelativeToolTip": "QuanLyVatTuKhoHang\\Ui\\Forms\\Login\\Login.cs [Design]",
+=======
+              "DocumentIndex": 1,
+>>>>>>> d432442cfc84916709dd72db60a28780cc952120
+>>>>>>> 8ad610f3b2411bc33a329f2d01eb261678186b52
               "Title": "Welcome.cs",
               "DocumentMoniker": "D:\\lap_trinh_ung_dung\\laptrinhungdung\\LapTrinhUngDung\\QuanLyVatTuKhoHang\\Auth\\Welcome.cs",
               "RelativeDocumentMoniker": "Auth\\Welcome.cs",
@@ -89,6 +132,7 @@
             {
               "$type": "Document",
 <<<<<<< HEAD
+<<<<<<< HEAD
               "DocumentIndex": 0,
               "Title": "Login.cs [Design]",
               "DocumentMoniker": "H:\\T\u00E0i li\u1EC7u h\u1ECDc t\u1EADp\\2025\\L\u1EADp tr\u00ECnh \u1EE9ng d\u1EE5ng\\Project\\LapTrinhUngDung\\QuanLyVatTuKhoHang\\QuanLyVatTuKhoHang\\Ui\\Forms\\Login\\Login.cs",
@@ -96,12 +140,29 @@
               "ToolTip": "H:\\T\u00E0i li\u1EC7u h\u1ECDc t\u1EADp\\2025\\L\u1EADp tr\u00ECnh \u1EE9ng d\u1EE5ng\\Project\\LapTrinhUngDung\\QuanLyVatTuKhoHang\\QuanLyVatTuKhoHang\\Ui\\Forms\\Login\\Login.cs [Design]*",
               "RelativeToolTip": "QuanLyVatTuKhoHang\\Ui\\Forms\\Login\\Login.cs [Design]*",
 =======
+=======
+>>>>>>> 8ad610f3b2411bc33a329f2d01eb261678186b52
               "DocumentIndex": 1,
               "Title": "Welcome.cs [Design]",
               "DocumentMoniker": "D:\\lap_trinh_ung_dung\\laptrinhungdung\\LapTrinhUngDung\\QuanLyVatTuKhoHang\\Auth\\Welcome.cs",
               "RelativeDocumentMoniker": "Auth\\Welcome.cs",
               "ToolTip": "D:\\lap_trinh_ung_dung\\laptrinhungdung\\LapTrinhUngDung\\QuanLyVatTuKhoHang\\Auth\\Welcome.cs [Design]",
               "RelativeToolTip": "Auth\\Welcome.cs [Design]",
+<<<<<<< HEAD
+=======
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T17:51:57.136Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "RecoverPassword.cs [Design]",
+              "DocumentMoniker": "D:\\lap_trinh_ung_dung\\laptrinhungdung\\LapTrinhUngDung\\QuanLyVatTuKhoHang\\Auth\\RecoverPassword.cs",
+              "RelativeDocumentMoniker": "Auth\\RecoverPassword.cs",
+              "ToolTip": "D:\\lap_trinh_ung_dung\\laptrinhungdung\\LapTrinhUngDung\\QuanLyVatTuKhoHang\\Auth\\RecoverPassword.cs [Design]",
+              "RelativeToolTip": "Auth\\RecoverPassword.cs [Design]",
+>>>>>>> 8ad610f3b2411bc33a329f2d01eb261678186b52
 >>>>>>> b9786a8c8ee4299ae5bba99f70942f7345d47816
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-13T06:25:59.133Z",
@@ -109,6 +170,9 @@
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
+              "DocumentIndex": 0,
+=======
 <<<<<<< HEAD
               "DocumentIndex": 1,
               "Title": "Login.cs",
@@ -153,7 +217,12 @@
               "RelativeToolTip": "QuanLyVatTuKhoHang\\Models\\Employee.cs",
               "ViewState": "AgIAAAQAAAAAAAAAAAAkwA4AAAAtAAAAAAAAAA==",
 =======
+<<<<<<< HEAD
               "DocumentIndex": 0,
+=======
+              "DocumentIndex": 3,
+>>>>>>> d432442cfc84916709dd72db60a28780cc952120
+>>>>>>> 8ad610f3b2411bc33a329f2d01eb261678186b52
               "Title": "Login.cs [Design]",
               "DocumentMoniker": "D:\\lap_trinh_ung_dung\\laptrinhungdung\\LapTrinhUngDung\\QuanLyVatTuKhoHang\\Auth\\Login.cs",
               "RelativeDocumentMoniker": "Auth\\Login.cs",
