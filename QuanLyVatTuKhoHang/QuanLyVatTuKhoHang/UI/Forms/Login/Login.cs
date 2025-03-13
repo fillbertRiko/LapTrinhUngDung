@@ -19,7 +19,7 @@ namespace QuanLyVatTuKhoHang.Ui.Forms.Login
         {
             // Initialize form components here
         }
-        /*
+        
         private void FormMainLoad_Load(object sender, EventArgs e)
         {
             try
@@ -68,5 +68,4 @@ namespace QuanLyVatTuKhoHang.Ui.Forms.Login
             forgetPassword.ShowDialog();
         }
     }
-    */
 }
