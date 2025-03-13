@@ -443,7 +443,13 @@ D:\lap_trinh_ung_dung\laptrinhungdung\LapTrinhUngDung\QuanLyVatTuKhoHang\bin\Deb
 D:\lap_trinh_ung_dung\laptrinhungdung\LapTrinhUngDung\QuanLyVatTuKhoHang\obj\Debug\QuanLyVatTuKhoHang.Form2.resources
 D:\lap_trinh_ung_dung\laptrinhungdung\LapTrinhUngDung\QuanLyVatTuKhoHang\obj\Debug\QuanLyVatTuKhoHang.Form4.resources
 >>>>>>> 03fc491c26dd0b1c5860c5761307ffaff71680ab
+<<<<<<< HEAD
 H:\Tài liệu học tập\2025\Lập trình ứng dụng\Project\LapTrinhUngDung\QuanLyVatTuKhoHang\obj\Debug\QuanLyVatTuKhoHang.csproj.SuggestedBindingRedirects.cache
 H:\Tài liệu học tập\2025\Lập trình ứng dụng\Project\LapTrinhUngDung\QuanLyVatTuKhoHang\obj\Debug\QuanLyVatTuKhoHang.exe.config
 H:\Tài liệu học tập\2025\Lập trình ứng dụng\Project\LapTrinhUngDung\QuanLyVatTuKhoHang\obj\Debug\QuanLyVatTuKhoHang.Form2.resources
 H:\Tài liệu học tập\2025\Lập trình ứng dụng\Project\LapTrinhUngDung\QuanLyVatTuKhoHang\obj\Debug\QuanLyVatTuKhoHang.Form4.resources
+=======
+D:\lap_trinh_ung_dung\laptrinhungdung\LapTrinhUngDung\QuanLyVatTuKhoHang\obj\Debug\QuanLyVatTuKhoHang.FormLogin.resources
+D:\lap_trinh_ung_dung\laptrinhungdung\LapTrinhUngDung\QuanLyVatTuKhoHang\obj\Debug\QuanLyVatTuKhoHang.Auth.FormRecover.resources
+D:\lap_trinh_ung_dung\laptrinhungdung\LapTrinhUngDung\QuanLyVatTuKhoHang\obj\Debug\QuanLyVatTuKhoHang.Auth.Welcome.resources
+>>>>>>> 260866a9c79377ccd5caa75749f48cf196b53047
