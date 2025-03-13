@@ -306,6 +306,10 @@
       <DependentUpon>Warehouse.mdf</DependentUpon>
     </Content>
     <Content Include="ILLink\ILLink.Descriptors.LibraryBuild.xml" />
+    <Content Include="QuanLyVatTuKhoHang\Properties\bin\README.txt" />
+    <Content Include="QuanLyVatTuKhoHang\Properties\obj\README.txt" />
+    <Content Include="QuanLyVatTuKhoHang\Resources\Pickeball\README.txt" />
+    <Content Include="QuanLyVatTuKhoHang\Utils\README.txt" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.8">
@@ -319,12 +323,7 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="QuanLyVatTuKhoHang\Properties\bin\" />
-    <Folder Include="QuanLyVatTuKhoHang\Properties\obj\" />
-    <Folder Include="QuanLyVatTuKhoHang\Resources\Pickeball\" />
-    <Folder Include="QuanLyVatTuKhoHang\Utils\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="packages\Microsoft.Data.SqlClient.SNI.6.0.2\build\net462\Microsoft.Data.SqlClient.SNI.targets" Condition="Exists('packages\Microsoft.Data.SqlClient.SNI.6.0.2\build\net462\Microsoft.Data.SqlClient.SNI.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
