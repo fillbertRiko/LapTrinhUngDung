@@ -322,7 +322,7 @@
   <ItemGroup>
     <Folder Include="QuanLyVatTuKhoHang\Properties\bin\" />
     <Folder Include="QuanLyVatTuKhoHang\Properties\obj\" />
-    <Folder Include="QuanLyVatTuKhoHang\Resources\" />
+    <Folder Include="QuanLyVatTuKhoHang\Resources\Pickeball\" />
     <Folder Include="QuanLyVatTuKhoHang\Utils\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
