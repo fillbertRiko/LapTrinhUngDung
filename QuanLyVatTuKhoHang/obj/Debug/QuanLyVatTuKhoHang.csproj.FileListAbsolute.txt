@@ -451,3 +451,4 @@ D:\lap_trinh_ung_dung\laptrinhungdung\LapTrinhUngDung\QuanLyVatTuKhoHang\obj\Deb
 D:\lap_trinh_ung_dung\laptrinhungdung\LapTrinhUngDung\QuanLyVatTuKhoHang\obj\Debug\QuanLyVatTuKhoHang.Auth.FormRecover.resources
 D:\lap_trinh_ung_dung\laptrinhungdung\LapTrinhUngDung\QuanLyVatTuKhoHang\obj\Debug\QuanLyVatTuKhoHang.Auth.Welcome.resources
 >>>>>>> 260866a9c79377ccd5caa75749f48cf196b53047
+>>>>>>> parent of e104097 (update: form)
