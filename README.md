@@ -93,7 +93,7 @@ QuanLyVatTuKhoHang/
 - **Xác thực tài khoản**: Đăng nhập với quyền admin hoặc nhân viên.
 
 ## 4. Liên hệ & Hỗ trợ
-Nếu có bất kỳ vấn đề nào, vui lòng liên hệ nhóm phát triển qua email: `support@quanlykhohang.com`.
+Nếu có bất kỳ vấn đề nào, vui lòng liên hệ nhóm phát triển qua email: `dhuy110399@gmail.com`.
 
 ---
 📌 **Lưu ý:** Hãy đảm bảo bạn có quyền truy cập SQL Server trước khi chạy ứng dụng.
