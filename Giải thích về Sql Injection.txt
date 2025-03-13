@@ -1,0 +1,59 @@
+**SQL Injection** là một kỹ thuật tấn công bảo mật, trong đó kẻ tấn công lợi dụng lỗ hổng trong cách ứng dụng xử lý dữ liệu nhập từ người dùng để can thiệp vào câu lệnh SQL. Khi ứng dụng xây dựng câu truy vấn SQL bằng cách ghép trực tiếp các giá trị do người dùng cung cấp (mà không được kiểm tra, làm sạch hay parameter hóa), kẻ tấn công có thể chèn thêm các đoạn mã SQL độc hại vào đó. Điều này dẫn đến việc câu truy vấn thực hiện khác với ý định của lập trình viên, có thể cho phép truy cập trái phép, thay đổi hoặc xóa dữ liệu từ cơ sở dữ liệu.
+
+---
+
+### Ví dụ minh họa
+
+Giả sử bạn có đoạn mã truy vấn đăng nhập sau (không an toàn):
+
+```csharp
+string sql = "SELECT * FROM Employees WHERE Email = '" + email + "' AND Password = '" + password + "'";
+```
+
+Nếu người dùng nhập giá trị như sau:
+- **Email:** `test@example.com`
+- **Password:** `' OR '1'='1`
+
+Câu truy vấn thay đổi thành:
+
+```sql
+SELECT * FROM Employees WHERE Email = 'test@example.com' AND Password = '' OR '1'='1'
+```
+
+Ở đây, phần `OR '1'='1'` luôn đúng, dẫn đến việc truy vấn có thể trả về tất cả các bản ghi trong bảng Employees, cho phép kẻ tấn công đăng nhập thành công mà không cần mật khẩu hợp lệ.
+
+---
+
+### Cách phòng chống SQL Injection
+
+1. **Sử dụng Parameterized Query (Prepared Statements):**  
+   Đảm bảo rằng bạn không nối trực tiếp chuỗi nhập của người dùng vào câu truy vấn SQL. Thay vào đó, sử dụng các tham số như ví dụ dưới đây:
+
+   ```csharp
+   string sql = "SELECT * FROM Employees WHERE Email = @Email AND Password = @Password";
+   using (SqlCommand cmd = new SqlCommand(sql, connection))
+   {
+       cmd.Parameters.AddWithValue("@Email", email);
+       cmd.Parameters.AddWithValue("@Password", password);
+       // thực hiện ExecuteReader() hoặc ExecuteNonQuery()
+   }
+   ```
+
+2. **Sử dụng Stored Procedures:**  
+   Truy vấn qua stored procedures (thủ tục lưu sẵn) giúp tách biệt dữ liệu nhập từ logic truy vấn, giảm nguy cơ bị tấn công.
+
+3. **Xử lý và làm sạch dữ liệu đầu vào:**  
+   Kiểm tra và loại bỏ các ký tự đặc biệt không cần thiết từ dữ liệu người dùng và sử dụng các bộ lọc hợp lệ.
+
+4. **Sử dụng ORM hoặc các framework an toàn:**  
+   Sử dụng các công cụ như Entity Framework có thể giúp làm trừ tối đa vấn đề SQL Injection bằng cách cung cấp các lớp truy xuất dữ liệu an toàn.
+
+---
+
+### Tóm tắt
+
+- **SQL Injection** là khi kẻ tấn công sử dụng các dữ liệu nhập không hợp lệ để chèn mã SQL độc hại, dẫn đến việc thay đổi truy vấn SQL và truy cập trái phép vào cơ sở dữ liệu.  
+- **Nguyên nhân**: Thiếu kiểm tra, làm sạch dữ liệu đầu vào và sử dụng truy vấn động dựa trên chuỗi.
+- **Phòng tránh**: Sử dụng parameterized queries, stored procedures, làm sạch dữ liệu đầu vào và sử dụng các framework an toàn.
+
+Hi vọng giải thích trên rõ ràng và hữu ích với bạn. Bạn có muốn biết thêm về một ví dụ thực tế hoặc phương pháp cụ thể nào khác để bảo vệ ứng dụng của mình khỏi SQL Injection không?
