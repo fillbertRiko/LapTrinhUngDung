@@ -1,7 +1,7 @@
 ﻿using System.Data.SqlClient;
 using System.Data;
 
-namespace QuanLyVatTuKhoHang.Auth
+namespace QuanLyVatTuKhoHang.QuanLyVatTuKhoHang.Database
 {
     public static class Connection
     {

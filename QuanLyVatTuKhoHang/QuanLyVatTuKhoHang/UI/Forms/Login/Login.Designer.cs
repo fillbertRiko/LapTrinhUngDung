@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Data;
 
-namespace QuanLyVatTuKhoHang
+namespace QuanLyVatTuKhoHang.Ui.Forms.Login
 {
     partial class FormLogin
     {

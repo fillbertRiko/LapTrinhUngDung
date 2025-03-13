@@ -1,10 +1,11 @@
-﻿using QuanLyVatTuKhoHang.Auth;
+﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Data.SqlClient;
-using QuanLyVatTuKhoHang.Class;
-using System;
+using QuanLyVatTuKhoHang.QuanLyVatTuKhoHang.Database;
+using QuanLyVatTuKhoHang.QuanLyVatTuKhoHang.Models;
 
-namespace QuanLyVatTuKhoHang.Class
+namespace QuanLyVatTuKhoHang.QuanLyVatTuKhoHang.Database
 {
     public class Modify
     {
@@ -12,21 +13,27 @@ namespace QuanLyVatTuKhoHang.Class
         {
         }
 
-        //dung de truy van cac cau lenh trong bangr
-        SqlCommand cmd;
-        //dung de doc du lieu trong bang
-        SqlDataReader dataReader;
-
+        //lay method lay danh sach Employee dua vao truy van SQL va danh sach tham so
         public List<Employee> Employees(string query, List<SqlParameter> parameters)
         {
             List<Employee> employees = new List<Employee>();
             try
             {
-                connec.Open();
-                
+                using (SqlConnection connec = Connection.GetSqlConnection())
+                {
+                    //mo ket noi neu chua mo
+                    if (connec.State == ConnectionState.Closed)
+                    {
+                        connec.Open();
+                    }
+
                     using (SqlCommand cmd = new SqlCommand(query, connec))
                     {
-                        cmd.Parameters.AddRange(parameters.ToArray());
+                        if (parameters != null && parameters.Count > 0)
+                        {
+                            cmd.Parameters.AddRange(parameters.ToArray());
+                        }
+
                         using (SqlDataReader reader = cmd.ExecuteReader())
                         {
                             while (reader.Read())
@@ -35,12 +42,16 @@ namespace QuanLyVatTuKhoHang.Class
                             }
                         }
                     }
-                
+
+                }
+
             }
-            catch(Exception ex) {
-                Console.WriteLine("Bug: " +ex.Message);
+            catch (Exception ex)
+            {
+                Console.WriteLine("Bug: " + ex.Message);
             }
             return employees;
         }
     }
 }
+

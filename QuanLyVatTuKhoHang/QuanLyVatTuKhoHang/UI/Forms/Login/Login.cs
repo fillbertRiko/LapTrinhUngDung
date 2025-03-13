@@ -1,17 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 using System.Data.SqlClient;
-using QuanLyVatTuKhoHang.Auth;
-using QuanLyVatTuKhoHang.Class;
+using System.Windows.Forms;
+using QuanLyVatTuKhoHang.QuanLyVatTuKhoHang.Database;
+using QuanLyVatTuKhoHang.QuanLyVatTuKhoHang.Models;
 
-namespace QuanLyVatTuKhoHang
+namespace QuanLyVatTuKhoHang.Ui.Forms.Login
 {
     public partial class FormLogin : Form
     {
@@ -20,10 +14,23 @@ namespace QuanLyVatTuKhoHang
             InitializeComponent();
         }
 
+        private void InitializeComponent()
+        {
+            // Initialize form components here
+        }
+
         private void FormMainLoad_Load(object sender, EventArgs e)
         {
-            // Mở kết nối
-            Auth.Connection.Connect();
+            try
+            {
+                //mo ket noi
+                QuanLyVatTuKhoHang.Database.Connection.Connect();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Lỗi kết nối tới database: {ex.Message}", "Bug Gòi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            
+            }
         }
 
         // Khởi tạo hàm modify
@@ -33,7 +40,7 @@ namespace QuanLyVatTuKhoHang
             string username = txtUsername.Text;
             string password = txtPassword.Text;
             if (username.Trim() == "") { MessageBox.Show("Vui lòng nhập tên người dùng!"); }
-            else if (password.Trim() == "") { MessageBox.Show("Vui lòng nhập tài khoản người dùng!"); }
+            else if (password.Trim() == "") { MessageBox.Show("Vui lòng nhập mật khẩu người dùng!"); }
             else
             {
                 string query = "Select * from Employees where EmployeeID = @username and Password = @password";
@@ -56,7 +63,7 @@ namespace QuanLyVatTuKhoHang
 
         private void lkbForgetPassword_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            FormRecover forgetPassword = new FormRecover();
+            QuanVatTuKhoHang.Ui.Forms.Login.FormRecover forgetPassword = new FormRecover();
             forgetPassword.ShowDialog();
         }
     }

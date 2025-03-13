@@ -4,36 +4,22 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using QuanLyVatTuKhoHang.UI.Forms.Login;
 
-namespace QuanLyVatTuKhoHang
+namespace QuanLyVatTuKhoHang.UI.Forms.Login
 {
-    internal static class Program
+    public partial class FormLogin:Form
     {
-        /*private SqlConnection Connect
-        {
-            try
-            {
-
-            }
-        }
-        */
-        /// <summary>
-        /// The main entry point for the application.
-        /// </summary>
         [STAThread]
         static void Main()
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new FormLogin());
-            /*
-             * string strCon = @"Data Source=DESKTOP-P7SFE1O\DDHUY;"
-                                + "Initial Catalog=SalesManagement;"
-                                + "Integrated Security=True;"
-                                + "Trust Server Certificate=True";
-            SqlConnection sqlCon = null;
-            */
         }
-        
+    }
+    internal static class Program
+    {
+
     }
 }

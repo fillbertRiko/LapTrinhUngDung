@@ -49,6 +49,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>QuanLyVatTuKhoHang.UI.Forms.Login.FormLogin</StartupObject>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="Azure.Core, Version=1.45.0.0, Culture=neutral, PublicKeyToken=92742159e12e44c8, processorArchitecture=MSIL">
       <HintPath>packages\Azure.Core.1.45.0\lib\net472\Azure.Core.dll</HintPath>
@@ -208,65 +211,67 @@
     <Compile Include="QuanLyVatTuKhoHang\Controllers\InventoryController.cs" />
     <Compile Include="QuanLyVatTuKhoHang\Controllers\ProductController.cs" />
     <Compile Include="QuanLyVatTuKhoHang\Database\Connection.cs" />
-    <Compile Include="QuanLyVatTuKhoHang\UI\Forms\Login\Login.cs">
+    <Compile Include="QuanLyVatTuKhoHang\Ui\Forms\Login\Login.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="QuanLyVatTuKhoHang\UI\Forms\Login\Login.Designer.cs">
+    <Compile Include="QuanLyVatTuKhoHang\Ui\Forms\Login\Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
     <Compile Include="QuanLyVatTuKhoHang\Database\Modify.cs" />
-    <Compile Include="QuanLyVatTuKhoHang\UI\Forms\Login\RecoverPassword.cs">
+    <Compile Include="QuanLyVatTuKhoHang\Ui\Forms\Login\RecoverPassword.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="QuanLyVatTuKhoHang\UI\Forms\Login\.Designer.cs">
+    <Compile Include="QuanLyVatTuKhoHang\Ui\Forms\Login\.Designer.cs">
       <DependentUpon>RecoverPassword.cs</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="QuanLyVatTuKhoHang\Models\Customer.cs" />
     <Compile Include="QuanLyVatTuKhoHang\Models\Employee.cs" />
-    <Compile Include="QuanLyVatTuKhoHang\UI\Forms\Login\Welcome.cs">
+    <Compile Include="QuanLyVatTuKhoHang\Ui\Forms\Login\Welcome.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="QuanLyVatTuKhoHang\UI\Forms\Login\Welcome.Designer.cs">
+    <Compile Include="QuanLyVatTuKhoHang\Ui\Forms\Login\Welcome.Designer.cs">
       <DependentUpon>Welcome.cs</DependentUpon>
     </Compile>
-    <Compile Include="QuanLyVatTuKhoHang\UI\Forms\Import goods\Extend.cs">
+    <Compile Include="QuanLyVatTuKhoHang\Ui\Forms\Import goods\Extend.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="QuanLyVatTuKhoHang\UI\Forms\Import goods\Extend.Designer.cs">
+    <Compile Include="QuanLyVatTuKhoHang\Ui\Forms\Import goods\Extend.Designer.cs">
       <DependentUpon>Extend.cs</DependentUpon>
     </Compile>
-    <Compile Include="QuanLyVatTuKhoHang\UI\Forms\Main\MainForm.cs">
+    <Compile Include="QuanLyVatTuKhoHang\Ui\Forms\Main\MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="QuanLyVatTuKhoHang\UI\Forms\Main\MainForm.Designer.cs">
+    <Compile Include="QuanLyVatTuKhoHang\Ui\Forms\Main\MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="QuanLyVatTuKhoHang\UI\Forms\Product delivery\Extend.cs">
+    <Compile Include="QuanLyVatTuKhoHang\Ui\Forms\Product delivery\Extend.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="QuanLyVatTuKhoHang\UI\Forms\Product delivery\Extend.Designer.cs">
+    <Compile Include="QuanLyVatTuKhoHang\Ui\Forms\Product delivery\Extend.Designer.cs">
       <DependentUpon>Extend.cs</DependentUpon>
     </Compile>
     <Compile Include="QuanLyVatTuKhoHang\Models\Product.cs" />
-    <Compile Include="QuanLyVatTuKhoHang\Program.cs" />
+    <Compile Include="QuanLyVatTuKhoHang\Program.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="QuanLyVatTuKhoHang\UI\Forms\Login\Login.resx">
+    <EmbeddedResource Include="QuanLyVatTuKhoHang\Ui\Forms\Login\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="QuanLyVatTuKhoHang\UI\Forms\Login\RecoverPassword.resx">
+    <EmbeddedResource Include="QuanLyVatTuKhoHang\Ui\Forms\Login\RecoverPassword.resx">
       <DependentUpon>RecoverPassword.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="QuanLyVatTuKhoHang\UI\Forms\Login\Welcome.resx">
+    <EmbeddedResource Include="QuanLyVatTuKhoHang\Ui\Forms\Login\Welcome.resx">
       <DependentUpon>Welcome.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="QuanLyVatTuKhoHang\UI\Forms\Import goods\Extend.resx">
+    <EmbeddedResource Include="QuanLyVatTuKhoHang\Ui\Forms\Import goods\Extend.resx">
       <DependentUpon>Extend.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="QuanLyVatTuKhoHang\UI\Forms\Main\MainForm.resx">
+    <EmbeddedResource Include="QuanLyVatTuKhoHang\Ui\Forms\Main\MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="QuanLyVatTuKhoHang\UI\Forms\Product delivery\Extend.resx">
+    <EmbeddedResource Include="QuanLyVatTuKhoHang\Ui\Forms\Product delivery\Extend.resx">
       <DependentUpon>Extend.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
