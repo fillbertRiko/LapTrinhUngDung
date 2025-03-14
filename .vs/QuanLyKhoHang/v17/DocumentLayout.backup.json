@@ -3,8 +3,16 @@
   "WorkspaceRootPath": "D:\\lap_trinh_ung_dung\\laptrinhungdung\\LapTrinhUngDung\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{3B7720EC-5EE9-4D4F-9BBE-58B4A35A543F}|UngDungQuanLyKho\\UngDungQuanLyKho.csproj|D:\\lap_trinh_ung_dung\\laptrinhungdung\\LapTrinhUngDung\\ungdungquanlykho\\data\\view\\recoverpassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3B7720EC-5EE9-4D4F-9BBE-58B4A35A543F}|UngDungQuanLyKho\\UngDungQuanLyKho.csproj|solutionrelative:ungdungquanlykho\\data\\view\\recoverpassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{3B7720EC-5EE9-4D4F-9BBE-58B4A35A543F}|UngDungQuanLyKho\\UngDungQuanLyKho.csproj|d:\\lap_trinh_ung_dung\\laptrinhungdung\\laptrinhungdung\\ungdungquanlykho\\data\\view\\recoverpassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{3B7720EC-5EE9-4D4F-9BBE-58B4A35A543F}|UngDungQuanLyKho\\UngDungQuanLyKho.csproj|solutionrelative:ungdungquanlykho\\data\\view\\recoverpassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B7720EC-5EE9-4D4F-9BBE-58B4A35A543F}|UngDungQuanLyKho\\UngDungQuanLyKho.csproj|d:\\lap_trinh_ung_dung\\laptrinhungdung\\laptrinhungdung\\ungdungquanlykho\\data\\view\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3B7720EC-5EE9-4D4F-9BBE-58B4A35A543F}|UngDungQuanLyKho\\UngDungQuanLyKho.csproj|solutionrelative:ungdungquanlykho\\data\\view\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3B7720EC-5EE9-4D4F-9BBE-58B4A35A543F}|UngDungQuanLyKho\\UngDungQuanLyKho.csproj|D:\\lap_trinh_ung_dung\\laptrinhungdung\\LapTrinhUngDung\\ungdungquanlykho\\data\\view\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -13,9 +21,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{3B7720EC-5EE9-4D4F-9BBE-58B4A35A543F}|UngDungQuanLyKho\\UngDungQuanLyKho.csproj|D:\\lap_trinh_ung_dung\\laptrinhungdung\\LapTrinhUngDung\\ungdungquanlykho\\data\\view\\welcome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{3B7720EC-5EE9-4D4F-9BBE-58B4A35A543F}|UngDungQuanLyKho\\UngDungQuanLyKho.csproj|solutionrelative:ungdungquanlykho\\data\\view\\welcome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_LocalDB__MSSQLLocalDB/H__T\u00C0I_LI\u1EC6U_H\u1ECCC_T\u1EACP_2025_L\u1EACP_TR\u00CCNH_\u1EE8NG_D\u1EE4NG_PROJECT_LAPTRINHUNGDUNG_UNGDUNGQUANLYKHO_DATA_DATABASE_QLKHOHANG.MDF/True/SqlTable/dbo.Employees.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
     }
   ],
   "DocumentGroupContainers": [
@@ -25,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -37,7 +42,33 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Login.cs",
+              "DocumentMoniker": "D:\\lap_trinh_ung_dung\\laptrinhungdung\\LapTrinhUngDung\\UngDungQuanLyKho\\Data\\View\\Login.cs",
+              "RelativeDocumentMoniker": "UngDungQuanLyKho\\Data\\View\\Login.cs",
+              "ToolTip": "D:\\lap_trinh_ung_dung\\laptrinhungdung\\LapTrinhUngDung\\UngDungQuanLyKho\\Data\\View\\Login.cs",
+              "RelativeToolTip": "UngDungQuanLyKho\\Data\\View\\Login.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAAAmwDQAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-14T18:41:48.819Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "RecoverPassword.cs",
+              "DocumentMoniker": "D:\\lap_trinh_ung_dung\\laptrinhungdung\\LapTrinhUngDung\\UngDungQuanLyKho\\Data\\View\\RecoverPassword.cs",
+              "RelativeDocumentMoniker": "UngDungQuanLyKho\\Data\\View\\RecoverPassword.cs",
+              "ToolTip": "D:\\lap_trinh_ung_dung\\laptrinhungdung\\LapTrinhUngDung\\UngDungQuanLyKho\\Data\\View\\RecoverPassword.cs*",
+              "RelativeToolTip": "UngDungQuanLyKho\\Data\\View\\RecoverPassword.cs*",
+              "ViewState": "AgIAABYAAAAAAAAAAAAcwCIAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-14T16:50:27.966Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "RecoverPassword.cs [Design]",
               "DocumentMoniker": "D:\\lap_trinh_ung_dung\\laptrinhungdung\\LapTrinhUngDung\\UngDungQuanLyKho\\Data\\View\\RecoverPassword.cs",
               "RelativeDocumentMoniker": "UngDungQuanLyKho\\Data\\View\\RecoverPassword.cs",
@@ -49,7 +80,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Login.cs [Design]",
               "DocumentMoniker": "D:\\lap_trinh_ung_dung\\laptrinhungdung\\LapTrinhUngDung\\UngDungQuanLyKho\\Data\\View\\Login.cs",
               "RelativeDocumentMoniker": "UngDungQuanLyKho\\Data\\View\\Login.cs",
@@ -61,7 +92,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "Welcome.cs [Design]",
               "DocumentMoniker": "D:\\lap_trinh_ung_dung\\laptrinhungdung\\LapTrinhUngDung\\UngDungQuanLyKho\\Data\\View\\Welcome.cs",
               "RelativeDocumentMoniker": "UngDungQuanLyKho\\Data\\View\\Welcome.cs",
@@ -70,15 +101,6 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-13T17:41:14.889Z",
               "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "dbo.Employees.sql",
-              "DocumentMoniker": "ViewDataWindow_MSSQL__/_LocalDB__MSSQLLocalDB/H__T\u00C0I_LI\u1EC6U_H\u1ECCC_T\u1EACP_2025_L\u1EACP_TR\u00CCNH_\u1EE8NG_D\u1EE4NG_PROJECT_LAPTRINHUNGDUNG_UNGDUNGQUANLYKHO_DATA_DATABASE_QLKHOHANG.MDF/True/SqlTable/dbo.Employees.sql",
-              "ToolTip": "ViewDataWindow_MSSQL__/_LocalDB__MSSQLLocalDB/H__T\u00C0I_LI\u1EC6U_H\u1ECCC_T\u1EACP_2025_L\u1EACP_TR\u00CCNH_\u1EE8NG_D\u1EE4NG_PROJECT_LAPTRINHUNGDUNG_UNGDUNGQUANLYKHO_DATA_DATABASE_QLKHOHANG.MDF/True/SqlTable/dbo.Employees.sql",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2025-03-13T16:08:48.665Z"
             }
           ]
         }
