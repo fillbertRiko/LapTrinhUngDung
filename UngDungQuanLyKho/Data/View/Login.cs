@@ -26,6 +26,7 @@ namespace UngDungQuanLyKho.Data.View
             string tentk = textBox_Email.Text;
             string matKhau = textBox_Password.Text;
             
+            //kiem tra dieu kien qua dau cach
             if (tentk.Trim() == "") { MessageBox.Show("Nhập email!"); }
             else if (matKhau.Trim() == "") { MessageBox.Show("Nhập password!"); }
             else
