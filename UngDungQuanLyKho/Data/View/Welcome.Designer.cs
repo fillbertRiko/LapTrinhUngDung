@@ -39,59 +39,72 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(14, 15);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(522, 426);
+            this.pictureBox1.Size = new System.Drawing.Size(587, 532);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Location = new System.Drawing.Point(540, 12);
+            this.pictureBox2.Location = new System.Drawing.Point(608, 15);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(248, 129);
+            this.pictureBox2.Size = new System.Drawing.Size(279, 161);
             this.pictureBox2.TabIndex = 1;
             this.pictureBox2.TabStop = false;
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(540, 147);
+            this.textBox1.Location = new System.Drawing.Point(608, 184);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(248, 114);
+            this.textBox1.Size = new System.Drawing.Size(278, 142);
             this.textBox1.TabIndex = 2;
             // 
             // button_MoMain
             // 
-            this.button_MoMain.Location = new System.Drawing.Point(552, 337);
+            this.button_MoMain.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.button_MoMain.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.button_MoMain.ForeColor = System.Drawing.Color.White;
+            this.button_MoMain.Location = new System.Drawing.Point(621, 380);
+            this.button_MoMain.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button_MoMain.Name = "button_MoMain";
-            this.button_MoMain.Size = new System.Drawing.Size(105, 23);
+            this.button_MoMain.Size = new System.Drawing.Size(118, 70);
             this.button_MoMain.TabIndex = 3;
             this.button_MoMain.Text = "Hiển Thị Menu";
-            this.button_MoMain.UseVisualStyleBackColor = true;
+            this.button_MoMain.UseVisualStyleBackColor = false;
             this.button_MoMain.Click += new System.EventHandler(this.button_MoMain_Click);
             // 
             // button_DangXuat
             // 
-            this.button_DangXuat.Location = new System.Drawing.Point(683, 337);
+            this.button_DangXuat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.button_DangXuat.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.button_DangXuat.ForeColor = System.Drawing.Color.White;
+            this.button_DangXuat.Location = new System.Drawing.Point(768, 380);
+            this.button_DangXuat.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button_DangXuat.Name = "button_DangXuat";
-            this.button_DangXuat.Size = new System.Drawing.Size(105, 23);
+            this.button_DangXuat.Size = new System.Drawing.Size(118, 70);
             this.button_DangXuat.TabIndex = 4;
             this.button_DangXuat.Text = "Đăng Xuất";
-            this.button_DangXuat.UseVisualStyleBackColor = true;
+            this.button_DangXuat.UseVisualStyleBackColor = false;
             // 
             // Welcome
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(900, 562);
             this.Controls.Add(this.button_DangXuat);
             this.Controls.Add(this.button_MoMain);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "Welcome";
             this.Text = "Welcome";
+            this.Load += new System.EventHandler(this.Welcome_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);

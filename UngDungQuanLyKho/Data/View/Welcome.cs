@@ -26,5 +26,10 @@ namespace UngDungQuanLyKho.Data.UI.Forms.Index
 
             this.Close();
         }
+
+        private void Welcome_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

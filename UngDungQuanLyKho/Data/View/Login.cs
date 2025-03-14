@@ -55,5 +55,15 @@ namespace UngDungQuanLyKho.Data.View
             recoverPassword.Show();
             this.Hide();
         }
+
+        private void textBox_Email_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox_Password_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
