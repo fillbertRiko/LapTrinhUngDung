@@ -31,7 +31,7 @@ namespace UngDungQuanLyKho.Data.UI.Forms.Index
         Modify modify = new Modify();
         private void linkLabel_XoaNoiDung_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            textBox_Email.Text = "";
+            textBox_Email.Clear();
             label_Show.Text = "";
 
             textBox_Email.Focus();
@@ -58,6 +58,11 @@ namespace UngDungQuanLyKho.Data.UI.Forms.Index
                     MessageBox.Show("Ơ Ơ Ơ, làm cái gì đấy, Mắt sang vành à!");
                 }
             }
+        }
+
+        private void guna2ControlBox1_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
