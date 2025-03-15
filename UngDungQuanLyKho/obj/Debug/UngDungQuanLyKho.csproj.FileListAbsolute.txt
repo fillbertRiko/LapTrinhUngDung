@@ -45,3 +45,5 @@ D:\lap_trinh_ung_dung\laptrinhungdung\LapTrinhUngDung\UngDungQuanLyKho\obj\Debug
 D:\lap_trinh_ung_dung\laptrinhungdung\LapTrinhUngDung\UngDungQuanLyKho\obj\Debug\UngDungQuanLyKho.pdb
 D:\lap_trinh_ung_dung\laptrinhungdung\LapTrinhUngDung\UngDungQuanLyKho\bin\Debug\Guna.UI2.dll
 D:\lap_trinh_ung_dung\laptrinhungdung\LapTrinhUngDung\UngDungQuanLyKho\obj\Debug\UngDungQ.8114B2D4.Up2Date
+H:\Tài liệu học tập\2025\Lập trình ứng dụng\Project\LapTrinhUngDung\UngDungQuanLyKho\bin\Debug\Guna.UI2.dll
+H:\Tài liệu học tập\2025\Lập trình ứng dụng\Project\LapTrinhUngDung\UngDungQuanLyKho\obj\Debug\UngDungQ.8114B2D4.Up2Date
