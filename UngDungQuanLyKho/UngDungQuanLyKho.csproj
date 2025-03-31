@@ -80,6 +80,24 @@
     <Compile Include="Data\View\Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
+    <Compile Include="Data\View\MENU\PhieuNhapKho.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Data\View\MENU\PhieuNhapKho.Designer.cs">
+      <DependentUpon>PhieuNhapKho.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Data\View\MENU\PhieuXuatDieuChuyen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Data\View\MENU\PhieuXuatDieuChuyen.Designer.cs">
+      <DependentUpon>PhieuXuatDieuChuyen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Data\View\MENU\PhieuXuatKho.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Data\View\MENU\PhieuXuatKho.Designer.cs">
+      <DependentUpon>PhieuXuatKho.cs</DependentUpon>
+    </Compile>
     <Compile Include="Data\View\RecoverPassword.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -102,6 +120,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Data\View\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Data\View\MENU\PhieuNhapKho.resx">
+      <DependentUpon>PhieuNhapKho.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Data\View\RecoverPassword.resx">
       <DependentUpon>RecoverPassword.cs</DependentUpon>

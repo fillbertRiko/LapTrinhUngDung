@@ -3,53 +3,12 @@
   "WorkspaceRootPath": "H:\\T\u00E0i li\u1EC7u h\u1ECDc t\u1EADp\\2025\\L\u1EADp tr\u00ECnh \u1EE9ng d\u1EE5ng\\Project\\LapTrinhUngDung\\",
   "Documents": [
     {
-<<<<<<< HEAD
-      "AbsoluteMoniker": "D:0:0:{3B7720EC-5EE9-4D4F-9BBE-58B4A35A543F}|UngDungQuanLyKho\\UngDungQuanLyKho.csproj|h:\\t\u00E0i li\u1EC7u h\u1ECDc t\u1EADp\\2025\\l\u1EADp tr\u00ECnh \u1EE9ng d\u1EE5ng\\project\\laptrinhungdung\\ungdungquanlykho\\data\\view\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{3B7720EC-5EE9-4D4F-9BBE-58B4A35A543F}|UngDungQuanLyKho\\UngDungQuanLyKho.csproj|solutionrelative:ungdungquanlykho\\data\\view\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{3B7720EC-5EE9-4D4F-9BBE-58B4A35A543F}|UngDungQuanLyKho\\UngDungQuanLyKho.csproj|h:\\t\u00E0i li\u1EC7u h\u1ECDc t\u1EADp\\2025\\l\u1EADp tr\u00ECnh \u1EE9ng d\u1EE5ng\\project\\laptrinhungdung\\ungdungquanlykho\\data\\view\\menu\\phieunhapkho.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{3B7720EC-5EE9-4D4F-9BBE-58B4A35A543F}|UngDungQuanLyKho\\UngDungQuanLyKho.csproj|solutionrelative:ungdungquanlykho\\data\\view\\menu\\phieunhapkho.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3B7720EC-5EE9-4D4F-9BBE-58B4A35A543F}|UngDungQuanLyKho\\UngDungQuanLyKho.csproj|H:\\T\u00E0i li\u1EC7u h\u1ECDc t\u1EADp\\2025\\L\u1EADp tr\u00ECnh \u1EE9ng d\u1EE5ng\\Project\\LapTrinhUngDung\\ungdungquanlykho\\data\\view\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3B7720EC-5EE9-4D4F-9BBE-58B4A35A543F}|UngDungQuanLyKho\\UngDungQuanLyKho.csproj|solutionrelative:ungdungquanlykho\\data\\view\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3B7720EC-5EE9-4D4F-9BBE-58B4A35A543F}|UngDungQuanLyKho\\UngDungQuanLyKho.csproj|h:\\t\u00E0i li\u1EC7u h\u1ECDc t\u1EADp\\2025\\l\u1EADp tr\u00ECnh \u1EE9ng d\u1EE5ng\\project\\laptrinhungdung\\ungdungquanlykho\\data\\view\\recoverpassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{3B7720EC-5EE9-4D4F-9BBE-58B4A35A543F}|UngDungQuanLyKho\\UngDungQuanLyKho.csproj|solutionrelative:ungdungquanlykho\\data\\view\\recoverpassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3B7720EC-5EE9-4D4F-9BBE-58B4A35A543F}|UngDungQuanLyKho\\UngDungQuanLyKho.csproj|H:\\T\u00E0i li\u1EC7u h\u1ECDc t\u1EADp\\2025\\L\u1EADp tr\u00ECnh \u1EE9ng d\u1EE5ng\\Project\\LapTrinhUngDung\\ungdungquanlykho\\data\\view\\recoverpassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3B7720EC-5EE9-4D4F-9BBE-58B4A35A543F}|UngDungQuanLyKho\\UngDungQuanLyKho.csproj|solutionrelative:ungdungquanlykho\\data\\view\\recoverpassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3B7720EC-5EE9-4D4F-9BBE-58B4A35A543F}|UngDungQuanLyKho\\UngDungQuanLyKho.csproj|H:\\T\u00E0i li\u1EC7u h\u1ECDc t\u1EADp\\2025\\L\u1EADp tr\u00ECnh \u1EE9ng d\u1EE5ng\\Project\\LapTrinhUngDung\\ungdungquanlykho\\data\\view\\welcome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{3B7720EC-5EE9-4D4F-9BBE-58B4A35A543F}|UngDungQuanLyKho\\UngDungQuanLyKho.csproj|solutionrelative:ungdungquanlykho\\data\\view\\welcome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3B7720EC-5EE9-4D4F-9BBE-58B4A35A543F}|UngDungQuanLyKho\\UngDungQuanLyKho.csproj|H:\\T\u00E0i li\u1EC7u h\u1ECDc t\u1EADp\\2025\\L\u1EADp tr\u00ECnh \u1EE9ng d\u1EE5ng\\Project\\LapTrinhUngDung\\ungdungquanlykho\\data\\view\\welcome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3B7720EC-5EE9-4D4F-9BBE-58B4A35A543F}|UngDungQuanLyKho\\UngDungQuanLyKho.csproj|h:\\t\u00E0i li\u1EC7u h\u1ECDc t\u1EADp\\2025\\l\u1EADp tr\u00ECnh \u1EE9ng d\u1EE5ng\\project\\laptrinhungdung\\ungdungquanlykho\\data\\view\\welcome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3B7720EC-5EE9-4D4F-9BBE-58B4A35A543F}|UngDungQuanLyKho\\UngDungQuanLyKho.csproj|solutionrelative:ungdungquanlykho\\data\\view\\welcome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3B7720EC-5EE9-4D4F-9BBE-58B4A35A543F}|UngDungQuanLyKho\\UngDungQuanLyKho.csproj|H:\\T\u00E0i li\u1EC7u h\u1ECDc t\u1EADp\\2025\\L\u1EADp tr\u00ECnh \u1EE9ng d\u1EE5ng\\Project\\LapTrinhUngDung\\ungdungquanlykho\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3B7720EC-5EE9-4D4F-9BBE-58B4A35A543F}|UngDungQuanLyKho\\UngDungQuanLyKho.csproj|solutionrelative:ungdungquanlykho\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-=======
-      "AbsoluteMoniker": "D:0:0:{3B7720EC-5EE9-4D4F-9BBE-58B4A35A543F}|UngDungQuanLyKho\\UngDungQuanLyKho.csproj|D:\\lap_trinh_ung_dung\\laptrinhungdung\\LapTrinhUngDung\\ungdungquanlykho\\data\\view\\recoverpassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3B7720EC-5EE9-4D4F-9BBE-58B4A35A543F}|UngDungQuanLyKho\\UngDungQuanLyKho.csproj|solutionrelative:ungdungquanlykho\\data\\view\\recoverpassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3B7720EC-5EE9-4D4F-9BBE-58B4A35A543F}|UngDungQuanLyKho\\UngDungQuanLyKho.csproj|d:\\lap_trinh_ung_dung\\laptrinhungdung\\laptrinhungdung\\ungdungquanlykho\\data\\view\\recoverpassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{3B7720EC-5EE9-4D4F-9BBE-58B4A35A543F}|UngDungQuanLyKho\\UngDungQuanLyKho.csproj|solutionrelative:ungdungquanlykho\\data\\view\\recoverpassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3B7720EC-5EE9-4D4F-9BBE-58B4A35A543F}|UngDungQuanLyKho\\UngDungQuanLyKho.csproj|d:\\lap_trinh_ung_dung\\laptrinhungdung\\laptrinhungdung\\ungdungquanlykho\\data\\view\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3B7720EC-5EE9-4D4F-9BBE-58B4A35A543F}|UngDungQuanLyKho\\UngDungQuanLyKho.csproj|solutionrelative:ungdungquanlykho\\data\\view\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3B7720EC-5EE9-4D4F-9BBE-58B4A35A543F}|UngDungQuanLyKho\\UngDungQuanLyKho.csproj|D:\\lap_trinh_ung_dung\\laptrinhungdung\\LapTrinhUngDung\\ungdungquanlykho\\data\\view\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{3B7720EC-5EE9-4D4F-9BBE-58B4A35A543F}|UngDungQuanLyKho\\UngDungQuanLyKho.csproj|solutionrelative:ungdungquanlykho\\data\\view\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3B7720EC-5EE9-4D4F-9BBE-58B4A35A543F}|UngDungQuanLyKho\\UngDungQuanLyKho.csproj|D:\\lap_trinh_ung_dung\\laptrinhungdung\\LapTrinhUngDung\\ungdungquanlykho\\data\\view\\welcome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{3B7720EC-5EE9-4D4F-9BBE-58B4A35A543F}|UngDungQuanLyKho\\UngDungQuanLyKho.csproj|solutionrelative:ungdungquanlykho\\data\\view\\welcome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
->>>>>>> b80d75fa33aa9dd081691be6193509a9a3c285af
     }
   ],
   "DocumentGroupContainers": [
@@ -59,167 +18,40 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-<<<<<<< HEAD
-          "SelectedChildIndex": 1,
-=======
-          "SelectedChildIndex": 3,
->>>>>>> b80d75fa33aa9dd081691be6193509a9a3c285af
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
-<<<<<<< HEAD
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Login.cs [Design]",
-              "DocumentMoniker": "H:\\T\u00E0i li\u1EC7u h\u1ECDc t\u1EADp\\2025\\L\u1EADp tr\u00ECnh \u1EE9ng d\u1EE5ng\\Project\\LapTrinhUngDung\\UngDungQuanLyKho\\Data\\View\\Login.cs",
-              "RelativeDocumentMoniker": "UngDungQuanLyKho\\Data\\View\\Login.cs",
-              "ToolTip": "H:\\T\u00E0i li\u1EC7u h\u1ECDc t\u1EADp\\2025\\L\u1EADp tr\u00ECnh \u1EE9ng d\u1EE5ng\\Project\\LapTrinhUngDung\\UngDungQuanLyKho\\Data\\View\\Login.cs [Design]",
-              "RelativeToolTip": "UngDungQuanLyKho\\Data\\View\\Login.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-14T16:14:33.692Z",
-              "EditorCaption": " [Design]"
-=======
               "$type": "Bookmark",
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
->>>>>>> b80d75fa33aa9dd081691be6193509a9a3c285af
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-<<<<<<< HEAD
-              "Title": "RecoverPassword.cs [Design]",
-              "DocumentMoniker": "H:\\T\u00E0i li\u1EC7u h\u1ECDc t\u1EADp\\2025\\L\u1EADp tr\u00ECnh \u1EE9ng d\u1EE5ng\\Project\\LapTrinhUngDung\\UngDungQuanLyKho\\Data\\View\\RecoverPassword.cs",
-              "RelativeDocumentMoniker": "UngDungQuanLyKho\\Data\\View\\RecoverPassword.cs",
-              "ToolTip": "H:\\T\u00E0i li\u1EC7u h\u1ECDc t\u1EADp\\2025\\L\u1EADp tr\u00ECnh \u1EE9ng d\u1EE5ng\\Project\\LapTrinhUngDung\\UngDungQuanLyKho\\Data\\View\\RecoverPassword.cs [Design]",
-              "RelativeToolTip": "UngDungQuanLyKho\\Data\\View\\RecoverPassword.cs [Design]",
+              "DocumentIndex": 0,
+              "Title": "PhieuNhapKho.cs [Design]",
+              "DocumentMoniker": "H:\\T\u00E0i li\u1EC7u h\u1ECDc t\u1EADp\\2025\\L\u1EADp tr\u00ECnh \u1EE9ng d\u1EE5ng\\Project\\LapTrinhUngDung\\UngDungQuanLyKho\\Data\\View\\MENU\\PhieuNhapKho.cs",
+              "RelativeDocumentMoniker": "UngDungQuanLyKho\\Data\\View\\MENU\\PhieuNhapKho.cs",
+              "ToolTip": "H:\\T\u00E0i li\u1EC7u h\u1ECDc t\u1EADp\\2025\\L\u1EADp tr\u00ECnh \u1EE9ng d\u1EE5ng\\Project\\LapTrinhUngDung\\UngDungQuanLyKho\\Data\\View\\MENU\\PhieuNhapKho.cs [Design]",
+              "RelativeToolTip": "UngDungQuanLyKho\\Data\\View\\MENU\\PhieuNhapKho.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-14T03:17:39.038Z",
+              "WhenOpened": "2025-03-31T03:51:19.986Z",
               "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "RecoverPassword.cs",
-              "DocumentMoniker": "H:\\T\u00E0i li\u1EC7u h\u1ECDc t\u1EADp\\2025\\L\u1EADp tr\u00ECnh \u1EE9ng d\u1EE5ng\\Project\\LapTrinhUngDung\\UngDungQuanLyKho\\Data\\View\\RecoverPassword.cs",
-              "RelativeDocumentMoniker": "UngDungQuanLyKho\\Data\\View\\RecoverPassword.cs",
-              "ToolTip": "H:\\T\u00E0i li\u1EC7u h\u1ECDc t\u1EADp\\2025\\L\u1EADp tr\u00ECnh \u1EE9ng d\u1EE5ng\\Project\\LapTrinhUngDung\\UngDungQuanLyKho\\Data\\View\\RecoverPassword.cs",
-              "RelativeToolTip": "UngDungQuanLyKho\\Data\\View\\RecoverPassword.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACsAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003525|",
-              "WhenOpened": "2025-03-13T16:42:55.281Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Login.cs",
-              "DocumentMoniker": "H:\\T\u00E0i li\u1EC7u h\u1ECDc t\u1EADp\\2025\\L\u1EADp tr\u00ECnh \u1EE9ng d\u1EE5ng\\Project\\LapTrinhUngDung\\UngDungQuanLyKho\\Data\\View\\Login.cs",
-              "RelativeDocumentMoniker": "UngDungQuanLyKho\\Data\\View\\Login.cs",
-              "ToolTip": "H:\\T\u00E0i li\u1EC7u h\u1ECDc t\u1EADp\\2025\\L\u1EADp tr\u00ECnh \u1EE9ng d\u1EE5ng\\Project\\LapTrinhUngDung\\UngDungQuanLyKho\\Data\\View\\Login.cs",
-              "RelativeToolTip": "UngDungQuanLyKho\\Data\\View\\Login.cs",
-              "ViewState": "AgIAACMAAAAAAAAAAAAYwC4AAAA5AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-13T16:52:04.026Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
               "Title": "Welcome.cs",
               "DocumentMoniker": "H:\\T\u00E0i li\u1EC7u h\u1ECDc t\u1EADp\\2025\\L\u1EADp tr\u00ECnh \u1EE9ng d\u1EE5ng\\Project\\LapTrinhUngDung\\UngDungQuanLyKho\\Data\\View\\Welcome.cs",
               "RelativeDocumentMoniker": "UngDungQuanLyKho\\Data\\View\\Welcome.cs",
               "ToolTip": "H:\\T\u00E0i li\u1EC7u h\u1ECDc t\u1EADp\\2025\\L\u1EADp tr\u00ECnh \u1EE9ng d\u1EE5ng\\Project\\LapTrinhUngDung\\UngDungQuanLyKho\\Data\\View\\Welcome.cs",
               "RelativeToolTip": "UngDungQuanLyKho\\Data\\View\\Welcome.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAD4vxoAAAAZAAAAAAAAAA==",
+              "ViewState": "AgIAACgAAAAAAAAAAAAkwDYAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-13T17:41:34.741Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Welcome.cs [Design]",
-              "DocumentMoniker": "H:\\T\u00E0i li\u1EC7u h\u1ECDc t\u1EADp\\2025\\L\u1EADp tr\u00ECnh \u1EE9ng d\u1EE5ng\\Project\\LapTrinhUngDung\\UngDungQuanLyKho\\Data\\View\\Welcome.cs",
-              "RelativeDocumentMoniker": "UngDungQuanLyKho\\Data\\View\\Welcome.cs",
-              "ToolTip": "H:\\T\u00E0i li\u1EC7u h\u1ECDc t\u1EADp\\2025\\L\u1EADp tr\u00ECnh \u1EE9ng d\u1EE5ng\\Project\\LapTrinhUngDung\\UngDungQuanLyKho\\Data\\View\\Welcome.cs [Design]",
-=======
-              "Title": "Login.cs",
-              "DocumentMoniker": "D:\\lap_trinh_ung_dung\\laptrinhungdung\\LapTrinhUngDung\\UngDungQuanLyKho\\Data\\View\\Login.cs",
-              "RelativeDocumentMoniker": "UngDungQuanLyKho\\Data\\View\\Login.cs",
-              "ToolTip": "D:\\lap_trinh_ung_dung\\laptrinhungdung\\LapTrinhUngDung\\UngDungQuanLyKho\\Data\\View\\Login.cs",
-              "RelativeToolTip": "UngDungQuanLyKho\\Data\\View\\Login.cs",
-              "ViewState": "AgIAACcAAAAAAAAAAAAmwDQAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-14T18:41:48.819Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "RecoverPassword.cs",
-              "DocumentMoniker": "D:\\lap_trinh_ung_dung\\laptrinhungdung\\LapTrinhUngDung\\UngDungQuanLyKho\\Data\\View\\RecoverPassword.cs",
-              "RelativeDocumentMoniker": "UngDungQuanLyKho\\Data\\View\\RecoverPassword.cs",
-              "ToolTip": "D:\\lap_trinh_ung_dung\\laptrinhungdung\\LapTrinhUngDung\\UngDungQuanLyKho\\Data\\View\\RecoverPassword.cs",
-              "RelativeToolTip": "UngDungQuanLyKho\\Data\\View\\RecoverPassword.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAcwCIAAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-14T16:50:27.966Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "RecoverPassword.cs [Design]",
-              "DocumentMoniker": "D:\\lap_trinh_ung_dung\\laptrinhungdung\\LapTrinhUngDung\\UngDungQuanLyKho\\Data\\View\\RecoverPassword.cs",
-              "RelativeDocumentMoniker": "UngDungQuanLyKho\\Data\\View\\RecoverPassword.cs",
-              "ToolTip": "D:\\lap_trinh_ung_dung\\laptrinhungdung\\LapTrinhUngDung\\UngDungQuanLyKho\\Data\\View\\RecoverPassword.cs [Design]",
-              "RelativeToolTip": "UngDungQuanLyKho\\Data\\View\\RecoverPassword.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-13T17:08:41.63Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Login.cs [Design]",
-              "DocumentMoniker": "D:\\lap_trinh_ung_dung\\laptrinhungdung\\LapTrinhUngDung\\UngDungQuanLyKho\\Data\\View\\Login.cs",
-              "RelativeDocumentMoniker": "UngDungQuanLyKho\\Data\\View\\Login.cs",
-              "ToolTip": "D:\\lap_trinh_ung_dung\\laptrinhungdung\\LapTrinhUngDung\\UngDungQuanLyKho\\Data\\View\\Login.cs [Design]",
-              "RelativeToolTip": "UngDungQuanLyKho\\Data\\View\\Login.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-13T16:49:59.62Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Welcome.cs [Design]",
-              "DocumentMoniker": "D:\\lap_trinh_ung_dung\\laptrinhungdung\\LapTrinhUngDung\\UngDungQuanLyKho\\Data\\View\\Welcome.cs",
-              "RelativeDocumentMoniker": "UngDungQuanLyKho\\Data\\View\\Welcome.cs",
-              "ToolTip": "D:\\lap_trinh_ung_dung\\laptrinhungdung\\LapTrinhUngDung\\UngDungQuanLyKho\\Data\\View\\Welcome.cs [Design]",
->>>>>>> b80d75fa33aa9dd081691be6193509a9a3c285af
-              "RelativeToolTip": "UngDungQuanLyKho\\Data\\View\\Welcome.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-13T17:41:14.889Z",
-              "EditorCaption": " [Design]"
-<<<<<<< HEAD
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Program.cs",
-              "DocumentMoniker": "H:\\T\u00E0i li\u1EC7u h\u1ECDc t\u1EADp\\2025\\L\u1EADp tr\u00ECnh \u1EE9ng d\u1EE5ng\\Project\\LapTrinhUngDung\\UngDungQuanLyKho\\Program.cs",
-              "RelativeDocumentMoniker": "UngDungQuanLyKho\\Program.cs",
-              "ToolTip": "H:\\T\u00E0i li\u1EC7u h\u1ECDc t\u1EADp\\2025\\L\u1EADp tr\u00ECnh \u1EE9ng d\u1EE5ng\\Project\\LapTrinhUngDung\\UngDungQuanLyKho\\Program.cs",
-              "RelativeToolTip": "UngDungQuanLyKho\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-13T16:39:16.39Z",
-              "EditorCaption": ""
-=======
->>>>>>> b80d75fa33aa9dd081691be6193509a9a3c285af
             }
           ]
         }

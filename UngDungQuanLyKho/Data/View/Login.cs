@@ -44,7 +44,7 @@ namespace UngDungQuanLyKho.Data.View
                 }
                 else
                 {
-                    MessageBox.Show("Có Bug!", "Thông báo!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("Nhập sai tài khoản hoăc mật khẩu!!!", "Thông báo!", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
             }
         }

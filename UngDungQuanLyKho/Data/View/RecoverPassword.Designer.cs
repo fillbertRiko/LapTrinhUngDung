@@ -59,7 +59,7 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(49, 278);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(48, 20);
+            this.label1.Size = new System.Drawing.Size(42, 17);
             this.label1.TabIndex = 1;
             this.label1.Text = "Email";
             // 
@@ -72,7 +72,7 @@
             this.linkLabel_XoaNoiDung.LinkColor = System.Drawing.Color.Blue;
             this.linkLabel_XoaNoiDung.Location = new System.Drawing.Point(360, 350);
             this.linkLabel_XoaNoiDung.Name = "linkLabel_XoaNoiDung";
-            this.linkLabel_XoaNoiDung.Size = new System.Drawing.Size(108, 20);
+            this.linkLabel_XoaNoiDung.Size = new System.Drawing.Size(96, 17);
             this.linkLabel_XoaNoiDung.TabIndex = 4;
             this.linkLabel_XoaNoiDung.TabStop = true;
             this.linkLabel_XoaNoiDung.Text = "Xoá Nội Dung";
@@ -87,7 +87,7 @@
             this.linkLabel_QuayLai.LinkColor = System.Drawing.Color.Blue;
             this.linkLabel_QuayLai.Location = new System.Drawing.Point(47, 349);
             this.linkLabel_QuayLai.Name = "linkLabel_QuayLai";
-            this.linkLabel_QuayLai.Size = new System.Drawing.Size(190, 20);
+            this.linkLabel_QuayLai.Size = new System.Drawing.Size(172, 17);
             this.linkLabel_QuayLai.TabIndex = 5;
             this.linkLabel_QuayLai.TabStop = true;
             this.linkLabel_QuayLai.Text = "<-Quay trang đăng nhập?";
@@ -110,10 +110,10 @@
             // label_Show
             // 
             this.label_Show.AutoSize = true;
-            this.label_Show.Location = new System.Drawing.Point(73, 401);
+            this.label_Show.Location = new System.Drawing.Point(248, 393);
             this.label_Show.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label_Show.Name = "label_Show";
-            this.label_Show.Size = new System.Drawing.Size(0, 20);
+            this.label_Show.Size = new System.Drawing.Size(0, 17);
             this.label_Show.TabIndex = 10;
             // 
             // textBox_Email
@@ -145,7 +145,7 @@
             this.guna2ControlBox1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.guna2ControlBox1.FillColor = System.Drawing.Color.Red;
             this.guna2ControlBox1.IconColor = System.Drawing.Color.White;
-            this.guna2ControlBox1.Location = new System.Drawing.Point(765, 2);
+            this.guna2ControlBox1.Location = new System.Drawing.Point(226, 387);
             this.guna2ControlBox1.Name = "guna2ControlBox1";
             this.guna2ControlBox1.Size = new System.Drawing.Size(45, 29);
             this.guna2ControlBox1.TabIndex = 11;
@@ -174,13 +174,13 @@
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.label2.Location = new System.Drawing.Point(157, 220);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(220, 32);
+            this.label2.Size = new System.Drawing.Size(187, 29);
             this.label2.TabIndex = 11;
             this.label2.Text = "Quên mật khẩu";
             // 
             // RecoverPassword
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(212)))), ((int)(((byte)(250)))));
             this.ClientSize = new System.Drawing.Size(810, 669);

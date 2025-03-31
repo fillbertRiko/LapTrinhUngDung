@@ -7,10 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using UngDungQuanLyKho.Data.View;
+using UngDungQuanLyKho.Data.View.MENU;
+using UngDungQuanLyKho.Data.Auth;
 
 namespace UngDungQuanLyKho.Data.UI.Forms.Index
 {
-    public partial class Welcome: Form
+    public partial class Welcome : Form
     {
         public Welcome()
         {
@@ -22,14 +25,61 @@ namespace UngDungQuanLyKho.Data.UI.Forms.Index
         {
             //mo main
             Main main = new Main();
-            main.ShowDialog();
-
-            this.Close();
+            main.Show();
+            this.Hide();
         }
 
         private void Welcome_Load(object sender, EventArgs e)
         {
 
         }
+
+        private void textBox_HienThiNguoiDung_TextChanged(object sender, EventArgs e)
+        {
+            //hien thi ten nguoi dung trong textbox
+            textBox_HienThiNguoiDung.Text = AuthManager.TenNguoiDung;
+        }
+
+        private void button_DangXuat_Click(object sender, EventArgs e)
+        {
+            //tao chuc nang dang xuat
+            //dong form welcome 
+            this.Close();
+            var confirmResult = MessageBox.Show("Bạn có chắc chắn muốn đăng xuất?",
+                                     "Đăng xuất",
+                                     MessageBoxButtons.YesNo);
+            if (confirmResult == DialogResult.Yes)
+            {
+                //dong form welcome chuyen sang form login
+                Login login = new Login();
+                login.Show();
+            }
+        }
+
+        private void button_PhieuNhap_Click(object sender, EventArgs e)
+        {
+            //hien thi form phieu nhap kho
+            PhieuNhapKho phieuNhap = new PhieuNhapKho();
+            phieuNhap.Show();
+            this.Hide();
+        }
+
+        private void button_PhieuXuat_Click(object sender, EventArgs e)
+        {
+            //Hien thi phieu xuat kho
+            PhieuXuatKho phieuXuat = new PhieuXuatKho();
+            phieuXuat.Show();
+            this.Hide();
+        }
+
+        private void button_PhieuLuuChuyen_Click(object sender, EventArgs e)
+        {
+            //hien thi phieu dieu chuyen
+            PhieuXuatDieuChuyen phieuXuatDieuChuyen = new PhieuXuatDieuChuyen();
+            phieuXuatDieuChuyen.Show();
+            this.Hide();
+        }
+
+
     }
 }

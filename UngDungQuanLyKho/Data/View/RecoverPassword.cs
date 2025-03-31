@@ -50,12 +50,11 @@ namespace UngDungQuanLyKho.Data.UI.Forms.Index
                 {
                     label_Show.ForeColor = Color.Green;
                     label_Show.Text = modify.Employees(query)[0].Password;
-                    MessageBox.Show("Chú em nhớ kĩ vào đừng để quên!!!");
                 }
                 else
                 {
                     label_Show.ForeColor= Color.Red;
-                    MessageBox.Show("Ơ Ơ Ơ, làm cái gì đấy, Mắt sang vành à!");
+                    MessageBox.Show("Sai tài khoản!");
                 }
             }
         }
