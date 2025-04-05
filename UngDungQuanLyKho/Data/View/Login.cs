@@ -65,5 +65,12 @@ namespace UngDungQuanLyKho.Data.View
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            DialogResult txt = MessageBox.Show("Bạn có muốn thoát không ?", "Thoát", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (txt == DialogResult.Yes) 
+                this.Close();
+        }
     }
 }
