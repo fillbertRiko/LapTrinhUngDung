@@ -152,3 +152,8 @@ CREATE TABLE ActivityLogs (
 GO
 
 --Da hoan thien csdl co ban
+
+--code thuc thi trong winform
+
+--hien tai khoan 
+SELECT * FROM Employees;

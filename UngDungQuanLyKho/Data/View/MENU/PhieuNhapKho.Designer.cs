@@ -48,8 +48,8 @@
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.button1 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -224,6 +224,13 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Mã Code Qua Máy Quét";
             // 
+            // panel1
+            // 
+            this.panel1.Location = new System.Drawing.Point(6, 21);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(929, 60);
+            this.panel1.TabIndex = 0;
+            // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.GreenYellow;
@@ -233,13 +240,6 @@
             this.button1.TabIndex = 20;
             this.button1.Text = "Mở Khoá";
             this.button1.UseVisualStyleBackColor = false;
-            // 
-            // panel1
-            // 
-            this.panel1.Location = new System.Drawing.Point(6, 21);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(929, 60);
-            this.panel1.TabIndex = 0;
             // 
             // PhieuNhapKho
             // 

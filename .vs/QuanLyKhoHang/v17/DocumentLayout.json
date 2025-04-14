@@ -3,11 +3,27 @@
   "WorkspaceRootPath": "H:\\T\u00E0i li\u1EC7u h\u1ECDc t\u1EADp\\2025\\L\u1EADp tr\u00ECnh \u1EE9ng d\u1EE5ng\\Project\\LapTrinhUngDung\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{3B7720EC-5EE9-4D4F-9BBE-58B4A35A543F}|UngDungQuanLyKho\\UngDungQuanLyKho.csproj|h:\\t\u00E0i li\u1EC7u h\u1ECDc t\u1EADp\\2025\\l\u1EADp tr\u00ECnh \u1EE9ng d\u1EE5ng\\project\\laptrinhungdung\\ungdungquanlykho\\data\\database\\modify.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3B7720EC-5EE9-4D4F-9BBE-58B4A35A543F}|UngDungQuanLyKho\\UngDungQuanLyKho.csproj|solutionrelative:ungdungquanlykho\\data\\database\\modify.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B7720EC-5EE9-4D4F-9BBE-58B4A35A543F}|UngDungQuanLyKho\\UngDungQuanLyKho.csproj|h:\\t\u00E0i li\u1EC7u h\u1ECDc t\u1EADp\\2025\\l\u1EADp tr\u00ECnh \u1EE9ng d\u1EE5ng\\project\\laptrinhungdung\\ungdungquanlykho\\data\\database\\connection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3B7720EC-5EE9-4D4F-9BBE-58B4A35A543F}|UngDungQuanLyKho\\UngDungQuanLyKho.csproj|solutionrelative:ungdungquanlykho\\data\\database\\connection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B7720EC-5EE9-4D4F-9BBE-58B4A35A543F}|UngDungQuanLyKho\\UngDungQuanLyKho.csproj|h:\\t\u00E0i li\u1EC7u h\u1ECDc t\u1EADp\\2025\\l\u1EADp tr\u00ECnh \u1EE9ng d\u1EE5ng\\project\\laptrinhungdung\\ungdungquanlykho\\data\\view\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3B7720EC-5EE9-4D4F-9BBE-58B4A35A543F}|UngDungQuanLyKho\\UngDungQuanLyKho.csproj|solutionrelative:ungdungquanlykho\\data\\view\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B7720EC-5EE9-4D4F-9BBE-58B4A35A543F}|UngDungQuanLyKho\\UngDungQuanLyKho.csproj|h:\\t\u00E0i li\u1EC7u h\u1ECDc t\u1EADp\\2025\\l\u1EADp tr\u00ECnh \u1EE9ng d\u1EE5ng\\project\\laptrinhungdung\\ungdungquanlykho\\data\\view\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3B7720EC-5EE9-4D4F-9BBE-58B4A35A543F}|UngDungQuanLyKho\\UngDungQuanLyKho.csproj|solutionrelative:ungdungquanlykho\\data\\view\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{3B7720EC-5EE9-4D4F-9BBE-58B4A35A543F}|UngDungQuanLyKho\\UngDungQuanLyKho.csproj|h:\\t\u00E0i li\u1EC7u h\u1ECDc t\u1EADp\\2025\\l\u1EADp tr\u00ECnh \u1EE9ng d\u1EE5ng\\project\\laptrinhungdung\\ungdungquanlykho\\data\\view\\menu\\phieunhapkho.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{3B7720EC-5EE9-4D4F-9BBE-58B4A35A543F}|UngDungQuanLyKho\\UngDungQuanLyKho.csproj|solutionrelative:ungdungquanlykho\\data\\view\\menu\\phieunhapkho.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3B7720EC-5EE9-4D4F-9BBE-58B4A35A543F}|UngDungQuanLyKho\\UngDungQuanLyKho.csproj|h:\\t\u00E0i li\u1EC7u h\u1ECDc t\u1EADp\\2025\\l\u1EADp tr\u00ECnh \u1EE9ng d\u1EE5ng\\project\\laptrinhungdung\\ungdungquanlykho\\data\\view\\welcome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3B7720EC-5EE9-4D4F-9BBE-58B4A35A543F}|UngDungQuanLyKho\\UngDungQuanLyKho.csproj|H:\\T\u00E0i li\u1EC7u h\u1ECDc t\u1EADp\\2025\\L\u1EADp tr\u00ECnh \u1EE9ng d\u1EE5ng\\Project\\LapTrinhUngDung\\ungdungquanlykho\\data\\view\\welcome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3B7720EC-5EE9-4D4F-9BBE-58B4A35A543F}|UngDungQuanLyKho\\UngDungQuanLyKho.csproj|solutionrelative:ungdungquanlykho\\data\\view\\welcome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -18,8 +34,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Modify.cs",
+              "DocumentMoniker": "H:\\T\u00E0i li\u1EC7u h\u1ECDc t\u1EADp\\2025\\L\u1EADp tr\u00ECnh \u1EE9ng d\u1EE5ng\\Project\\LapTrinhUngDung\\UngDungQuanLyKho\\Data\\Database\\Modify.cs",
+              "RelativeDocumentMoniker": "UngDungQuanLyKho\\Data\\Database\\Modify.cs",
+              "ToolTip": "H:\\T\u00E0i li\u1EC7u h\u1ECDc t\u1EADp\\2025\\L\u1EADp tr\u00ECnh \u1EE9ng d\u1EE5ng\\Project\\LapTrinhUngDung\\UngDungQuanLyKho\\Data\\Database\\Modify.cs",
+              "RelativeToolTip": "UngDungQuanLyKho\\Data\\Database\\Modify.cs",
+              "ViewState": "AgIAACoAAAAAAAAAAAAYwDgAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-14T15:37:11.732Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
@@ -30,7 +59,46 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
+              "Title": "Connection.cs",
+              "DocumentMoniker": "H:\\T\u00E0i li\u1EC7u h\u1ECDc t\u1EADp\\2025\\L\u1EADp tr\u00ECnh \u1EE9ng d\u1EE5ng\\Project\\LapTrinhUngDung\\UngDungQuanLyKho\\Data\\Database\\Connection.cs",
+              "RelativeDocumentMoniker": "UngDungQuanLyKho\\Data\\Database\\Connection.cs",
+              "ToolTip": "H:\\T\u00E0i li\u1EC7u h\u1ECDc t\u1EADp\\2025\\L\u1EADp tr\u00ECnh \u1EE9ng d\u1EE5ng\\Project\\LapTrinhUngDung\\UngDungQuanLyKho\\Data\\Database\\Connection.cs",
+              "RelativeToolTip": "UngDungQuanLyKho\\Data\\Database\\Connection.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-14T15:31:09.915Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Main.cs",
+              "DocumentMoniker": "H:\\T\u00E0i li\u1EC7u h\u1ECDc t\u1EADp\\2025\\L\u1EADp tr\u00ECnh \u1EE9ng d\u1EE5ng\\Project\\LapTrinhUngDung\\UngDungQuanLyKho\\Data\\View\\Main.cs",
+              "RelativeDocumentMoniker": "UngDungQuanLyKho\\Data\\View\\Main.cs",
+              "ToolTip": "H:\\T\u00E0i li\u1EC7u h\u1ECDc t\u1EADp\\2025\\L\u1EADp tr\u00ECnh \u1EE9ng d\u1EE5ng\\Project\\LapTrinhUngDung\\UngDungQuanLyKho\\Data\\View\\Main.cs",
+              "RelativeToolTip": "UngDungQuanLyKho\\Data\\View\\Main.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-14T15:18:18.609Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Login.cs",
+              "DocumentMoniker": "H:\\T\u00E0i li\u1EC7u h\u1ECDc t\u1EADp\\2025\\L\u1EADp tr\u00ECnh \u1EE9ng d\u1EE5ng\\Project\\LapTrinhUngDung\\UngDungQuanLyKho\\Data\\View\\Login.cs",
+              "RelativeDocumentMoniker": "UngDungQuanLyKho\\Data\\View\\Login.cs",
+              "ToolTip": "H:\\T\u00E0i li\u1EC7u h\u1ECDc t\u1EADp\\2025\\L\u1EADp tr\u00ECnh \u1EE9ng d\u1EE5ng\\Project\\LapTrinhUngDung\\UngDungQuanLyKho\\Data\\View\\Login.cs",
+              "RelativeToolTip": "UngDungQuanLyKho\\Data\\View\\Login.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABMAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-14T15:06:40.396Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "PhieuNhapKho.cs [Design]",
               "DocumentMoniker": "H:\\T\u00E0i li\u1EC7u h\u1ECDc t\u1EADp\\2025\\L\u1EADp tr\u00ECnh \u1EE9ng d\u1EE5ng\\Project\\LapTrinhUngDung\\UngDungQuanLyKho\\Data\\View\\MENU\\PhieuNhapKho.cs",
               "RelativeDocumentMoniker": "UngDungQuanLyKho\\Data\\View\\MENU\\PhieuNhapKho.cs",
@@ -42,13 +110,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "Welcome.cs",
               "DocumentMoniker": "H:\\T\u00E0i li\u1EC7u h\u1ECDc t\u1EADp\\2025\\L\u1EADp tr\u00ECnh \u1EE9ng d\u1EE5ng\\Project\\LapTrinhUngDung\\UngDungQuanLyKho\\Data\\View\\Welcome.cs",
               "RelativeDocumentMoniker": "UngDungQuanLyKho\\Data\\View\\Welcome.cs",
               "ToolTip": "H:\\T\u00E0i li\u1EC7u h\u1ECDc t\u1EADp\\2025\\L\u1EADp tr\u00ECnh \u1EE9ng d\u1EE5ng\\Project\\LapTrinhUngDung\\UngDungQuanLyKho\\Data\\View\\Welcome.cs",
               "RelativeToolTip": "UngDungQuanLyKho\\Data\\View\\Welcome.cs",
-              "ViewState": "AgIAACgAAAAAAAAAAAAkwDYAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAADsAAAAAAAAAAAAswDYAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-13T17:41:34.741Z",
               "EditorCaption": ""

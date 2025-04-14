@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data.SqlClient;
 using UngDungQuanLyKho.Data.Models;
+using System.Data;
 
 namespace UngDungQuanLyKho.Data.Database
 {
@@ -39,6 +40,21 @@ namespace UngDungQuanLyKho.Data.Database
             }
 
             return employees;
+        }
+
+        void LoadAccountList()
+        {
+            string query = "SELECT * FROM Employees";
+            SqlCommand cmd = new SqlCommand(query, Connection.GetSqlConnection());
+
+            DataTable data = new DataTable();
+
+            SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+            adapter.Fill(data);
+
+            Connection.GetSqlConnection().Close();
+
+            //hien thi datasource o day
         }
     }
 }
