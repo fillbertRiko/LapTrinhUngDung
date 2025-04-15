@@ -60,7 +60,7 @@
             this.linkLabel_QuenMatKhau.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.linkLabel_QuenMatKhau.Location = new System.Drawing.Point(481, 480);
             this.linkLabel_QuenMatKhau.Name = "linkLabel_QuenMatKhau";
-            this.linkLabel_QuenMatKhau.Size = new System.Drawing.Size(132, 22);
+            this.linkLabel_QuenMatKhau.Size = new System.Drawing.Size(109, 18);
             this.linkLabel_QuenMatKhau.TabIndex = 3;
             this.linkLabel_QuenMatKhau.TabStop = true;
             this.linkLabel_QuenMatKhau.Text = "Quên mật khẩu";
@@ -132,7 +132,7 @@
             this.label1.Location = new System.Drawing.Point(35, 271);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(88, 20);
+            this.label1.Size = new System.Drawing.Size(78, 17);
             this.label1.TabIndex = 9;
             this.label1.Text = "Đăng nhập";
             // 
@@ -142,7 +142,7 @@
             this.label2.Location = new System.Drawing.Point(35, 384);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(75, 20);
+            this.label2.Size = new System.Drawing.Size(66, 17);
             this.label2.TabIndex = 10;
             this.label2.Text = "Mật khẩu";
             // 
@@ -184,6 +184,7 @@
             this.Name = "Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Login_FormClosing);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

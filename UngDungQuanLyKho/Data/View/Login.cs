@@ -39,8 +39,9 @@ namespace UngDungQuanLyKho.Data.View
 
                     //Application.Exit();
                     Welcome welcome = new Welcome();
-                    welcome.Show();
                     this.Hide();
+                    welcome.ShowDialog();
+                    this.Show();
                 }
                 else
                 {
@@ -66,11 +67,18 @@ namespace UngDungQuanLyKho.Data.View
 
         }
 
+        //update phuong thuc thoat trong form login
         private void button1_Click(object sender, EventArgs e)
         {
-            DialogResult txt = MessageBox.Show("Bạn có muốn thoát không ?", "Thoát", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-            if (txt == DialogResult.Yes) 
-                this.Close();
+            Application.Exit();
+        }
+
+        private void Login_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if(MessageBox.Show("Bạn có muốn thoát không ?", "Thoát", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.No)
+            {
+                e.Cancel = true;
+            }
         }
     }
 }

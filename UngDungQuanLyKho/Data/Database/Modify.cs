@@ -56,5 +56,28 @@ namespace UngDungQuanLyKho.Data.Database
 
             //hien thi datasource o day
         }
+
+        //ham tra ve list danh sach trong bang
+        public DataTable ExcuteQuery(string query)
+        {
+            DataTable data = new DataTable();
+            using (SqlConnection sqlConnection = Connection.GetSqlConnection())
+            {
+                sqlConnection.Open();
+
+                //thuc thi cau lenh trong using roi xoa no di
+                cmd = new SqlCommand(query, sqlConnection);
+
+                //thuc thi cau lenh
+                reader = cmd.ExecuteReader();
+
+                SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+                adapter.Fill(data);
+
+                data.Load(reader);
+                sqlConnection.Close();
+            }
+            return data;
+        }
     }
 }
