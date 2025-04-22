@@ -1,65 +1,57 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Configuration;               
+using System.Data;
 using System.Data.SqlClient;
 
 namespace UngDungQuanLyKho.Data.Auth
 {
     class AuthManager
     {
-        //tao xac thuc nguoi dung khi dang nhap dang xuat
-        public static string TenNguoiDung { get; set; }
-
+        // Lưu trữ tạm mật khẩu - dùng 1 biến duy nhất
         private static string matKhau;
-        public static string GetMatKhau()
-        {
-            return matKhau;
-        }
-        private static string matKhauStatic;
-        public static void SetMatKhau(string matKhau)
-        {
-            matKhauStatic = matKhau;
-        }
 
-        public string GetTenNguoiDung()
-        {
-            // Implement the logic to get the user's name
-            return "Tên người dùng";
-        }
-        public static void SetTenNguoiDung(string tenNguoiDung)
-        {
-            TenNguoiDung = tenNguoiDung;
-        }
+        // Tên người dùng hiện tại
+        public static string TenNguoiDung { get; private set; }
 
-        public static bool KiemTraXacThucNguoiDung(string tenNguoiDung, string matKhau)
-        {
-            // Implement the logic to check user authentication
-            // This is a placeholder implementation
-            return tenNguoiDung == TenNguoiDung && matKhau == matKhauStatic;
-        }
+        // Lấy mật khẩu đã lưu
+        public static string GetMatKhau() => matKhau;
 
-        public static string LayTenNguoiDungTuDatabase(string connectionString, string userId)
+        // Gán mật khẩu
+        public static void SetMatKhau(string mk) => matKhau = mk;  // Đơn nhất hóa biến :contentReference[oaicite:6]{index=6}
+
+        // Gán tên người dùng
+        public static void SetTenNguoiDung(string ten) => TenNguoiDung = ten;
+
+        // Xác thực bằng so sánh với giá trị lưu tĩnh
+        public static bool KiemTraXacThucNguoiDung(string tenNguoiDung, string mk)
+            => tenNguoiDung == TenNguoiDung && mk == matKhau;
+
+        // Lấy tên người dùng từ DB theo EmployeeId
+        public static string LayTenNguoiDungTuDatabase(string userId)
         {
-            string tenNguoiDung = null;
-            using (SqlConnection connection = new SqlConnection(connectionString))
+            object ConfigurationManager = null;
+            // Đọc chuỗi kết nối từ app.config
+            //string connStr = ConfigurationManager
+            //    .ConnectionStrings["QuanLyKho"].ConnectionString;   // :contentReference[oaicite:7]{index=7}
+
+            string connStr = @"Data Source=Heizzdoobert-F;Initial Catalog=WarehouseManagement;Integrated Security=True;Encrypt=True;Trust Server Certificate=True";
+
+            const string query =
+                "SELECT EmployeeName FROM Employees WHERE EmployeeId = @EmployeeId";
+
+            using (var conn = new SqlConnection(connStr))
+            using (var cmd = new SqlCommand(query, conn))
             {
-                connection.Open();
-                string query = "SELECT EmployeeName FROM Employees WHERE EmployeeId = @EmployeeId";
-                using (SqlCommand command = new SqlCommand(query, connection))
-                {
-                    command.Parameters.AddWithValue("@UserId", userId);
-                    using (SqlDataReader reader = command.ExecuteReader())
-                    {
-                        if (reader.Read())
-                        {
-                            tenNguoiDung = reader["EmployeeName"].ToString();
-                        }
-                    }
-                }
+                cmd.CommandType = CommandType.Text;
+                // Thêm tham số an toàn, định rõ kiểu và độ dài nếu cần :contentReference[oaicite:8]{index=8}
+                cmd.Parameters.Add(new SqlParameter("@EmployeeId", SqlDbType.Int)
+                { Value = int.Parse(userId) });
+
+                conn.Open();
+                // ExecuteScalar trả về giá trị cột đầu tiên, hàng đầu tiên :contentReference[oaicite:9]{index=9}
+                object result = cmd.ExecuteScalar();
+                return result as string;    // null nếu không có kết quả :contentReference[oaicite:10]{index=10}
             }
-            return tenNguoiDung;
         }
     }
 }

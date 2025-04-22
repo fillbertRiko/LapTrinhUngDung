@@ -39,25 +39,51 @@ namespace UngDungQuanLyKho.Data.UI.Forms.Index
 
         private void button_LayLaiTaiKhoan_Click(object sender, EventArgs e)
         {
-            string email = textBox_Email.Text;
-
-            //kiem tra
-            if (email.Trim() == "") { MessageBox.Show("Nhập vào email cần lấy lại"); }
-            else
+            // 1. Lấy và kiểm tra email đầu vào
+            string email = textBox_Email.Text.Trim();
+            if (string.IsNullOrEmpty(email))
             {
-                string query = "SELECT * FROM Employees WHERE Email = '" + email + "'";
-                if (modify.Employees(query).Count() != 0)
+                MessageBox.Show("Nhập vào email cần lấy lại", "Thông báo",
+                                MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            try
+            {
+                // 2. Tạo kết nối và command với parameter
+                using (SqlConnection conn = Connection.GetSqlConnection())
+                using (SqlCommand cmd = new SqlCommand(
+                       "SELECT Password FROM Employees WHERE Email = @Email", conn))
                 {
-                    label_Show.ForeColor = Color.Green;
-                    label_Show.Text = modify.Employees(query)[0].Password;
-                }
-                else
-                {
-                    label_Show.ForeColor= Color.Red;
-                    MessageBox.Show("Sai tài khoản!");
+                    cmd.CommandType = CommandType.Text;
+                    cmd.Parameters.Add("@Email", SqlDbType.VarChar, 255).Value = email;
+                    // Thêm parameter an toàn :contentReference[oaicite:0]{index=0}
+
+                    conn.Open();
+                    object result = cmd.ExecuteScalar();
+                    // ExecuteScalar trả về giá trị cột đầu tiên, hàng đầu tiên :contentReference[oaicite:1]{index=1}
+
+                    if (result != null && result != DBNull.Value)
+                    {
+                        label_Show.ForeColor = Color.Green;
+                        label_Show.Text = result.ToString();
+                    }
+                    else
+                    {
+                        label_Show.ForeColor = Color.Red;
+                        MessageBox.Show("Email không tồn tại trong hệ thống!", "Lỗi",
+                                        MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
                 }
             }
+            catch (Exception ex)
+            {
+                // 3. Bắt và hiển thị lỗi
+                MessageBox.Show($"Lỗi khi lấy lại tài khoản:\n{ex.Message}", "Lỗi",
+                                MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
+
 
         private void guna2ControlBox1_Click(object sender, EventArgs e)
         {

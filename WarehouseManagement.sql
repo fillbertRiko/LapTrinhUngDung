@@ -155,5 +155,97 @@ GO
 
 --code thuc thi trong winform
 
---hien tai khoan 
-SELECT * FROM Employees;
+--tao procedure 
+--nhập hàng
+IF OBJECT_ID('dbo.usp_GetAllImports','P') IS NOT NULL
+  DROP PROC dbo.usp_GetAllImports;
+GO
+CREATE PROCEDURE dbo.usp_GetAllImports
+AS
+BEGIN
+  SET NOCOUNT ON;
+  SELECT 
+    ImportID,
+    ImportDate,
+    EmployeeID,
+    Supplier
+  FROM Imports;
+END
+GO
+
+
+--Chi tiết Nhập hàng
+IF OBJECT_ID('dbo.usp_GetImportDetails','P') IS NOT NULL
+  DROP PROC dbo.usp_GetImportDetails;
+GO
+CREATE PROCEDURE dbo.usp_GetImportDetails
+  @ImportID INT
+AS
+BEGIN
+  SET NOCOUNT ON;
+  SELECT 
+    d.ImportDetailID,
+    d.ProductID,
+    p.ProductName,
+    d.Quantity,
+    d.Price
+  FROM ImportDetails d
+  JOIN Products p ON p.ProductID = d.ProductID
+  WHERE d.ImportID = @ImportID;
+END
+GO
+
+
+--Them moi bản ghi nhập hàng
+IF OBJECT_ID('dbo.usp_InsertImport','P') IS NOT NULL
+  DROP PROC dbo.usp_InsertImport;
+GO
+CREATE PROCEDURE dbo.usp_InsertImport
+  @ImportDate DATE,
+  @EmployeeID INT = NULL,
+  @Supplier VARCHAR(255)
+AS
+BEGIN
+  SET NOCOUNT ON;
+  INSERT INTO Imports (ImportDate, EmployeeID, Supplier)
+  VALUES (@ImportDate, @EmployeeID, @Supplier);
+
+  SELECT SCOPE_IDENTITY() AS NewImportID;
+END
+GO
+
+
+--Cập nhật nhập hàng
+IF OBJECT_ID('dbo.usp_UpdateImport','P') IS NOT NULL
+  DROP PROC dbo.usp_UpdateImport;
+GO
+CREATE PROCEDURE dbo.usp_UpdateImport
+  @ImportID INT,
+  @ImportDate DATE,
+  @EmployeeID INT = NULL,
+  @Supplier VARCHAR(255)
+AS
+BEGIN
+  SET NOCOUNT ON;
+  UPDATE Imports
+  SET ImportDate = @ImportDate,
+      EmployeeID = @EmployeeID,
+      Supplier   = @Supplier
+  WHERE ImportID = @ImportID;
+END
+GO
+
+
+--Xoá nhập hàng
+IF OBJECT_ID('dbo.usp_DeleteImport','P') IS NOT NULL
+  DROP PROC dbo.usp_DeleteImport;
+GO
+CREATE PROCEDURE dbo.usp_DeleteImport
+  @ImportID INT
+AS
+BEGIN
+  SET NOCOUNT ON;
+  DELETE FROM Imports
+  WHERE ImportID = @ImportID;
+END
+GO

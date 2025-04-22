@@ -25,19 +25,27 @@ namespace UngDungQuanLyKho.Data.View
         {
             string tentk = textBox_Email.Text;
             string matKhau = textBox_Password.Text;
-            
+
             //kiem tra dieu kien qua dau cach
             if (tentk.Trim() == "") { MessageBox.Show("Nhập email!"); }
             else if (matKhau.Trim() == "") { MessageBox.Show("Nhập password!"); }
             else
             {
-                string query = "SELECT * FROM Employees WHERE Email ='" + tentk + "' and Password = '" + matKhau + "'";
+                string query = "SELECT * FROM Employees WHERE Email = @Email AND Password = @Password";
 
-                if (modify.Employees(query).Count() != 0)
+                // Use parameterized query to prevent SQL injection
+                SqlParameter[] parameters = new SqlParameter[]
+                {
+                    new SqlParameter("@Email", tentk),
+                    new SqlParameter("@Password", matKhau)
+                };
+
+                DataTable result = modify.ExecuteStoredProcedure(query, parameters) as DataTable;
+
+                if (result != null && result.Rows.Count > 0)
                 {
                     MessageBox.Show("Đăng nhập thành công!", "Thông báo!", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                    //Application.Exit();
                     Welcome welcome = new Welcome();
                     this.Hide();
                     welcome.ShowDialog();

@@ -53,7 +53,10 @@ namespace UngDungQuanLyKho.Data.UI.Forms.Index
                 //dong form welcome chuyen sang form login
                 Login login = new Login();
                 login.Show();
+                this.Hide();
             }
+            //xu ly chuc nnag dang xuat
+
         }
 
         private void button_PhieuNhap_Click(object sender, EventArgs e)
