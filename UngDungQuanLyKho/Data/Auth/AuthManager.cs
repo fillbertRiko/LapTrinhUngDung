@@ -1,56 +1,59 @@
 ﻿using System;
-using System.Configuration;               
 using System.Data;
 using System.Data.SqlClient;
+using System.Security.Cryptography;
+using System.Text;
 
 namespace UngDungQuanLyKho.Data.Auth
 {
     class AuthManager
     {
-        // Lưu trữ tạm mật khẩu - dùng 1 biến duy nhất
-        private static string matKhau;
-
-        // Tên người dùng hiện tại
+        private static string hashedPassword;  // Thay đổi biến mật khẩu thành dạng đã băm
         public static string TenNguoiDung { get; private set; }
 
-        // Lấy mật khẩu đã lưu
-        public static string GetMatKhau() => matKhau;
+        // Mã hóa mật khẩu bằng SHA-256
+        private static string HashPassword(string password)
+        {
+            using (SHA256 sha256 = SHA256.Create())
+            {
+                byte[] bytes = sha256.ComputeHash(Encoding.UTF8.GetBytes(password));
+                StringBuilder builder = new StringBuilder();
+                foreach (byte b in bytes)
+                {
+                    builder.Append(b.ToString("x2"));
+                }
+                return builder.ToString();
+            }
+        }
 
-        // Gán mật khẩu
-        public static void SetMatKhau(string mk) => matKhau = mk;  // Đơn nhất hóa biến :contentReference[oaicite:6]{index=6}
+        // Gán mật khẩu đã băm
+        public static void SetMatKhau(string mk) => hashedPassword = HashPassword(mk);
 
-        // Gán tên người dùng
-        public static void SetTenNguoiDung(string ten) => TenNguoiDung = ten;
-
-        // Xác thực bằng so sánh với giá trị lưu tĩnh
+        // Kiểm tra xác thực người dùng
         public static bool KiemTraXacThucNguoiDung(string tenNguoiDung, string mk)
-            => tenNguoiDung == TenNguoiDung && mk == matKhau;
+            => tenNguoiDung == TenNguoiDung && HashPassword(mk) == hashedPassword;
 
         // Lấy tên người dùng từ DB theo EmployeeId
         public static string LayTenNguoiDungTuDatabase(string userId)
         {
-            object ConfigurationManager = null;
-            // Đọc chuỗi kết nối từ app.config
-            //string connStr = ConfigurationManager
-            //    .ConnectionStrings["QuanLyKho"].ConnectionString;   // :contentReference[oaicite:7]{index=7}
+            if (!int.TryParse(userId, out int id))
+            {
+                Console.WriteLine("Lỗi: EmployeeId không hợp lệ.");
+                return null;
+            }
 
             string connStr = @"Data Source=Heizzdoobert-F;Initial Catalog=WarehouseManagement;Integrated Security=True;Encrypt=True;Trust Server Certificate=True";
-
-            const string query =
-                "SELECT EmployeeName FROM Employees WHERE EmployeeId = @EmployeeId";
+            const string query = "SELECT EmployeeName FROM Employees WHERE EmployeeId = @EmployeeId";
 
             using (var conn = new SqlConnection(connStr))
             using (var cmd = new SqlCommand(query, conn))
             {
                 cmd.CommandType = CommandType.Text;
-                // Thêm tham số an toàn, định rõ kiểu và độ dài nếu cần :contentReference[oaicite:8]{index=8}
-                cmd.Parameters.Add(new SqlParameter("@EmployeeId", SqlDbType.Int)
-                { Value = int.Parse(userId) });
+                cmd.Parameters.Add(new SqlParameter("@EmployeeId", SqlDbType.Int) { Value = id });
 
                 conn.Open();
-                // ExecuteScalar trả về giá trị cột đầu tiên, hàng đầu tiên :contentReference[oaicite:9]{index=9}
                 object result = cmd.ExecuteScalar();
-                return result as string;    // null nếu không có kết quả :contentReference[oaicite:10]{index=10}
+                return result as string;  // Trả về tên hoặc null nếu không có kết quả
             }
         }
     }

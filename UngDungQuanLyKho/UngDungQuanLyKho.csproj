@@ -124,6 +124,9 @@
     <EmbeddedResource Include="Data\View\MENU\PhieuNhapKho.resx">
       <DependentUpon>PhieuNhapKho.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Data\View\MENU\PhieuXuatKho.resx">
+      <DependentUpon>PhieuXuatKho.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Data\View\RecoverPassword.resx">
       <DependentUpon>RecoverPassword.cs</DependentUpon>
     </EmbeddedResource>

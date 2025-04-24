@@ -249,3 +249,18 @@ BEGIN
   WHERE ImportID = @ImportID;
 END
 GO
+
+--Tao procedure cho truy xuat tai khoan
+CREATE PROCEDURE CheckLogin
+@Email NVARCHAR(100),
+@Password NVARCHAR(100)
+AS
+BEGIN
+    SELECT * FROM Employees WHERE Email = @Email AND Password = @Password;
+END
+
+
+--kiem tra procedure
+SELECT name
+FROM sys.procedures
+ORDER BY name;

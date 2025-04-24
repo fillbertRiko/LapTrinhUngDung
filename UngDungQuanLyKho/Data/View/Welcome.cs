@@ -23,10 +23,10 @@ namespace UngDungQuanLyKho.Data.UI.Forms.Index
         //dong form welcome chuyen sang form main
         private void button_MoMain_Click(object sender, EventArgs e)
         {
-            //mo main
             Main main = new Main();
-            main.Show();
-            this.Hide();
+            this.Hide();  // Ẩn form Welcome thay vì đóng ngay lập tức
+            main.ShowDialog();
+            this.Close();
         }
 
         private void Welcome_Load(object sender, EventArgs e)
@@ -51,9 +51,10 @@ namespace UngDungQuanLyKho.Data.UI.Forms.Index
             if (confirmResult == DialogResult.Yes)
             {
                 //dong form welcome chuyen sang form login
-                Login login = new Login();
-                login.Show();
                 this.Hide();
+                Login login = new Login();
+                login.ShowDialog();
+                this.Close();
             }
             //xu ly chuc nnag dang xuat
 
@@ -63,26 +64,28 @@ namespace UngDungQuanLyKho.Data.UI.Forms.Index
         {
             //hien thi form phieu nhap kho
             PhieuNhapKho phieuNhap = new PhieuNhapKho();
-            phieuNhap.Show();
             this.Hide();
+            phieuNhap.ShowDialog();
+            this.Show();
+
         }
 
         private void button_PhieuXuat_Click(object sender, EventArgs e)
         {
             //Hien thi phieu xuat kho
             PhieuXuatKho phieuXuat = new PhieuXuatKho();
-            phieuXuat.Show();
             this.Hide();
+            phieuXuat.ShowDialog();
+            this.Show();
         }
 
         private void button_PhieuLuuChuyen_Click(object sender, EventArgs e)
         {
             //hien thi phieu dieu chuyen
             PhieuXuatDieuChuyen phieuXuatDieuChuyen = new PhieuXuatDieuChuyen();
-            phieuXuatDieuChuyen.Show();
             this.Hide();
+            phieuXuatDieuChuyen.ShowDialog();
+            this.Show();
         }
-
-
     }
 }

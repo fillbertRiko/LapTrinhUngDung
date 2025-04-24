@@ -66,3 +66,4 @@ D:\lap_trinh_ung_dung\laptrinhungdung\LapTrinhUngDung\LapTrinhUngDung\UngDungQua
 D:\lap_trinh_ung_dung\laptrinhungdung\LapTrinhUngDung\LapTrinhUngDung\UngDungQuanLyKho\obj\Debug\UngDungQuanLyKho.exe
 D:\lap_trinh_ung_dung\laptrinhungdung\LapTrinhUngDung\LapTrinhUngDung\UngDungQuanLyKho\obj\Debug\UngDungQuanLyKho.pdb
 H:\Tài liệu học tập\2025\Lập trình ứng dụng\Project\LapTrinhUngDung\UngDungQuanLyKho\obj\Debug\UngDungQuanLyKho.Data.View.MENU.PhieuNhapKho.resources
+H:\Tài liệu học tập\2025\Lập trình ứng dụng\Project\LapTrinhUngDung\UngDungQuanLyKho\obj\Debug\UngDungQuanLyKho.Data.View.MENU.PhieuXuatKho.resources

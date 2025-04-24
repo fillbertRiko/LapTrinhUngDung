@@ -3,6 +3,7 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Windows.Forms;
 using UngDungQuanLyKho.Data.Database;
+using UngDungQuanLyKho.Data.UI.Forms.Index;
 
 namespace UngDungQuanLyKho.Data.View.MENU
 {
@@ -15,7 +16,7 @@ namespace UngDungQuanLyKho.Data.View.MENU
             InitializeComponent();
 
             // Chỉ subscribe DataBindingComplete một lần
-            dataGridView1.DataBindingComplete += dataGridView1_DataBindingComplete;  // :contentReference[oaicite:2]{index=2}
+            dataGridView1.DataBindingComplete += dataGridView1_DataBindingComplete; 
 
             // Gán sự kiện cho các nút, giữ nguyên tên btnXXX_Click
             btnShowData.Click += btnShowData_Click;
@@ -28,20 +29,20 @@ namespace UngDungQuanLyKho.Data.View.MENU
             btnNew.Click += btnNew_Click;
 
             // Khi Form load, gọi LoadData
-            this.Load += PhieuNhapKho_Load;                                         // :contentReference[oaicite:3]{index=3}
+            this.Load += PhieuNhapKho_Load;                                        
         }
 
         private void PhieuNhapKho_Load(object sender, EventArgs e)
         {
-            LoadData();                                                              // :contentReference[oaicite:4]{index=4}
+            LoadData();                                                              
         }
 
         private void LoadData()
         {
             try
             {
-                var dt = db.ExecuteStoredProcedure("usp_GetAllImports");             // Ưu việt khi dùng SP :contentReference[oaicite:5]{index=5}
-                dataGridView1.DataSource = dt;                                      // Bind DataTable cho grid :contentReference[oaicite:6]{index=6}
+                var dt = db.ExecuteStoredProcedure("usp_GetAllImports");             
+                dataGridView1.DataSource = dt;                                      
             }
             catch (Exception ex)
             {
@@ -64,19 +65,19 @@ namespace UngDungQuanLyKho.Data.View.MENU
 
             // Tắt sort và resize columns
             foreach (DataGridViewColumn c in dataGridView1.Columns)
-                c.SortMode = DataGridViewColumnSortMode.NotSortable;                // :contentReference[oaicite:7]{index=7}
+                c.SortMode = DataGridViewColumnSortMode.NotSortable;                
 
-            dataGridView1.AutoResizeColumns();                                      // Tự động căn lại cột :contentReference[oaicite:8]{index=8}
+            dataGridView1.AutoResizeColumns();                                   
         }
 
         private void btnShowData_Click(object sender, EventArgs e)
         {
-            LoadData();                                                              // Tái sử dụng LoadData
+            LoadData();                                                              
         }
 
         private void btnClear_Click(object sender, EventArgs e)
         {
-            dataGridView1.DataSource = null;                                         // Chỉ cần null DataSource :contentReference[oaicite:9]{index=9}
+            dataGridView1.DataSource = null;                                          
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
@@ -90,7 +91,7 @@ namespace UngDungQuanLyKho.Data.View.MENU
                 new SqlParameter("@EmployeeID",  txtEmployeeID.Text),
                 new SqlParameter("@Supplier",    txtSupplier.Text)
             };
-            db.ExecuteStoredProcedure("usp_AddImport", parameters);                  // gọi SP thêm mới :contentReference[oaicite:10]{index=10}
+            db.ExecuteStoredProcedure("usp_AddImport", parameters);                  
             LoadData();
         }
 
@@ -106,23 +107,23 @@ namespace UngDungQuanLyKho.Data.View.MENU
                 new SqlParameter("@EmployeeID",  txtEmployeeID.Text),
                 new SqlParameter("@Supplier",    txtSupplier.Text)
             };
-            db.ExecuteStoredProcedure("usp_UpdateImport", parameters);               // gọi SP cập nhật :contentReference[oaicite:11]{index=11}
+            db.ExecuteStoredProcedure("usp_UpdateImport", parameters);              
             LoadData();
         }
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
             var idParam = new[] { new SqlParameter("@ImportID", GetSelectedID()) };
-            db.ExecuteStoredProcedure("usp_DeleteImport", idParam);                 // gọi SP xóa :contentReference[oaicite:12]{index=12}
+            db.ExecuteStoredProcedure("usp_DeleteImport", idParam);                 
             LoadData();
         }
 
         private void btnBackMenu_Click(object sender, EventArgs e)
         {
-            var menu = new Main();
-            menu.FormClosed += (s, args) => { this.Close(); this.Dispose(); };
-            menu.Show();
-            this.Hide();
+            var menu = new Welcome();
+            this.Hide();  // Ẩn form hiện tại thay vì đóng ngay lập tức
+            menu.ShowDialog();
+            this.Close();  // Đóng form sau khi Welcome đã được đóng
         }
 
         private void btnExit_Click(object sender, EventArgs e)
@@ -131,16 +132,20 @@ namespace UngDungQuanLyKho.Data.View.MENU
                                 MessageBoxButtons.YesNo, MessageBoxIcon.Question)
                 == DialogResult.Yes)
             {
-                Application.Exit();
+                var menu = new Welcome();
+                this.Hide();
+                menu.ShowDialog();
+                this.Close();
             }
         }
 
         private void btnNew_Click(object sender, EventArgs e)
         {
             var f = new PhieuNhapKho();
-            f.FormClosed += (s, args) => { this.Close(); this.Dispose(); };
-            f.Show();
+            f.ShowDialog();
             this.Hide();
+            f.Close();
+            this.Close();
         }
 
         // Lấy ID dòng hiện tại
