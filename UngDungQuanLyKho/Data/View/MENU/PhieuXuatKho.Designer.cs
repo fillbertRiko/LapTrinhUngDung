@@ -29,8 +29,25 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.txtProductID = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.cbbSupplier = new System.Windows.Forms.ComboBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.dtpImportDate = new System.Windows.Forms.DateTimePicker();
+            this.cbEmployeeID = new System.Windows.Forms.ComboBox();
+            this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.btnNew = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.btnBackMenu = new System.Windows.Forms.Button();
+            this.btnDelete = new System.Windows.Forms.Button();
+            this.btnAdd = new System.Windows.Forms.Button();
+            this.btnUpdate = new System.Windows.Forms.Button();
+            this.btnClear = new System.Windows.Forms.Button();
+            this.btnLoadExport = new System.Windows.Forms.Button();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.dgvExports = new System.Windows.Forms.DataGridView();
             this.status = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ImportID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ProductID = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -38,53 +55,196 @@
             this.ImportDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.EmployeeID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Supplier = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btnDelete = new System.Windows.Forms.Button();
-            this.btnAdd = new System.Windows.Forms.Button();
-            this.btnUpdate = new System.Windows.Forms.Button();
-            this.btnClear = new System.Windows.Forms.Button();
-            this.btnShowData = new System.Windows.Forms.Button();
-            this.btnExit = new System.Windows.Forms.Button();
-            this.btnBackMenu = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.txtPrice = new System.Windows.Forms.TextBox();
-            this.txtQuantity = new System.Windows.Forms.NumericUpDown();
             this.textBox3 = new System.Windows.Forms.TextBox();
-            this.txtSupplier = new System.Windows.Forms.TextBox();
-            this.txtEmployeeID = new System.Windows.Forms.ComboBox();
-            this.dtpImportDate = new System.Windows.Forms.DateTimePicker();
-            this.txtProductID = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
+            this.txtQuantity = new System.Windows.Forms.NumericUpDown();
+            this.txtPrice = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.dgvExportDetails = new System.Windows.Forms.DataGridView();
+            this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
-            this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvExports)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtQuantity)).BeginInit();
+            this.groupBox1.SuspendLayout();
+            this.groupBox4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvExportDetails)).BeginInit();
             this.SuspendLayout();
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.txtProductID);
+            this.groupBox3.Controls.Add(this.label1);
+            this.groupBox3.Controls.Add(this.cbbSupplier);
+            this.groupBox3.Controls.Add(this.label2);
+            this.groupBox3.Controls.Add(this.label3);
+            this.groupBox3.Controls.Add(this.label4);
+            this.groupBox3.Controls.Add(this.dtpImportDate);
+            this.groupBox3.Controls.Add(this.cbEmployeeID);
+            this.groupBox3.Location = new System.Drawing.Point(12, 12);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(458, 240);
+            this.groupBox3.TabIndex = 33;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Thông tin xuất hàng";
+            // 
+            // txtProductID
+            // 
+            this.txtProductID.Location = new System.Drawing.Point(158, 34);
+            this.txtProductID.Name = "txtProductID";
+            this.txtProductID.Size = new System.Drawing.Size(291, 22);
+            this.txtProductID.TabIndex = 8;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(17, 37);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(92, 16);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Mã Phiếu Xuất";
+            // 
+            // cbbSupplier
+            // 
+            this.cbbSupplier.FormattingEnabled = true;
+            this.cbbSupplier.Location = new System.Drawing.Point(158, 139);
+            this.cbbSupplier.Name = "cbbSupplier";
+            this.cbbSupplier.Size = new System.Drawing.Size(291, 24);
+            this.cbbSupplier.TabIndex = 26;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(17, 72);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(69, 16);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Ngày Xuất";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(17, 107);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(120, 16);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "Mã Nhân Viên Xuất";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(17, 142);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(107, 16);
+            this.label4.TabIndex = 3;
+            this.label4.Text = "Tên Khách Hàng";
+            // 
+            // dtpImportDate
+            // 
+            this.dtpImportDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpImportDate.Location = new System.Drawing.Point(158, 67);
+            this.dtpImportDate.Name = "dtpImportDate";
+            this.dtpImportDate.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.dtpImportDate.Size = new System.Drawing.Size(291, 22);
+            this.dtpImportDate.TabIndex = 9;
+            // 
+            // cbEmployeeID
+            // 
+            this.cbEmployeeID.FormattingEnabled = true;
+            this.cbEmployeeID.Location = new System.Drawing.Point(158, 104);
+            this.cbEmployeeID.Name = "cbEmployeeID";
+            this.cbEmployeeID.Size = new System.Drawing.Size(147, 24);
+            this.cbEmployeeID.TabIndex = 10;
+            // 
+            // guna2DragControl1
+            // 
+            this.guna2DragControl1.DockIndicatorTransparencyValue = 0.6D;
+            this.guna2DragControl1.UseTransparentDrag = true;
             // 
             // btnNew
             // 
-            this.btnNew.Location = new System.Drawing.Point(1410, 198);
+            this.btnNew.Location = new System.Drawing.Point(931, 163);
             this.btnNew.Name = "btnNew";
             this.btnNew.Size = new System.Drawing.Size(135, 54);
-            this.btnNew.TabIndex = 47;
-            this.btnNew.Text = "Thêm Phiếu Nhập Mới";
+            this.btnNew.TabIndex = 31;
+            this.btnNew.Text = "Thêm Phiếu Xuất Mới";
             this.btnNew.UseVisualStyleBackColor = true;
             // 
-            // dataGridView1
+            // btnBackMenu
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.btnBackMenu.Location = new System.Drawing.Point(931, 26);
+            this.btnBackMenu.Name = "btnBackMenu";
+            this.btnBackMenu.Size = new System.Drawing.Size(135, 54);
+            this.btnBackMenu.TabIndex = 30;
+            this.btnBackMenu.Text = "Quay Về Menu";
+            this.btnBackMenu.UseVisualStyleBackColor = true;
+            // 
+            // btnDelete
+            // 
+            this.btnDelete.Location = new System.Drawing.Point(903, 36);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(75, 23);
+            this.btnDelete.TabIndex = 26;
+            this.btnDelete.Text = "Xoá";
+            this.btnDelete.UseVisualStyleBackColor = true;
+            // 
+            // btnAdd
+            // 
+            this.btnAdd.Location = new System.Drawing.Point(659, 36);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(75, 23);
+            this.btnAdd.TabIndex = 25;
+            this.btnAdd.Text = "Thêm";
+            this.btnAdd.UseVisualStyleBackColor = true;
+            // 
+            // btnUpdate
+            // 
+            this.btnUpdate.Location = new System.Drawing.Point(788, 36);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(75, 23);
+            this.btnUpdate.TabIndex = 24;
+            this.btnUpdate.Text = "Sửa";
+            this.btnUpdate.UseVisualStyleBackColor = true;
+            // 
+            // btnClear
+            // 
+            this.btnClear.Location = new System.Drawing.Point(399, 36);
+            this.btnClear.Name = "btnClear";
+            this.btnClear.Size = new System.Drawing.Size(181, 23);
+            this.btnClear.TabIndex = 23;
+            this.btnClear.Text = "Dọn sạch bảng";
+            this.btnClear.UseVisualStyleBackColor = true;
+            // 
+            // btnLoadExport
+            // 
+            this.btnLoadExport.Location = new System.Drawing.Point(189, 36);
+            this.btnLoadExport.Name = "btnLoadExport";
+            this.btnLoadExport.Size = new System.Drawing.Size(75, 23);
+            this.btnLoadExport.TabIndex = 22;
+            this.btnLoadExport.Text = "Hiển thị";
+            this.btnLoadExport.UseVisualStyleBackColor = true;
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.btnDelete);
+            this.groupBox2.Controls.Add(this.btnAdd);
+            this.groupBox2.Controls.Add(this.btnUpdate);
+            this.groupBox2.Controls.Add(this.btnClear);
+            this.groupBox2.Controls.Add(this.btnLoadExport);
+            this.groupBox2.Controls.Add(this.dgvExports);
+            this.groupBox2.Location = new System.Drawing.Point(12, 261);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(1044, 494);
+            this.groupBox2.TabIndex = 29;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Bảng Thông Tin Xuất Hàng";
+            // 
+            // dgvExports
+            // 
+            this.dgvExports.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvExports.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.status,
             this.ImportID,
             this.ProductID,
@@ -92,12 +252,12 @@
             this.ImportDate,
             this.EmployeeID,
             this.Supplier});
-            this.dataGridView1.Location = new System.Drawing.Point(6, 72);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(1499, 422);
-            this.dataGridView1.TabIndex = 21;
+            this.dgvExports.Location = new System.Drawing.Point(0, 78);
+            this.dgvExports.Name = "dgvExports";
+            this.dgvExports.RowHeadersWidth = 51;
+            this.dgvExports.RowTemplate.Height = 24;
+            this.dgvExports.Size = new System.Drawing.Size(1032, 422);
+            this.dgvExports.TabIndex = 21;
             // 
             // status
             // 
@@ -155,293 +315,136 @@
             this.Supplier.ReadOnly = true;
             this.Supplier.Width = 300;
             // 
-            // btnDelete
+            // textBox3
             // 
-            this.btnDelete.Location = new System.Drawing.Point(903, 36);
-            this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(75, 23);
-            this.btnDelete.TabIndex = 26;
-            this.btnDelete.Text = "Xoá";
-            this.btnDelete.UseVisualStyleBackColor = true;
-            // 
-            // btnAdd
-            // 
-            this.btnAdd.Location = new System.Drawing.Point(659, 36);
-            this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(75, 23);
-            this.btnAdd.TabIndex = 25;
-            this.btnAdd.Text = "Thêm";
-            this.btnAdd.UseVisualStyleBackColor = true;
-            // 
-            // btnUpdate
-            // 
-            this.btnUpdate.Location = new System.Drawing.Point(788, 36);
-            this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(75, 23);
-            this.btnUpdate.TabIndex = 24;
-            this.btnUpdate.Text = "Sửa";
-            this.btnUpdate.UseVisualStyleBackColor = true;
-            // 
-            // btnClear
-            // 
-            this.btnClear.Location = new System.Drawing.Point(399, 36);
-            this.btnClear.Name = "btnClear";
-            this.btnClear.Size = new System.Drawing.Size(181, 23);
-            this.btnClear.TabIndex = 23;
-            this.btnClear.Text = "Dọn sạch bảng";
-            this.btnClear.UseVisualStyleBackColor = true;
-            // 
-            // btnShowData
-            // 
-            this.btnShowData.Location = new System.Drawing.Point(189, 36);
-            this.btnShowData.Name = "btnShowData";
-            this.btnShowData.Size = new System.Drawing.Size(75, 23);
-            this.btnShowData.TabIndex = 22;
-            this.btnShowData.Text = "Hiển thị";
-            this.btnShowData.UseVisualStyleBackColor = true;
-            // 
-            // btnExit
-            // 
-            this.btnExit.Location = new System.Drawing.Point(1410, 127);
-            this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(135, 54);
-            this.btnExit.TabIndex = 46;
-            this.btnExit.Text = "Thoát Phiếu Nhập";
-            this.btnExit.UseVisualStyleBackColor = true;
-            // 
-            // btnBackMenu
-            // 
-            this.btnBackMenu.Location = new System.Drawing.Point(1410, 56);
-            this.btnBackMenu.Name = "btnBackMenu";
-            this.btnBackMenu.Size = new System.Drawing.Size(135, 54);
-            this.btnBackMenu.TabIndex = 45;
-            this.btnBackMenu.Text = "Quay Về Menu";
-            this.btnBackMenu.UseVisualStyleBackColor = true;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.GreenYellow;
-            this.button1.Location = new System.Drawing.Point(463, 20);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(182, 23);
-            this.button1.TabIndex = 43;
-            this.button1.Text = "Mở Khoá";
-            this.button1.UseVisualStyleBackColor = false;
-            // 
-            // guna2DragControl1
-            // 
-            this.guna2DragControl1.DockIndicatorTransparencyValue = 0.6D;
-            this.guna2DragControl1.UseTransparentDrag = true;
-            // 
-            // panel1
-            // 
-            this.panel1.Location = new System.Drawing.Point(5, 17);
-            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(826, 48);
-            this.panel1.TabIndex = 0;
-            // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.btnDelete);
-            this.groupBox2.Controls.Add(this.btnAdd);
-            this.groupBox2.Controls.Add(this.btnUpdate);
-            this.groupBox2.Controls.Add(this.btnClear);
-            this.groupBox2.Controls.Add(this.btnShowData);
-            this.groupBox2.Controls.Add(this.dataGridView1);
-            this.groupBox2.Location = new System.Drawing.Point(25, 259);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(1520, 494);
-            this.groupBox2.TabIndex = 44;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Bảng Thông Tin Nhập Hàng";
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.groupBox1.Controls.Add(this.panel1);
-            this.groupBox1.Location = new System.Drawing.Point(463, 54);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(941, 199);
-            this.groupBox1.TabIndex = 42;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Mã Code Qua Máy Quét";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(319, 199);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(25, 16);
-            this.label10.TabIndex = 41;
-            this.label10.Text = "->>";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(319, 94);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(22, 16);
-            this.label9.TabIndex = 40;
-            this.label9.Text = "-->";
-            // 
-            // txtPrice
-            // 
-            this.txtPrice.Location = new System.Drawing.Point(166, 231);
-            this.txtPrice.Name = "txtPrice";
-            this.txtPrice.Size = new System.Drawing.Size(291, 22);
-            this.txtPrice.TabIndex = 39;
+            this.textBox3.Location = new System.Drawing.Point(144, 43);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(291, 22);
+            this.textBox3.TabIndex = 12;
             // 
             // txtQuantity
             // 
-            this.txtQuantity.Location = new System.Drawing.Point(166, 197);
+            this.txtQuantity.Location = new System.Drawing.Point(144, 79);
             this.txtQuantity.Name = "txtQuantity";
-            this.txtQuantity.Size = new System.Drawing.Size(147, 22);
-            this.txtQuantity.TabIndex = 38;
+            this.txtQuantity.Size = new System.Drawing.Size(291, 22);
+            this.txtQuantity.TabIndex = 13;
             // 
-            // textBox3
+            // txtPrice
             // 
-            this.textBox3.Location = new System.Drawing.Point(166, 161);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(291, 22);
-            this.textBox3.TabIndex = 37;
-            // 
-            // txtSupplier
-            // 
-            this.txtSupplier.Location = new System.Drawing.Point(166, 126);
-            this.txtSupplier.Name = "txtSupplier";
-            this.txtSupplier.Size = new System.Drawing.Size(291, 22);
-            this.txtSupplier.TabIndex = 36;
-            // 
-            // txtEmployeeID
-            // 
-            this.txtEmployeeID.FormattingEnabled = true;
-            this.txtEmployeeID.Location = new System.Drawing.Point(166, 91);
-            this.txtEmployeeID.Name = "txtEmployeeID";
-            this.txtEmployeeID.Size = new System.Drawing.Size(147, 24);
-            this.txtEmployeeID.TabIndex = 35;
-            // 
-            // dtpImportDate
-            // 
-            this.dtpImportDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpImportDate.Location = new System.Drawing.Point(166, 54);
-            this.dtpImportDate.Name = "dtpImportDate";
-            this.dtpImportDate.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.dtpImportDate.Size = new System.Drawing.Size(291, 22);
-            this.dtpImportDate.TabIndex = 34;
-            // 
-            // txtProductID
-            // 
-            this.txtProductID.Location = new System.Drawing.Point(166, 21);
-            this.txtProductID.Name = "txtProductID";
-            this.txtProductID.Size = new System.Drawing.Size(291, 22);
-            this.txtProductID.TabIndex = 33;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(25, 234);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(55, 16);
-            this.label7.TabIndex = 32;
-            this.label7.Text = "Đơn Giá";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(25, 199);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(67, 16);
-            this.label6.TabIndex = 31;
-            this.label6.Text = "Số Lượng ";
+            this.txtPrice.Location = new System.Drawing.Point(144, 113);
+            this.txtPrice.Name = "txtPrice";
+            this.txtPrice.Size = new System.Drawing.Size(291, 22);
+            this.txtPrice.TabIndex = 15;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(25, 164);
+            this.label5.Location = new System.Drawing.Point(3, 46);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(91, 16);
-            this.label5.TabIndex = 30;
+            this.label5.TabIndex = 4;
             this.label5.Text = "Mã Hàng Hoá";
             // 
-            // label4
+            // label6
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(25, 129);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(121, 16);
-            this.label4.TabIndex = 29;
-            this.label4.Text = "Tên Nhà Cung Cấp";
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(3, 81);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(67, 16);
+            this.label6.TabIndex = 5;
+            this.label6.Text = "Số Lượng ";
             // 
-            // label3
+            // label7
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(25, 94);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(127, 16);
-            this.label3.TabIndex = 28;
-            this.label3.Text = "Mã Nhân Viên Nhập";
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(3, 116);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(55, 16);
+            this.label7.TabIndex = 6;
+            this.label7.Text = "Đơn Giá";
             // 
-            // label2
+            // groupBox1
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(25, 59);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(76, 16);
-            this.label2.TabIndex = 27;
-            this.label2.Text = "Ngày Nhập";
+            this.groupBox1.Controls.Add(this.textBox3);
+            this.groupBox1.Controls.Add(this.label5);
+            this.groupBox1.Controls.Add(this.label6);
+            this.groupBox1.Controls.Add(this.label7);
+            this.groupBox1.Controls.Add(this.txtQuantity);
+            this.groupBox1.Controls.Add(this.txtPrice);
+            this.groupBox1.Location = new System.Drawing.Point(473, 12);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(452, 240);
+            this.groupBox1.TabIndex = 32;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Danh mục thông tin";
             // 
-            // label1
+            // groupBox4
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(25, 24);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(99, 16);
-            this.label1.TabIndex = 26;
-            this.label1.Text = "Mã Phiếu Nhập";
+            this.groupBox4.Controls.Add(this.dgvExportDetails);
+            this.groupBox4.Location = new System.Drawing.Point(1072, 9);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(486, 746);
+            this.groupBox4.TabIndex = 34;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "Chi tiết sản phẩm xuất";
+            // 
+            // dgvExportDetails
+            // 
+            this.dgvExportDetails.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvExportDetails.Location = new System.Drawing.Point(6, 21);
+            this.dgvExportDetails.Name = "dgvExportDetails";
+            this.dgvExportDetails.RowHeadersWidth = 51;
+            this.dgvExportDetails.RowTemplate.Height = 24;
+            this.dgvExportDetails.Size = new System.Drawing.Size(474, 719);
+            this.dgvExportDetails.TabIndex = 0;
             // 
             // PhieuXuatKho
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1570, 773);
+            this.Controls.Add(this.groupBox4);
+            this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.btnNew);
-            this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnBackMenu);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.label10);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.txtPrice);
-            this.Controls.Add(this.txtQuantity);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.txtSupplier);
-            this.Controls.Add(this.txtEmployeeID);
-            this.Controls.Add(this.dtpImportDate);
-            this.Controls.Add(this.txtProductID);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
             this.Name = "PhieuXuatKho";
             this.Text = "PhieuXuatKho";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
             this.groupBox2.ResumeLayout(false);
-            this.groupBox1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvExports)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtQuantity)).EndInit();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            this.groupBox4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvExportDetails)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.TextBox txtProductID;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ComboBox cbbSupplier;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.DateTimePicker dtpImportDate;
+        private System.Windows.Forms.ComboBox cbEmployeeID;
+        private Guna.UI2.WinForms.Guna2DragControl guna2DragControl1;
         private System.Windows.Forms.Button btnNew;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button btnBackMenu;
+        private System.Windows.Forms.Button btnDelete;
+        private System.Windows.Forms.Button btnAdd;
+        private System.Windows.Forms.Button btnUpdate;
+        private System.Windows.Forms.Button btnClear;
+        private System.Windows.Forms.Button btnLoadExport;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.DataGridView dgvExports;
         private System.Windows.Forms.DataGridViewTextBoxColumn status;
         private System.Windows.Forms.DataGridViewTextBoxColumn ImportID;
         private System.Windows.Forms.DataGridViewTextBoxColumn ProductID;
@@ -449,33 +452,14 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn ImportDate;
         private System.Windows.Forms.DataGridViewTextBoxColumn EmployeeID;
         private System.Windows.Forms.DataGridViewTextBoxColumn Supplier;
-        private System.Windows.Forms.Button btnDelete;
-        private System.Windows.Forms.Button btnAdd;
-        private System.Windows.Forms.Button btnUpdate;
-        private System.Windows.Forms.Button btnClear;
-        private System.Windows.Forms.Button btnShowData;
-        private System.Windows.Forms.Button btnExit;
-        private System.Windows.Forms.Button btnBackMenu;
-        private System.Windows.Forms.Button button1;
-        private Guna.UI2.WinForms.Guna2DragControl guna2DragControl1;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox txtPrice;
-        private System.Windows.Forms.NumericUpDown txtQuantity;
         private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox txtSupplier;
-        private System.Windows.Forms.ComboBox txtEmployeeID;
-        private System.Windows.Forms.DateTimePicker dtpImportDate;
-        private System.Windows.Forms.TextBox txtProductID;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.NumericUpDown txtQuantity;
+        private System.Windows.Forms.TextBox txtPrice;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.DataGridView dgvExportDetails;
     }
 }

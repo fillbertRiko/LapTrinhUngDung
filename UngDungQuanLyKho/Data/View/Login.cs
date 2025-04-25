@@ -1,10 +1,10 @@
 ﻿using System;
-using System.Data;
 using System.Windows.Forms;
-using System.Data.SqlClient;
-using UngDungQuanLyKho.Data.Database;
+using UngDungQuanLyKho.Data.Auth;
 using UngDungQuanLyKho.Data.UI.Forms.Index;
-using UngDungQuanLyKho.Data.View;
+using UngDungQuanLyKho.Data.View.Admin;
+using UngDungQuanLyKho.Data.View.MENU_User;
+
 
 namespace UngDungQuanLyKho.Data.View
 {
@@ -15,72 +15,43 @@ namespace UngDungQuanLyKho.Data.View
             InitializeComponent();
         }
 
-        Modify modify = new Modify();
-
         private void button_DangNhap_Click(object sender, EventArgs e)
         {
-            string tentk = textBox_Email.Text.Trim();
-            string matKhau = textBox_Password.Text.Trim();
+            string email = textBox_Email.Text.Trim();
+            string password = textBox_Password.Text.Trim();
 
-            if (string.IsNullOrEmpty(tentk))
+            if (string.IsNullOrEmpty(email) || string.IsNullOrEmpty(password))
             {
-                MessageBox.Show("Nhập email!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Vui lòng nhập email và mật khẩu!", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
-            if (string.IsNullOrEmpty(matKhau))
+            if (AuthManager.KiemTraXacThucNguoiDung(email, password))
             {
-                MessageBox.Show("Nhập password!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;
-            }
+                var userInfo = AuthManager.LayThongTinNguoiDung(email);
+                MessageBox.Show($"Xin chào {userInfo.EmployeeName}, bạn đã đăng nhập thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-            try
-            {
-                using (SqlConnection conn = Connection.GetSqlConnection())
+                if (userInfo.Role == "Admin")
                 {
-                    conn.Open();
-
-                    using (SqlCommand cmd = new SqlCommand("CheckLogin", conn))
-                    {
-                        cmd.CommandType = CommandType.StoredProcedure;
-                        cmd.Parameters.AddWithValue("@Email", tentk);
-                        cmd.Parameters.AddWithValue("@Password", matKhau);
-
-                        using (SqlDataReader reader = cmd.ExecuteReader())
-                        {
-                            if (reader.Read())
-                            {
-                                string ten = reader["EmployeeName"].ToString();
-                                string quyen = reader["Role"].ToString();
-                                string email = reader["Email"].ToString();
-                                string matkhau = reader["Password"].ToString();
-
-                                MessageBox.Show($"Xin chào {ten}, bạn đã đăng nhập thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-                                Welcome welcome = new Welcome();
-                                this.Hide();
-                                welcome.ShowDialog();
-                                this.Close();
-                            }
-                            else
-                            {
-                                MessageBox.Show("Nhập sai tài khoản hoặc mật khẩu!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                                textBox_Password.Clear();
-                            }
-                        }
-                    }
+                    Employee admin = new Employee();
+                    this.Hide();
+                    admin.ShowDialog();
                 }
+                else
+                {
+                    Welcome welcome = new Welcome();
+                    this.Hide();
+                    welcome.ShowDialog();
+                }
+
+                this.Close();
             }
-            catch (SqlException ex)
+            else
             {
-                MessageBox.Show($"Lỗi kết nối: {ex.Message}", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show($"Lỗi không xác định: {ex.Message}", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Nhập sai tài khoản hoặc mật khẩu!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                textBox_Password.Clear();
             }
         }
-
 
         private void linkLabel_QuenMatKhau_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
@@ -96,7 +67,7 @@ namespace UngDungQuanLyKho.Data.View
 
         private void Login_FormClosing(object sender, FormClosingEventArgs e)
         {
-            if (MessageBox.Show("Bạn có muốn thoát không ?", "Thoát", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.No)
+            if (MessageBox.Show("Bạn có muốn thoát không?", "Thoát", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.No)
             {
                 e.Cancel = true;
             }

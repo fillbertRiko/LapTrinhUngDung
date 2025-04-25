@@ -3,6 +3,7 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Windows.Forms;
 using UngDungQuanLyKho.Data.Database;
+using UngDungQuanLyKho.Data.Models;
 using UngDungQuanLyKho.Data.UI.Forms.Index;
 
 namespace UngDungQuanLyKho.Data.View.MENU
@@ -16,7 +17,7 @@ namespace UngDungQuanLyKho.Data.View.MENU
             InitializeComponent();
 
             // Chỉ subscribe DataBindingComplete một lần
-            dataGridView1.DataBindingComplete += dataGridView1_DataBindingComplete; 
+            dgvImports.DataBindingComplete += dataGridView1_DataBindingComplete;
 
             // Gán sự kiện cho các nút, giữ nguyên tên btnXXX_Click
             btnShowData.Click += btnShowData_Click;
@@ -25,31 +26,39 @@ namespace UngDungQuanLyKho.Data.View.MENU
             btnUpdate.Click += btnUpdate_Click;
             btnDelete.Click += btnDelete_Click;
             btnBackMenu.Click += btnBackMenu_Click;
-            btnExit.Click += btnExit_Click;
             btnNew.Click += btnNew_Click;
 
             // Khi Form load, gọi LoadData
-            this.Load += PhieuNhapKho_Load;                                        
+            this.Load += PhieuNhapKho_Load;
         }
 
         private void PhieuNhapKho_Load(object sender, EventArgs e)
         {
-            LoadData();                                                              
+            LoadData();
         }
 
         private void LoadData()
         {
             try
             {
-                var dt = db.ExecuteStoredProcedure("usp_GetAllImports");             
-                dataGridView1.DataSource = dt;                                      
+                ImportModel importModel = new ImportModel();
+                DataTable dt = importModel.GetImports();
+
+                if (dt.Rows.Count == 0)
+                {
+                    MessageBox.Show("Không có phiếu nhập nào!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    dgvImports.DataSource = null;
+                    return;
+                }
+
+                dgvImports.DataSource = dt;
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Lỗi load dữ liệu: {ex.Message}", "Lỗi",
-                                MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show($"Lỗi khi tải danh sách phiếu nhập: {ex.Message}", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
 
         private void dataGridView1_DataBindingComplete(object sender,
                                                        DataGridViewBindingCompleteEventArgs e)
@@ -59,63 +68,111 @@ namespace UngDungQuanLyKho.Data.View.MENU
                                            "Price","ImportDate","EmployeeID",
                                            "Supplier" })
             {
-                if (dataGridView1.Columns.Contains(col))
-                    dataGridView1.Columns[col].Visible = false;
+                if (dgvImports.Columns.Contains(col))
+                    dgvImports.Columns[col].Visible = false;
             }
 
             // Tắt sort và resize columns
-            foreach (DataGridViewColumn c in dataGridView1.Columns)
-                c.SortMode = DataGridViewColumnSortMode.NotSortable;                
+            foreach (DataGridViewColumn c in dgvImports.Columns)
+                c.SortMode = DataGridViewColumnSortMode.NotSortable;
 
-            dataGridView1.AutoResizeColumns();                                   
+            dgvImports.AutoResizeColumns();
         }
 
         private void btnShowData_Click(object sender, EventArgs e)
         {
-            LoadData();                                                              
+            ImportModel importModel = new ImportModel();
+            dgvImports.DataSource = importModel.GetImports();
         }
 
         private void btnClear_Click(object sender, EventArgs e)
         {
-            dataGridView1.DataSource = null;                                          
+            dgvImports.DataSource = null;
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            var parameters = new[]
+            try
             {
-                new SqlParameter("@ProductID",   txtProductID.Text),
-                new SqlParameter("@Quantity",    int.Parse(txtQuantity.Text)),
-                new SqlParameter("@Price",       decimal.Parse(txtPrice.Text)),
-                new SqlParameter("@ImportDate",  dtpImportDate.Value),
-                new SqlParameter("@EmployeeID",  txtEmployeeID.Text),
-                new SqlParameter("@Supplier",    txtSupplier.Text)
-            };
-            db.ExecuteStoredProcedure("usp_AddImport", parameters);                  
-            LoadData();
+                if (string.IsNullOrWhiteSpace(txtProductID.Text) || string.IsNullOrWhiteSpace(txtQuantity.Text) || string.IsNullOrWhiteSpace(txtPrice.Text))
+                {
+                    MessageBox.Show("Vui lòng nhập đầy đủ thông tin sản phẩm!", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+
+                ImportModel importModel = new ImportModel();
+                int importId = importModel.AddImport(dtpImportDate.Value, Convert.ToInt32(cbEmployeeID.SelectedValue), cbbSupplier.Text);
+
+                if (importId > 0)
+                {
+                    importModel.AddImportDetail(importId, Convert.ToInt32(txtProductID.Text), Convert.ToInt32(txtQuantity.Text), Convert.ToDecimal(txtPrice.Text));
+                    MessageBox.Show("Phiếu nhập đã được thêm!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    LoadData();
+                }
+            }
+            catch (FormatException)
+            {
+                MessageBox.Show("Số lượng và giá phải là số hợp lệ!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Lỗi khi thêm phiếu nhập: {ex.Message}", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
-            var parameters = new[]
+            try
             {
-                new SqlParameter("@ImportID",    GetSelectedID()),
-                new SqlParameter("@ProductID",   txtProductID.Text),
-                new SqlParameter("@Quantity",    int.Parse(txtQuantity.Text)),
-                new SqlParameter("@Price",       decimal.Parse(txtPrice.Text)),
-                new SqlParameter("@ImportDate",  dtpImportDate.Value),
-                new SqlParameter("@EmployeeID",  txtEmployeeID.Text),
-                new SqlParameter("@Supplier",    txtSupplier.Text)
-            };
-            db.ExecuteStoredProcedure("usp_UpdateImport", parameters);              
-            LoadData();
+                if (dgvImports.CurrentRow == null)
+                {
+                    MessageBox.Show("Vui lòng chọn một phiếu nhập để chỉnh sửa!", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+
+                var parameters = new[]
+                {
+            new SqlParameter("@ImportID", GetSelectedID()),
+            new SqlParameter("@ProductID", txtProductID.Text),
+            new SqlParameter("@Quantity", int.Parse(txtQuantity.Text)),
+            new SqlParameter("@Price", decimal.Parse(txtPrice.Text)),
+            new SqlParameter("@ImportDate", dtpImportDate.Value),
+            new SqlParameter("@EmployeeID", cbEmployeeID.Text),
+            new SqlParameter("@Supplier", cbbSupplier.Text)
+        };
+
+                db.ExecuteStoredProcedure("usp_UpdateImport", parameters);
+                LoadData();
+                MessageBox.Show("Cập nhật phiếu nhập thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Lỗi khi cập nhật phiếu nhập: {ex.Message}", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
-            var idParam = new[] { new SqlParameter("@ImportID", GetSelectedID()) };
-            db.ExecuteStoredProcedure("usp_DeleteImport", idParam);                 
-            LoadData();
+            try
+            {
+                if (dgvImports.CurrentRow == null)
+                {
+                    MessageBox.Show("Vui lòng chọn một phiếu nhập để xóa!", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+
+                if (MessageBox.Show("Bạn có chắc chắn muốn xóa phiếu nhập này?", "Xác nhận xóa", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+                {
+                    var idParam = new[] { new SqlParameter("@ImportID", GetSelectedID()) };
+                    db.ExecuteStoredProcedure("usp_DeleteImport", idParam);
+                    LoadData();
+                    MessageBox.Show("Phiếu nhập đã được xóa!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Lỗi khi xóa phiếu nhập: {ex.Message}", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void btnBackMenu_Click(object sender, EventArgs e)
@@ -128,15 +185,7 @@ namespace UngDungQuanLyKho.Data.View.MENU
 
         private void btnExit_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("Bạn có chắc chắn muốn thoát?", "Xác nhận",
-                                MessageBoxButtons.YesNo, MessageBoxIcon.Question)
-                == DialogResult.Yes)
-            {
-                var menu = new Welcome();
-                this.Hide();
-                menu.ShowDialog();
-                this.Close();
-            }
+
         }
 
         private void btnNew_Click(object sender, EventArgs e)
@@ -151,9 +200,74 @@ namespace UngDungQuanLyKho.Data.View.MENU
         // Lấy ID dòng hiện tại
         private int GetSelectedID()
         {
-            if (dataGridView1.CurrentRow == null)
+            if (dgvImports.CurrentRow == null)
                 throw new InvalidOperationException("Chưa chọn bản ghi.");
-            return Convert.ToInt32(dataGridView1.CurrentRow.Cells["ImportID"].Value);
+            return Convert.ToInt32(dgvImports.CurrentRow.Cells["ImportID"].Value);
+        }
+
+        //hien thi chi tiet nhap hang khi chon mot phieu nhap
+        private void dgvImports_SelectionChanged(object sender, EventArgs e)
+        {
+            /*
+            if (dgvImports.SelectedRows.Count > 0)
+            {
+                int importId = Convert.ToInt32(dgvImports.SelectedRows[0].Cells["ImportID"].Value);
+                ImportModel importModel = new ImportModel();
+                dgvImportDetails.DataSource = importModel.GetImportDetails(importId);
+            }
+            */
+        }
+
+        private void btnAddImport_Click(object sender, EventArgs e)
+        {
+            ImportModel importModel = new ImportModel();
+            int importId = importModel.AddImport(dtpImportDate.Value, Convert.ToInt32(cbEmployeeID.SelectedValue), cbbSupplier.Text);
+
+            if (importId > 0)
+            {
+                MessageBox.Show("Phiếu nhập đã được thêm!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                LoadImports();
+            }
+        }
+        /*
+        private void btnAddImportDetail_Click(object sender, EventArgs e)
+        {
+            if (dgvImports.SelectedRows.Count == 0)
+            {
+                MessageBox.Show("Chọn một phiếu nhập trước!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            int importId = Convert.ToInt32(dgvImports.SelectedRows[0].Cells["ImportID"].Value);
+            ImportModel importModel = new ImportModel();
+            importModel.AddImportDetail(importId, Convert.ToInt32(cbProduct.SelectedValue), Convert.ToInt32(txtQuantity.Text), Convert.ToDecimal(txtPrice.Text));
+
+            MessageBox.Show("Sản phẩm đã được nhập!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            LoadImports();
+        }
+        */
+
+        //phuong thuc lay du lieu nhap hang trong database
+        private void LoadImports()
+        {
+            try
+            {
+                ImportModel importModel = new ImportModel();
+                DataTable dt = importModel.GetImports();
+
+                if (dt.Rows.Count == 0)
+                {
+                    MessageBox.Show("Không có phiếu nhập nào!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    dgvImports.DataSource = null;
+                    return;
+                }
+
+                dgvImports.DataSource = dt;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Lỗi khi tải danh sách phiếu nhập: {ex.Message}", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }

@@ -10,14 +10,41 @@ using System.Windows.Forms;
 using UngDungQuanLyKho.Data.View;
 using UngDungQuanLyKho.Data.View.MENU;
 using UngDungQuanLyKho.Data.Auth;
+using System.Timers;
+using UngDungQuanLyKho.Data.Models;
 
 namespace UngDungQuanLyKho.Data.UI.Forms.Index
 {
     public partial class Welcome : Form
     {
+        private static System.Timers.Timer checkStockTimer;
+
         public Welcome()
         {
             InitializeComponent();
+            SetDailyStockCheck();
+        }
+
+        private void SetDailyStockCheck()
+        {
+            checkStockTimer = new System.Timers.Timer(24 * 60 * 60 * 1000); // Kiểm tra mỗi 24 giờ
+            checkStockTimer.Elapsed += CheckStockLevels;
+            checkStockTimer.AutoReset = true;
+            checkStockTimer.Enabled = true;
+
+        }
+
+        private void CheckStockLevels(object sender, ElapsedEventArgs e)
+        {
+            ProductModel productModel = new ProductModel();
+            DataTable lowStockProducts = productModel.GetLowStockProducts();
+
+            if (lowStockProducts.Rows.Count > 0)
+            {
+                //string recipientEmail = "manager@example.com"; // Email của quản lý kho
+                //productModel.SendLowStockAlert(recipientEmail);
+            }
+
         }
 
         //dong form welcome chuyen sang form main
@@ -37,7 +64,7 @@ namespace UngDungQuanLyKho.Data.UI.Forms.Index
         private void textBox_HienThiNguoiDung_TextChanged(object sender, EventArgs e)
         {
             //hien thi ten nguoi dung trong textbox
-            textBox_HienThiNguoiDung.Text = AuthManager.TenNguoiDung;
+            //textBox_HienThiNguoiDung.Text = AuthManager.TenNguoiDung;
         }
 
         private void button_DangXuat_Click(object sender, EventArgs e)
@@ -82,10 +109,12 @@ namespace UngDungQuanLyKho.Data.UI.Forms.Index
         private void button_PhieuLuuChuyen_Click(object sender, EventArgs e)
         {
             //hien thi phieu dieu chuyen
+            /*
             PhieuXuatDieuChuyen phieuXuatDieuChuyen = new PhieuXuatDieuChuyen();
             this.Hide();
             phieuXuatDieuChuyen.ShowDialog();
             this.Show();
+            */
         }
     }
 }

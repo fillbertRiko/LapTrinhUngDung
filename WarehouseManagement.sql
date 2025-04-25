@@ -264,3 +264,225 @@ END
 SELECT name
 FROM sys.procedures
 ORDER BY name;
+
+--procedure voi thong tin nhan vien
+--Cap nhat nhan vien
+CREATE PROCEDURE usp_UpdateEmployee
+    @EmployeeID INT,
+    @EmployeeName NVARCHAR(255),
+    @Role NVARCHAR(50),
+    @Email NVARCHAR(255)
+AS
+BEGIN
+    UPDATE Employees
+    SET EmployeeName = @EmployeeName, 
+        Role = @Role, 
+        Email = @Email
+    WHERE EmployeeID = @EmployeeID;
+END
+
+--xoa nhan vien
+CREATE PROCEDURE usp_DeleteEmployee
+    @EmployeeID INT
+AS
+BEGIN
+    DELETE FROM Employees WHERE EmployeeID = @EmployeeID;
+END
+
+--tim kiem nhan vien
+CREATE PROCEDURE usp_SearchEmployee
+    @Keyword NVARCHAR(255)
+AS
+BEGIN
+    SELECT EmployeeID, EmployeeName, Role, Email 
+    FROM Employees
+    WHERE EmployeeName LIKE '%' + @Keyword + '%' 
+       OR Email LIKE '%' + @Keyword + '%';
+END
+
+--phan trang danh sach nhan vien
+CREATE PROCEDURE usp_GetEmployeesByPage
+    @PageNumber INT,
+    @PageSize INT
+AS
+BEGIN
+    SET NOCOUNT ON;
+    SELECT EmployeeID, EmployeeName, Role, Email 
+    FROM Employees
+    ORDER BY EmployeeID
+    OFFSET (@PageNumber - 1) * @PageSize ROWS
+    FETCH NEXT @PageSize ROWS ONLY;
+END
+
+--procedure khach hang
+--lay danh sach
+CREATE PROCEDURE usp_GetCustomers
+AS
+BEGIN
+    SELECT CustomerID, CustomerName, Address, Phone FROM Customers;
+END
+
+--tim kiem khach hang
+CREATE PROCEDURE usp_SearchCustomers
+    @Keyword NVARCHAR(255)
+AS
+BEGIN
+    SELECT CustomerID, CustomerName, Address, Phone 
+    FROM Customers
+    WHERE CustomerName LIKE '%' + @Keyword + '%' 
+       OR Phone LIKE '%' + @Keyword + '%';
+END
+
+--them khach hang
+CREATE PROCEDURE usp_AddCustomer
+    @CustomerName NVARCHAR(255),
+    @Address NVARCHAR(255),
+    @Phone NVARCHAR(50)
+AS
+BEGIN
+    INSERT INTO Customers (CustomerName, Address, Phone)
+    VALUES (@CustomerName, @Address, @Phone);
+END
+go
+--chinh sua va xoa khach hang
+CREATE PROCEDURE usp_UpdateCustomer
+    @CustomerID INT,
+    @CustomerName NVARCHAR(255),
+    @Address NVARCHAR(255),
+    @Phone NVARCHAR(50)
+AS
+BEGIN
+    UPDATE Customers
+    SET CustomerName = @CustomerName, Address = @Address, Phone = @Phone
+    WHERE CustomerID = @CustomerID;
+END
+go
+CREATE PROCEDURE usp_DeleteCustomer
+    @CustomerID INT
+AS
+BEGIN
+    DELETE FROM Customers WHERE CustomerID = @CustomerID;
+END
+
+go
+--thong ke so luong don hang cua khach hang
+CREATE PROCEDURE usp_GetCustomerOrders
+AS
+BEGIN
+    SELECT c.CustomerID, c.CustomerName, c.Phone,
+           ISNULL(o.OrderCount, 0) AS TotalOrders
+    FROM Customers c
+    LEFT JOIN (SELECT CustomerID, COUNT(*) AS OrderCount FROM Exports GROUP BY CustomerID) o
+        ON c.CustomerID = o.CustomerID;
+END
+go
+
+--procedure voi san pham
+--tải danh sách hàng hoá
+CREATE PROCEDURE usp_GetProducts
+AS
+BEGIN
+    SELECT ProductID, ProductName, Category, Unit, Quantity, MinQuantity, LocationID
+    FROM Products;
+END
+go
+
+--tim kiem san pham
+CREATE PROCEDURE usp_SearchProducts
+    @Keyword NVARCHAR(255)
+AS
+BEGIN
+    SELECT ProductID, ProductName, Category, Unit, Quantity, MinQuantity, LocationID
+    FROM Products
+    WHERE ProductName LIKE '%' + @Keyword + '%' 
+       OR Category LIKE '%' + @Keyword + '%';
+END
+go
+
+--them san pham
+CREATE PROCEDURE usp_AddProduct
+    @ProductName NVARCHAR(255),
+    @Category NVARCHAR(255),
+    @Unit NVARCHAR(100),
+    @Quantity INT,
+    @MinQuantity INT,
+    @LocationID INT
+AS
+BEGIN
+    INSERT INTO Products (ProductName, Category, Unit, Quantity, MinQuantity, LocationID)
+    VALUES (@ProductName, @Category, @Unit, @Quantity, @MinQuantity, @LocationID);
+END
+go
+
+--them sua xoa san pham
+CREATE PROCEDURE usp_UpdateProduct
+    @ProductID INT,
+    @ProductName NVARCHAR(255),
+    @Category NVARCHAR(255),
+    @Unit NVARCHAR(100),
+    @Quantity INT,
+    @MinQuantity INT,
+    @LocationID INT
+AS
+BEGIN
+    UPDATE Products
+    SET ProductName = @ProductName, Category = @Category, Unit = @Unit,
+        Quantity = @Quantity, MinQuantity = @MinQuantity, LocationID = @LocationID
+    WHERE ProductID = @ProductID;
+END
+go
+CREATE PROCEDURE usp_DeleteProduct
+    @ProductID INT
+AS
+BEGIN
+    DELETE FROM Products WHERE ProductID = @ProductID;
+END
+go
+
+--lay thong ke 
+CREATE PROCEDURE usp_GetLowStockProducts
+AS
+BEGIN
+    SELECT ProductID, ProductName, Category, Quantity, MinQuantity
+    FROM Products
+    WHERE Quantity < MinQuantity;
+END
+go
+
+--procedure cho nhap hang
+--lay danh sach phieu nhap
+CREATE PROCEDURE usp_GetImports
+AS
+BEGIN
+    SELECT i.ImportID, i.ImportDate, e.EmployeeName, i.Supplier
+    FROM Imports i
+    JOIN Employees e ON i.EmployeeID = e.EmployeeID;
+END
+go
+
+--them phieu nhap
+CREATE PROCEDURE usp_AddImport
+    @ImportDate DATE,
+    @EmployeeID INT,
+    @Supplier NVARCHAR(255)
+AS
+BEGIN
+    INSERT INTO Imports (ImportDate, EmployeeID, Supplier)
+    VALUES (@ImportDate, @EmployeeID, @Supplier);
+
+    SELECT SCOPE_IDENTITY() AS NewImportID;
+END
+go
+
+--them san pham vao phieu nhap
+CREATE PROCEDURE usp_AddImportDetail
+    @ImportID INT,
+    @ProductID INT,
+    @Quantity INT,
+    @Price DECIMAL(10,2)
+AS
+BEGIN
+    INSERT INTO ImportDetails (ImportID, ProductID, Quantity, Price)
+    VALUES (@ImportID, @ProductID, @Quantity, @Price);
+END
+go
