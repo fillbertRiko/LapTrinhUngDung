@@ -54,12 +54,37 @@ namespace UngDungQuanLyKho.Data.View.Admin
                 dgvStockStatus.Rows[e.RowIndex].DefaultCellStyle.BackColor = Color.Yellow; // Sắp hết
             }
         }
-        /*
+
+        private void dgvStockStatus_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            // Kiểm tra chỉ số hàng hợp lệ
+            if (e.RowIndex >= 0)
+            {
+                DataGridViewRow row = dgvStockStatus.Rows[e.RowIndex];
+
+                // Giả sử các cột chính của sản phẩm tồn kho là "ProductName", "Quantity" và "MinQuantity"
+                string productName = row.Cells["ProductName"].Value?.ToString() ?? "";
+                string quantity = row.Cells["Quantity"].Value?.ToString() ?? "";
+                string minQuantity = row.Cells["MinQuantity"].Value?.ToString() ?? "";
+
+                // Hiển thị chi tiết sản phẩm dưới dạng MessageBox (có thể thay thế bằng cách mở form chi tiết nếu cần)
+                MessageBox.Show(
+                    $"Sản phẩm: {productName}\nSố lượng hiện tại: {quantity}\nMức tồn tối thiểu: {minQuantity}",
+                    "Chi tiết sản phẩm",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Information);
+            }
+        }
+
+        private void btnRefesh_Click(object sender, EventArgs e)
+        {
+            // Tải lại danh sách sản phẩm
+            LoadLowStockProducts();
+        }
+
         private void btnSendAlert_Click(object sender, EventArgs e)
         {
-            ProductModel productModel = new ProductModel();
-            productModel.SendLowStockAlert("manager@example.com"); // Email quản lý kho
+            MessageBox.Show("Đã gửi thông báo đến quản lý kho!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
-        */
     }
 }

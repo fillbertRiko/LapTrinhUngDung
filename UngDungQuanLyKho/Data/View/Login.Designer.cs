@@ -33,7 +33,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.linkLabel_QuenMatKhau = new System.Windows.Forms.LinkLabel();
             this.button_DangNhap = new System.Windows.Forms.Button();
-            this.textBox_Email = new Guna.UI2.WinForms.Guna2TextBox();
+            this.textBox_Username = new Guna.UI2.WinForms.Guna2TextBox();
             this.textBox_Password = new Guna.UI2.WinForms.Guna2TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -80,28 +80,28 @@
             this.button_DangNhap.UseVisualStyleBackColor = false;
             this.button_DangNhap.Click += new System.EventHandler(this.button_DangNhap_Click);
             // 
-            // textBox_Email
+            // textBox_Username
             // 
-            this.textBox_Email.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.textBox_Email.DefaultText = "";
-            this.textBox_Email.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.textBox_Email.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.textBox_Email.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.textBox_Email.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.textBox_Email.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.textBox_Email.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.textBox_Email.ForeColor = System.Drawing.Color.Black;
-            this.textBox_Email.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.textBox_Email.IconLeft = ((System.Drawing.Image)(resources.GetObject("textBox_Email.IconLeft")));
-            this.textBox_Email.IconLeftSize = new System.Drawing.Size(35, 35);
-            this.textBox_Email.Location = new System.Drawing.Point(35, 302);
-            this.textBox_Email.Margin = new System.Windows.Forms.Padding(3, 6, 3, 6);
-            this.textBox_Email.Name = "textBox_Email";
-            this.textBox_Email.PlaceholderForeColor = System.Drawing.Color.Black;
-            this.textBox_Email.PlaceholderText = "";
-            this.textBox_Email.SelectedText = "";
-            this.textBox_Email.Size = new System.Drawing.Size(568, 59);
-            this.textBox_Email.TabIndex = 0;
+            this.textBox_Username.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.textBox_Username.DefaultText = "";
+            this.textBox_Username.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.textBox_Username.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.textBox_Username.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.textBox_Username.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.textBox_Username.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.textBox_Username.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.textBox_Username.ForeColor = System.Drawing.Color.Black;
+            this.textBox_Username.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.textBox_Username.IconLeft = ((System.Drawing.Image)(resources.GetObject("textBox_Username.IconLeft")));
+            this.textBox_Username.IconLeftSize = new System.Drawing.Size(35, 35);
+            this.textBox_Username.Location = new System.Drawing.Point(35, 302);
+            this.textBox_Username.Margin = new System.Windows.Forms.Padding(3, 6, 3, 6);
+            this.textBox_Username.Name = "textBox_Username";
+            this.textBox_Username.PlaceholderForeColor = System.Drawing.Color.Black;
+            this.textBox_Username.PlaceholderText = "";
+            this.textBox_Username.SelectedText = "";
+            this.textBox_Username.Size = new System.Drawing.Size(568, 59);
+            this.textBox_Username.TabIndex = 0;
             // 
             // textBox_Password
             // 
@@ -175,7 +175,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox_Password);
-            this.Controls.Add(this.textBox_Email);
+            this.Controls.Add(this.textBox_Username);
             this.Controls.Add(this.linkLabel_QuenMatKhau);
             this.Controls.Add(this.pictureBox1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
@@ -196,7 +196,7 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.LinkLabel linkLabel_QuenMatKhau;
         private System.Windows.Forms.Button button_DangNhap;
-        private Guna.UI2.WinForms.Guna2TextBox textBox_Email;
+        private Guna.UI2.WinForms.Guna2TextBox textBox_Username;
         private Guna.UI2.WinForms.Guna2TextBox textBox_Password;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;

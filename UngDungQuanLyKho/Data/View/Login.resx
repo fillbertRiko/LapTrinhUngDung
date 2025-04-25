@@ -2776,10 +2776,10 @@
         99+ABy544AEBADs=
 </value>
   </data>
-  <data name="textBox_Email.IconLeft" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="textBox_Username.IconLeft" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAYAAAD0eNT6AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        vgAADr4B6kKxwAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAHDMSURBVHhe7d0H
+        vQAADr0BR/uQrQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAHDMSURBVHhe7d0H
         dBRnmi98jyennbCzOxvv3Lvx7szO7t6d/QYwNoiMxNjjmbEnD8FE2wSJjAGpwURjwCCCiSYZTOOMsQ2W
         1CBAIFWLDOpGsasBk3NSd0vPd94iGJ6nhVJ3dVXX/znnd+75vvVAU/XW+3+7+g0PPYRCoSxdnkr6iqeS
         /qugLPLk9rKawfnlNdO3V0RW5pdFPso/Gtm9vazmUH5pTVl+aSS4rTRydqs/cnnr0ch1jy9yc6s/ciHP
@@ -3267,7 +3267,7 @@
   <data name="textBox_Password.IconLeft" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAYAAAD0eNT6AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAN
-        0QAADdEBwivf4wAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAADCLSURBVHhe7d17
+        0AAADdABEGw9BwAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAADCLSURBVHhe7d17
         mGxXWedxcgghxkwMEUFFufVee7Ic5ZEHGSKDIDI4Gryg8oigPihyERBHB4cMCAMoEBxEeIDhktOn+/S9
         q6uAIIEREljAQAIIgQBhDIS7EBOSQC4kJ+est848u7s66bxrd3d112Wvter7xwfhfZCcs2rV77e6a9fe
         dzl+/PhdAAD1vLMnemcL7+wveWd/0zv7+97ZZ3pnn+edfYl39tXe2bd4Zxe9s+d7Zy/yzn7MO/t57+zX

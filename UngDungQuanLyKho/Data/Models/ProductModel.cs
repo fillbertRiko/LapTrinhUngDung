@@ -24,11 +24,16 @@ namespace UngDungQuanLyKho.Data.Models
             {
                 conn.Open();
                 using (SqlCommand cmd = new SqlCommand("usp_GetProducts", conn))
-                using (SqlDataAdapter adapter = new SqlDataAdapter(cmd))
                 {
-                    DataTable dt = new DataTable();
-                    adapter.Fill(dt);
-                    return dt;
+                    // Cấu hình command là stored procedure
+                    cmd.CommandType = CommandType.StoredProcedure;
+
+                    using (SqlDataAdapter adapter = new SqlDataAdapter(cmd))
+                    {
+                        DataTable dt = new DataTable();
+                        adapter.Fill(dt);
+                        return dt;
+                    }
                 }
             }
         }
@@ -111,11 +116,16 @@ namespace UngDungQuanLyKho.Data.Models
             {
                 conn.Open();
                 using (SqlCommand cmd = new SqlCommand("usp_GetLowStockProducts", conn))
-                using (SqlDataAdapter adapter = new SqlDataAdapter(cmd))
                 {
-                    DataTable dt = new DataTable();
-                    adapter.Fill(dt);
-                    return dt;
+                    // Đặt command type là StoredProcedure
+                    cmd.CommandType = CommandType.StoredProcedure;
+
+                    using (SqlDataAdapter adapter = new SqlDataAdapter(cmd))
+                    {
+                        DataTable dt = new DataTable();
+                        adapter.Fill(dt);
+                        return dt;
+                    }
                 }
             }
         }

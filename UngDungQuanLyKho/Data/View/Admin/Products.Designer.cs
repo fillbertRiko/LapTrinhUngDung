@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.btnPrevPage = new System.Windows.Forms.Button();
             this.btnNextPage = new System.Windows.Forms.Button();
             this.btnStockReport = new System.Windows.Forms.Button();
@@ -50,7 +51,9 @@
             this.txtMinQuantity = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.txtLocationID = new System.Windows.Forms.TextBox();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dgvProducts)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnPrevPage
@@ -61,6 +64,7 @@
             this.btnPrevPage.TabIndex = 35;
             this.btnPrevPage.Text = "Trang trước";
             this.btnPrevPage.UseVisualStyleBackColor = true;
+            this.btnPrevPage.Click += new System.EventHandler(this.btnPrevPage_Click);
             // 
             // btnNextPage
             // 
@@ -70,6 +74,7 @@
             this.btnNextPage.TabIndex = 34;
             this.btnNextPage.Text = "Trang sau";
             this.btnNextPage.UseVisualStyleBackColor = true;
+            this.btnNextPage.Click += new System.EventHandler(this.btnNextPage_Click);
             // 
             // btnStockReport
             // 
@@ -123,6 +128,7 @@
             this.txtProductName.Name = "txtProductName";
             this.txtProductName.Size = new System.Drawing.Size(157, 22);
             this.txtProductName.TabIndex = 28;
+            this.txtProductName.TextChanged += new System.EventHandler(this.txtProductName_TextChanged);
             // 
             // txtCategory
             // 
@@ -130,6 +136,7 @@
             this.txtCategory.Name = "txtCategory";
             this.txtCategory.Size = new System.Drawing.Size(157, 22);
             this.txtCategory.TabIndex = 27;
+            this.txtCategory.TextChanged += new System.EventHandler(this.txtCategory_TextChanged);
             // 
             // txtUnit
             // 
@@ -137,6 +144,7 @@
             this.txtUnit.Name = "txtUnit";
             this.txtUnit.Size = new System.Drawing.Size(157, 22);
             this.txtUnit.TabIndex = 26;
+            this.txtUnit.TextChanged += new System.EventHandler(this.txtUnit_TextChanged);
             // 
             // txtQuantity
             // 
@@ -144,6 +152,7 @@
             this.txtQuantity.Name = "txtQuantity";
             this.txtQuantity.Size = new System.Drawing.Size(157, 22);
             this.txtQuantity.TabIndex = 25;
+            this.txtQuantity.TextChanged += new System.EventHandler(this.txtQuantity_TextChanged);
             // 
             // btnAdd
             // 
@@ -153,6 +162,7 @@
             this.btnAdd.TabIndex = 24;
             this.btnAdd.Text = "Thêm";
             this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click_1);
             // 
             // btnEdit
             // 
@@ -162,6 +172,7 @@
             this.btnEdit.TabIndex = 23;
             this.btnEdit.Text = "Sửa";
             this.btnEdit.UseVisualStyleBackColor = true;
+            this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click_1);
             // 
             // btnDelete
             // 
@@ -171,6 +182,7 @@
             this.btnDelete.TabIndex = 22;
             this.btnDelete.Text = "Xoá";
             this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click_1);
             // 
             // txtSearch
             // 
@@ -178,6 +190,7 @@
             this.txtSearch.Name = "txtSearch";
             this.txtSearch.Size = new System.Drawing.Size(157, 22);
             this.txtSearch.TabIndex = 21;
+            this.txtSearch.TextChanged += new System.EventHandler(this.txtSearch_TextChanged);
             // 
             // btnSearch
             // 
@@ -187,6 +200,7 @@
             this.btnSearch.TabIndex = 20;
             this.btnSearch.Text = "Tìm kiếm";
             this.btnSearch.UseVisualStyleBackColor = true;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click_1);
             // 
             // btnLoad
             // 
@@ -196,6 +210,7 @@
             this.btnLoad.TabIndex = 19;
             this.btnLoad.Text = "Hiển thị hàng hoá";
             this.btnLoad.UseVisualStyleBackColor = true;
+            this.btnLoad.Click += new System.EventHandler(this.btnLoad_Click);
             // 
             // dgvProducts
             // 
@@ -204,8 +219,9 @@
             this.dgvProducts.Name = "dgvProducts";
             this.dgvProducts.RowHeadersWidth = 51;
             this.dgvProducts.RowTemplate.Height = 24;
-            this.dgvProducts.Size = new System.Drawing.Size(517, 491);
+            this.dgvProducts.Size = new System.Drawing.Size(517, 490);
             this.dgvProducts.TabIndex = 18;
+            this.dgvProducts.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvProducts_CellContentClick);
             // 
             // label5
             // 
@@ -222,6 +238,7 @@
             this.txtMinQuantity.Name = "txtMinQuantity";
             this.txtMinQuantity.Size = new System.Drawing.Size(157, 22);
             this.txtMinQuantity.TabIndex = 36;
+            this.txtMinQuantity.TextChanged += new System.EventHandler(this.txtMinQuantity_TextChanged);
             // 
             // label6
             // 
@@ -238,6 +255,11 @@
             this.txtLocationID.Name = "txtLocationID";
             this.txtLocationID.Size = new System.Drawing.Size(157, 22);
             this.txtLocationID.TabIndex = 40;
+            this.txtLocationID.TextChanged += new System.EventHandler(this.txtLocationID_TextChanged);
+            // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
             // 
             // Products
             // 
@@ -269,6 +291,7 @@
             this.Name = "Products";
             this.Text = "Products";
             ((System.ComponentModel.ISupportInitialize)(this.dgvProducts)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -298,5 +321,6 @@
         private System.Windows.Forms.TextBox txtMinQuantity;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox txtLocationID;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
     }
 }

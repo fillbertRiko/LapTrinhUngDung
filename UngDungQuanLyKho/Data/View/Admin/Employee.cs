@@ -93,5 +93,30 @@ namespace UngDungQuanLyKho.Data.View.MENU_User
             if (currentPage > 1) currentPage--;
             dvgEmployees.DataSource = employeeModel.GetEmployeesByPage(currentPage, pageSize);
         }
+
+        private void txtSearch_TextChanged(object sender, EventArgs e)
+        {
+            // Lấy từ khóa hiện tại từ TextBox, loại bỏ khoảng trắng thừa
+            string keyword = txtSearch.Text.Trim();
+
+            // Khởi tạo đối tượng ProductModel
+            ProductModel productModel = new ProductModel();
+
+            // DataTable để chứa kết quả trả về
+            DataTable dt;
+
+            // Nếu ô tìm kiếm rỗng, load tất cả các sản phẩm, nếu không thì tìm kiếm theo từ khóa.
+            if (string.IsNullOrEmpty(keyword))
+            {
+                dt = productModel.GetProducts();
+            }
+            else
+            {
+                dt = productModel.SearchProducts(keyword);
+            }
+
+            // Cập nhật DataGridView để hiển thị kết quả tìm kiếm (đảm bảo dataGridViewProducts đã được khai báo trên form)
+            dvgEmployees.DataSource = dt;
+        }
     }
 }

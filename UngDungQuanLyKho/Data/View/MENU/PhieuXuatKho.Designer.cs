@@ -30,22 +30,22 @@
         {
             this.components = new System.ComponentModel.Container();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.txtProductID = new System.Windows.Forms.TextBox();
+            this.txtExportID = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.cbbSupplier = new System.Windows.Forms.ComboBox();
+            this.cbCustomerID = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.dtpImportDate = new System.Windows.Forms.DateTimePicker();
+            this.dtpExportDate = new System.Windows.Forms.DateTimePicker();
             this.cbEmployeeID = new System.Windows.Forms.ComboBox();
             this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.btnNew = new System.Windows.Forms.Button();
             this.btnBackMenu = new System.Windows.Forms.Button();
-            this.btnDelete = new System.Windows.Forms.Button();
-            this.btnAdd = new System.Windows.Forms.Button();
-            this.btnUpdate = new System.Windows.Forms.Button();
+            this.btnDeleteExport = new System.Windows.Forms.Button();
+            this.btnAddExport = new System.Windows.Forms.Button();
+            this.btnEditExport = new System.Windows.Forms.Button();
             this.btnClear = new System.Windows.Forms.Button();
-            this.btnLoadExport = new System.Windows.Forms.Button();
+            this.btnLoadExports = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.dgvExports = new System.Windows.Forms.DataGridView();
             this.status = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -55,7 +55,7 @@
             this.ImportDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.EmployeeID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Supplier = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtProductID = new System.Windows.Forms.TextBox();
             this.txtQuantity = new System.Windows.Forms.NumericUpDown();
             this.txtPrice = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
@@ -64,6 +64,10 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.dgvExportDetails = new System.Windows.Forms.DataGridView();
+            this.btnShowDetails = new System.Windows.Forms.Button();
+            this.btnCaculateTotal = new System.Windows.Forms.Button();
+            this.btnExportExcel = new System.Windows.Forms.Button();
+            this.lblTotalAmount = new System.Windows.Forms.Label();
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvExports)).BeginInit();
@@ -75,13 +79,14 @@
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.txtProductID);
+            this.groupBox3.Controls.Add(this.btnExportExcel);
+            this.groupBox3.Controls.Add(this.txtExportID);
             this.groupBox3.Controls.Add(this.label1);
-            this.groupBox3.Controls.Add(this.cbbSupplier);
+            this.groupBox3.Controls.Add(this.cbCustomerID);
             this.groupBox3.Controls.Add(this.label2);
             this.groupBox3.Controls.Add(this.label3);
             this.groupBox3.Controls.Add(this.label4);
-            this.groupBox3.Controls.Add(this.dtpImportDate);
+            this.groupBox3.Controls.Add(this.dtpExportDate);
             this.groupBox3.Controls.Add(this.cbEmployeeID);
             this.groupBox3.Location = new System.Drawing.Point(12, 12);
             this.groupBox3.Name = "groupBox3";
@@ -90,12 +95,12 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Thông tin xuất hàng";
             // 
-            // txtProductID
+            // txtExportID
             // 
-            this.txtProductID.Location = new System.Drawing.Point(158, 34);
-            this.txtProductID.Name = "txtProductID";
-            this.txtProductID.Size = new System.Drawing.Size(291, 22);
-            this.txtProductID.TabIndex = 8;
+            this.txtExportID.Location = new System.Drawing.Point(158, 34);
+            this.txtExportID.Name = "txtExportID";
+            this.txtExportID.Size = new System.Drawing.Size(291, 22);
+            this.txtExportID.TabIndex = 8;
             // 
             // label1
             // 
@@ -106,13 +111,13 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Mã Phiếu Xuất";
             // 
-            // cbbSupplier
+            // cbCustomerID
             // 
-            this.cbbSupplier.FormattingEnabled = true;
-            this.cbbSupplier.Location = new System.Drawing.Point(158, 139);
-            this.cbbSupplier.Name = "cbbSupplier";
-            this.cbbSupplier.Size = new System.Drawing.Size(291, 24);
-            this.cbbSupplier.TabIndex = 26;
+            this.cbCustomerID.FormattingEnabled = true;
+            this.cbCustomerID.Location = new System.Drawing.Point(158, 139);
+            this.cbCustomerID.Name = "cbCustomerID";
+            this.cbCustomerID.Size = new System.Drawing.Size(291, 24);
+            this.cbCustomerID.TabIndex = 26;
             // 
             // label2
             // 
@@ -141,14 +146,14 @@
             this.label4.TabIndex = 3;
             this.label4.Text = "Tên Khách Hàng";
             // 
-            // dtpImportDate
+            // dtpExportDate
             // 
-            this.dtpImportDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpImportDate.Location = new System.Drawing.Point(158, 67);
-            this.dtpImportDate.Name = "dtpImportDate";
-            this.dtpImportDate.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.dtpImportDate.Size = new System.Drawing.Size(291, 22);
-            this.dtpImportDate.TabIndex = 9;
+            this.dtpExportDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpExportDate.Location = new System.Drawing.Point(158, 67);
+            this.dtpExportDate.Name = "dtpExportDate";
+            this.dtpExportDate.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.dtpExportDate.Size = new System.Drawing.Size(291, 22);
+            this.dtpExportDate.TabIndex = 9;
             // 
             // cbEmployeeID
             // 
@@ -181,32 +186,32 @@
             this.btnBackMenu.Text = "Quay Về Menu";
             this.btnBackMenu.UseVisualStyleBackColor = true;
             // 
-            // btnDelete
+            // btnDeleteExport
             // 
-            this.btnDelete.Location = new System.Drawing.Point(903, 36);
-            this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(75, 23);
-            this.btnDelete.TabIndex = 26;
-            this.btnDelete.Text = "Xoá";
-            this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDeleteExport.Location = new System.Drawing.Point(903, 36);
+            this.btnDeleteExport.Name = "btnDeleteExport";
+            this.btnDeleteExport.Size = new System.Drawing.Size(75, 23);
+            this.btnDeleteExport.TabIndex = 26;
+            this.btnDeleteExport.Text = "Xoá";
+            this.btnDeleteExport.UseVisualStyleBackColor = true;
             // 
-            // btnAdd
+            // btnAddExport
             // 
-            this.btnAdd.Location = new System.Drawing.Point(659, 36);
-            this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(75, 23);
-            this.btnAdd.TabIndex = 25;
-            this.btnAdd.Text = "Thêm";
-            this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAddExport.Location = new System.Drawing.Point(659, 36);
+            this.btnAddExport.Name = "btnAddExport";
+            this.btnAddExport.Size = new System.Drawing.Size(75, 23);
+            this.btnAddExport.TabIndex = 25;
+            this.btnAddExport.Text = "Thêm";
+            this.btnAddExport.UseVisualStyleBackColor = true;
             // 
-            // btnUpdate
+            // btnEditExport
             // 
-            this.btnUpdate.Location = new System.Drawing.Point(788, 36);
-            this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(75, 23);
-            this.btnUpdate.TabIndex = 24;
-            this.btnUpdate.Text = "Sửa";
-            this.btnUpdate.UseVisualStyleBackColor = true;
+            this.btnEditExport.Location = new System.Drawing.Point(788, 36);
+            this.btnEditExport.Name = "btnEditExport";
+            this.btnEditExport.Size = new System.Drawing.Size(75, 23);
+            this.btnEditExport.TabIndex = 24;
+            this.btnEditExport.Text = "Sửa";
+            this.btnEditExport.UseVisualStyleBackColor = true;
             // 
             // btnClear
             // 
@@ -217,22 +222,22 @@
             this.btnClear.Text = "Dọn sạch bảng";
             this.btnClear.UseVisualStyleBackColor = true;
             // 
-            // btnLoadExport
+            // btnLoadExports
             // 
-            this.btnLoadExport.Location = new System.Drawing.Point(189, 36);
-            this.btnLoadExport.Name = "btnLoadExport";
-            this.btnLoadExport.Size = new System.Drawing.Size(75, 23);
-            this.btnLoadExport.TabIndex = 22;
-            this.btnLoadExport.Text = "Hiển thị";
-            this.btnLoadExport.UseVisualStyleBackColor = true;
+            this.btnLoadExports.Location = new System.Drawing.Point(189, 36);
+            this.btnLoadExports.Name = "btnLoadExports";
+            this.btnLoadExports.Size = new System.Drawing.Size(75, 23);
+            this.btnLoadExports.TabIndex = 22;
+            this.btnLoadExports.Text = "Hiển thị";
+            this.btnLoadExports.UseVisualStyleBackColor = true;
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.btnDelete);
-            this.groupBox2.Controls.Add(this.btnAdd);
-            this.groupBox2.Controls.Add(this.btnUpdate);
+            this.groupBox2.Controls.Add(this.btnDeleteExport);
+            this.groupBox2.Controls.Add(this.btnAddExport);
+            this.groupBox2.Controls.Add(this.btnEditExport);
             this.groupBox2.Controls.Add(this.btnClear);
-            this.groupBox2.Controls.Add(this.btnLoadExport);
+            this.groupBox2.Controls.Add(this.btnLoadExports);
             this.groupBox2.Controls.Add(this.dgvExports);
             this.groupBox2.Location = new System.Drawing.Point(12, 261);
             this.groupBox2.Name = "groupBox2";
@@ -315,12 +320,12 @@
             this.Supplier.ReadOnly = true;
             this.Supplier.Width = 300;
             // 
-            // textBox3
+            // txtProductID
             // 
-            this.textBox3.Location = new System.Drawing.Point(144, 43);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(291, 22);
-            this.textBox3.TabIndex = 12;
+            this.txtProductID.Location = new System.Drawing.Point(144, 43);
+            this.txtProductID.Name = "txtProductID";
+            this.txtProductID.Size = new System.Drawing.Size(291, 22);
+            this.txtProductID.TabIndex = 12;
             // 
             // txtQuantity
             // 
@@ -365,7 +370,9 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.textBox3);
+            this.groupBox1.Controls.Add(this.lblTotalAmount);
+            this.groupBox1.Controls.Add(this.btnCaculateTotal);
+            this.groupBox1.Controls.Add(this.txtProductID);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.label7);
@@ -398,11 +405,48 @@
             this.dgvExportDetails.Size = new System.Drawing.Size(474, 719);
             this.dgvExportDetails.TabIndex = 0;
             // 
+            // btnShowDetails
+            // 
+            this.btnShowDetails.Location = new System.Drawing.Point(931, 93);
+            this.btnShowDetails.Name = "btnShowDetails";
+            this.btnShowDetails.Size = new System.Drawing.Size(125, 64);
+            this.btnShowDetails.TabIndex = 35;
+            this.btnShowDetails.Text = "Hiển thị chi tiết đơn hàng";
+            this.btnShowDetails.UseVisualStyleBackColor = true;
+            // 
+            // btnCaculateTotal
+            // 
+            this.btnCaculateTotal.Location = new System.Drawing.Point(25, 175);
+            this.btnCaculateTotal.Name = "btnCaculateTotal";
+            this.btnCaculateTotal.Size = new System.Drawing.Size(194, 40);
+            this.btnCaculateTotal.TabIndex = 36;
+            this.btnCaculateTotal.Text = "Tổng giá trị đơn hàng";
+            this.btnCaculateTotal.UseVisualStyleBackColor = true;
+            // 
+            // btnExportExcel
+            // 
+            this.btnExportExcel.Location = new System.Drawing.Point(6, 184);
+            this.btnExportExcel.Name = "btnExportExcel";
+            this.btnExportExcel.Size = new System.Drawing.Size(194, 40);
+            this.btnExportExcel.TabIndex = 37;
+            this.btnExportExcel.Text = "In đơn xuất hàng";
+            this.btnExportExcel.UseVisualStyleBackColor = true;
+            // 
+            // lblTotalAmount
+            // 
+            this.lblTotalAmount.AutoSize = true;
+            this.lblTotalAmount.Location = new System.Drawing.Point(282, 187);
+            this.lblTotalAmount.Name = "lblTotalAmount";
+            this.lblTotalAmount.Size = new System.Drawing.Size(57, 16);
+            this.lblTotalAmount.TabIndex = 37;
+            this.lblTotalAmount.Text = "tong tien";
+            // 
             // PhieuXuatKho
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1570, 773);
+            this.Controls.Add(this.btnShowDetails);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.btnNew);
@@ -427,22 +471,22 @@
         #endregion
 
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.TextBox txtProductID;
+        private System.Windows.Forms.TextBox txtExportID;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox cbbSupplier;
+        private System.Windows.Forms.ComboBox cbCustomerID;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.DateTimePicker dtpImportDate;
+        private System.Windows.Forms.DateTimePicker dtpExportDate;
         private System.Windows.Forms.ComboBox cbEmployeeID;
         private Guna.UI2.WinForms.Guna2DragControl guna2DragControl1;
         private System.Windows.Forms.Button btnNew;
         private System.Windows.Forms.Button btnBackMenu;
-        private System.Windows.Forms.Button btnDelete;
-        private System.Windows.Forms.Button btnAdd;
-        private System.Windows.Forms.Button btnUpdate;
+        private System.Windows.Forms.Button btnDeleteExport;
+        private System.Windows.Forms.Button btnAddExport;
+        private System.Windows.Forms.Button btnEditExport;
         private System.Windows.Forms.Button btnClear;
-        private System.Windows.Forms.Button btnLoadExport;
+        private System.Windows.Forms.Button btnLoadExports;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.DataGridView dgvExports;
         private System.Windows.Forms.DataGridViewTextBoxColumn status;
@@ -452,7 +496,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn ImportDate;
         private System.Windows.Forms.DataGridViewTextBoxColumn EmployeeID;
         private System.Windows.Forms.DataGridViewTextBoxColumn Supplier;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtProductID;
         private System.Windows.Forms.NumericUpDown txtQuantity;
         private System.Windows.Forms.TextBox txtPrice;
         private System.Windows.Forms.Label label5;
@@ -461,5 +505,9 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.DataGridView dgvExportDetails;
+        private System.Windows.Forms.Button btnCaculateTotal;
+        private System.Windows.Forms.Button btnShowDetails;
+        private System.Windows.Forms.Button btnExportExcel;
+        private System.Windows.Forms.Label lblTotalAmount;
     }
 }

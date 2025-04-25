@@ -43,6 +43,7 @@
             this.dgvStockStatus.RowTemplate.Height = 24;
             this.dgvStockStatus.Size = new System.Drawing.Size(776, 351);
             this.dgvStockStatus.TabIndex = 0;
+            this.dgvStockStatus.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvStockStatus_CellContentClick);
             // 
             // btnRefesh
             // 
@@ -50,8 +51,9 @@
             this.btnRefesh.Name = "btnRefesh";
             this.btnRefesh.Size = new System.Drawing.Size(188, 34);
             this.btnRefesh.TabIndex = 1;
-            this.btnRefesh.Text = "button1";
+            this.btnRefesh.Text = "Làm mới";
             this.btnRefesh.UseVisualStyleBackColor = true;
+            this.btnRefesh.Click += new System.EventHandler(this.btnRefesh_Click);
             // 
             // btnSendAlert
             // 
@@ -59,8 +61,9 @@
             this.btnSendAlert.Name = "btnSendAlert";
             this.btnSendAlert.Size = new System.Drawing.Size(188, 34);
             this.btnSendAlert.TabIndex = 2;
-            this.btnSendAlert.Text = "button1";
+            this.btnSendAlert.Text = "Gửi thông báo";
             this.btnSendAlert.UseVisualStyleBackColor = true;
+            this.btnSendAlert.Click += new System.EventHandler(this.btnSendAlert_Click);
             // 
             // StockStatus
             // 

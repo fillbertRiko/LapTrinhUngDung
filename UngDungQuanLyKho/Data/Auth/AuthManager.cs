@@ -3,72 +3,70 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Security.Cryptography;
 using System.Text;
+using UngDungQuanLyKho.Data.Models;
+using UngDungQuanLyKho.Data.Database; // Import lớp Connection
 
 namespace UngDungQuanLyKho.Data.Auth
 {
-    class AuthManager
+    public class AuthManager
     {
-
-        public static string HashPassword(string password)
+        // Hàm băm mật khẩu theo SHA2-256 và chuyển sang dạng chuỗi hex
+        private static string HashPassword(string password)
         {
             using (SHA256 sha256 = SHA256.Create())
             {
                 byte[] bytes = sha256.ComputeHash(Encoding.UTF8.GetBytes(password));
+                // Chuyển đổi sang chuỗi hex giống SQL hàm CONVERT(..., 2)
                 StringBuilder builder = new StringBuilder();
                 foreach (byte b in bytes)
-                    builder.Append(b.ToString("x2"));
+                {
+                    builder.Append(b.ToString("x2")); // "x2" cho chữ thường, tương tự như LOWER() trong SQL
+                }
                 return builder.ToString();
             }
         }
 
-        public static bool KiemTraXacThucNguoiDung(string email, string password)
+        // Hàm xác thực người dùng
+        public static UserModel AuthenticateUser(string username, string password)
         {
-            string hashedInput = HashPassword(password);
-            string storedHash = LayMatKhauTuDatabase(email);
-
-            return !string.IsNullOrEmpty(storedHash) && storedHash == hashedInput;
-        }
-
-        private static string LayMatKhauTuDatabase(string email)
-        {
-            string connStr = @"Data Source=Heizzdoobert-F;Initial Catalog=WarehouseManagement;Integrated Security=True;Encrypt=True;Trust Server Certificate=True";
-            string query = "SELECT Password FROM Employees WHERE Email = @Email";
-
-            using (var conn = new SqlConnection(connStr))
-            using (var cmd = new SqlCommand(query, conn))
+            try
             {
-                cmd.CommandType = CommandType.Text;
-                cmd.Parameters.AddWithValue("@Email", email);
+                Console.WriteLine($"Đang xác thực: {username} - {password} (Băm: {HashPassword(password)})");
 
-                conn.Open();
-                object result = cmd.ExecuteScalar();
-                return result as string; // Trả về mật khẩu đã mã hóa hoặc null
-            }
-        }
-
-        public static (string EmployeeName, string Role) LayThongTinNguoiDung(string email)
-        {
-            string connStr = @"Data Source=Heizzdoobert-F;Initial Catalog=WarehouseManagement;Integrated Security=True;Encrypt=True;Trust Server Certificate=True";
-            string query = "SELECT EmployeeName, Role FROM Employees WHERE Email = @Email";
-
-            using (var conn = new SqlConnection(connStr))
-            using (var cmd = new SqlCommand(query, conn))
-            {
-                cmd.CommandType = CommandType.Text;
-                cmd.Parameters.AddWithValue("@Email", email);
-
-                conn.Open();
-                using (var reader = cmd.ExecuteReader())
+                using (SqlConnection conn = Connection.GetSqlConnection())
+                using (SqlCommand cmd = new SqlCommand("usp_CheckLogin", conn))
                 {
-                    if (reader.Read())
+                    cmd.CommandType = CommandType.StoredProcedure;
+                    cmd.Parameters.AddWithValue("@Username", username);
+                    cmd.Parameters.AddWithValue("@Password", password); // Lưu ý: Stored procedure tự xử lý băm
+
+                    conn.Open();
+                    using (SqlDataReader reader = cmd.ExecuteReader())
                     {
-                        return (reader["EmployeeName"].ToString(), reader["Role"].ToString());
+                        if (reader.Read())
+                        {
+                            Console.WriteLine("Đăng nhập thành công!");
+                            return new UserModel
+                            {
+                                UserID = Convert.ToInt32(reader["UserID"]),
+                                Username = username,
+                                FullName = reader["FullName"].ToString(),
+                                Role = reader["Role"].ToString()
+                            };
+                        }
+                        else
+                        {
+                            Console.WriteLine("Đăng nhập thất bại!");
+                            return null;
+                        }
                     }
                 }
             }
-            return (null, null);
+            catch (Exception ex)
+            {
+                Console.WriteLine("Lỗi xác thực: " + ex.Message);
+                return null;
+            }
         }
-
-
     }
 }
