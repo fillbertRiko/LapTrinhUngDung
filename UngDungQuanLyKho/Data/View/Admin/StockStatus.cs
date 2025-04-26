@@ -41,8 +41,16 @@ namespace UngDungQuanLyKho.Data.View.Admin
 
         private void dgvStockStatus_RowPrePaint(object sender, DataGridViewRowPrePaintEventArgs e)
         {
-            int quantity = Convert.ToInt32(dgvStockStatus.Rows[e.RowIndex].Cells["Quantity"].Value);
-            int minQuantity = Convert.ToInt32(dgvStockStatus.Rows[e.RowIndex].Cells["MinQuantity"].Value);
+            object quantityObj = dgvStockStatus.Rows[e.RowIndex].Cells["Quantity"].Value;
+            object minQuantityObj = dgvStockStatus.Rows[e.RowIndex].Cells["MinQuantity"].Value;
+
+            if (quantityObj == null || minQuantityObj == null || quantityObj == DBNull.Value || minQuantityObj == DBNull.Value)
+            {
+                return; // Bỏ qua hàng nếu có dữ liệu trống
+            }
+
+            int quantity = Convert.ToInt32(quantityObj);
+            int minQuantity = Convert.ToInt32(minQuantityObj);
 
             if (quantity == 0)
             {

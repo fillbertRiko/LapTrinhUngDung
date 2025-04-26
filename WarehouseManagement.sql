@@ -491,3 +491,33 @@ BEGIN
         
 END
 GO
+
+--tao procedure lay danh sach nguoi dung
+CREATE PROCEDURE usp_GetExports
+AS
+BEGIN
+    SET NOCOUNT ON;
+
+    SELECT 
+        ExportID,
+        ExportDate,
+        CustomerID
+    FROM dbo.Exports
+    ORDER BY ExportDate DESC;
+END
+go
+
+--tao procedure nhap hang
+CREATE PROCEDURE usp_GetImports
+AS
+BEGIN
+    SET NOCOUNT ON;
+
+    SELECT 
+        ImportID,
+        ImportDate,
+        Supplier
+    FROM dbo.Imports
+    ORDER BY ImportDate DESC;
+END
+go

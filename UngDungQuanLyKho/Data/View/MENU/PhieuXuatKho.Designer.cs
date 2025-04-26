@@ -30,6 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.btnExportExcel = new System.Windows.Forms.Button();
             this.txtExportID = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.cbCustomerID = new System.Windows.Forms.ComboBox();
@@ -39,7 +40,6 @@
             this.dtpExportDate = new System.Windows.Forms.DateTimePicker();
             this.cbEmployeeID = new System.Windows.Forms.ComboBox();
             this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
-            this.btnNew = new System.Windows.Forms.Button();
             this.btnBackMenu = new System.Windows.Forms.Button();
             this.btnDeleteExport = new System.Windows.Forms.Button();
             this.btnAddExport = new System.Windows.Forms.Button();
@@ -62,12 +62,12 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.lblTotalAmount = new System.Windows.Forms.Label();
+            this.btnCaculateTotal = new System.Windows.Forms.Button();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.dgvExportDetails = new System.Windows.Forms.DataGridView();
             this.btnShowDetails = new System.Windows.Forms.Button();
-            this.btnCaculateTotal = new System.Windows.Forms.Button();
-            this.btnExportExcel = new System.Windows.Forms.Button();
-            this.lblTotalAmount = new System.Windows.Forms.Label();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvExports)).BeginInit();
@@ -75,6 +75,7 @@
             this.groupBox1.SuspendLayout();
             this.groupBox4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvExportDetails)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox3
@@ -95,12 +96,23 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Thông tin xuất hàng";
             // 
+            // btnExportExcel
+            // 
+            this.btnExportExcel.Location = new System.Drawing.Point(6, 184);
+            this.btnExportExcel.Name = "btnExportExcel";
+            this.btnExportExcel.Size = new System.Drawing.Size(194, 40);
+            this.btnExportExcel.TabIndex = 37;
+            this.btnExportExcel.Text = "In đơn xuất hàng";
+            this.btnExportExcel.UseVisualStyleBackColor = true;
+            this.btnExportExcel.Click += new System.EventHandler(this.btnExportExcel_Click_1);
+            // 
             // txtExportID
             // 
             this.txtExportID.Location = new System.Drawing.Point(158, 34);
             this.txtExportID.Name = "txtExportID";
             this.txtExportID.Size = new System.Drawing.Size(291, 22);
             this.txtExportID.TabIndex = 8;
+            this.txtExportID.TextChanged += new System.EventHandler(this.txtExportID_TextChanged);
             // 
             // label1
             // 
@@ -118,6 +130,7 @@
             this.cbCustomerID.Name = "cbCustomerID";
             this.cbCustomerID.Size = new System.Drawing.Size(291, 24);
             this.cbCustomerID.TabIndex = 26;
+            this.cbCustomerID.SelectedIndexChanged += new System.EventHandler(this.cbCustomerID_SelectedIndexChanged);
             // 
             // label2
             // 
@@ -154,6 +167,7 @@
             this.dtpExportDate.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.dtpExportDate.Size = new System.Drawing.Size(291, 22);
             this.dtpExportDate.TabIndex = 9;
+            this.dtpExportDate.ValueChanged += new System.EventHandler(this.dtpExportDate_ValueChanged);
             // 
             // cbEmployeeID
             // 
@@ -162,20 +176,12 @@
             this.cbEmployeeID.Name = "cbEmployeeID";
             this.cbEmployeeID.Size = new System.Drawing.Size(147, 24);
             this.cbEmployeeID.TabIndex = 10;
+            this.cbEmployeeID.SelectedIndexChanged += new System.EventHandler(this.cbEmployeeID_SelectedIndexChanged);
             // 
             // guna2DragControl1
             // 
             this.guna2DragControl1.DockIndicatorTransparencyValue = 0.6D;
             this.guna2DragControl1.UseTransparentDrag = true;
-            // 
-            // btnNew
-            // 
-            this.btnNew.Location = new System.Drawing.Point(931, 163);
-            this.btnNew.Name = "btnNew";
-            this.btnNew.Size = new System.Drawing.Size(135, 54);
-            this.btnNew.TabIndex = 31;
-            this.btnNew.Text = "Thêm Phiếu Xuất Mới";
-            this.btnNew.UseVisualStyleBackColor = true;
             // 
             // btnBackMenu
             // 
@@ -185,6 +191,7 @@
             this.btnBackMenu.TabIndex = 30;
             this.btnBackMenu.Text = "Quay Về Menu";
             this.btnBackMenu.UseVisualStyleBackColor = true;
+            this.btnBackMenu.Click += new System.EventHandler(this.btnBackMenu_Click);
             // 
             // btnDeleteExport
             // 
@@ -194,6 +201,7 @@
             this.btnDeleteExport.TabIndex = 26;
             this.btnDeleteExport.Text = "Xoá";
             this.btnDeleteExport.UseVisualStyleBackColor = true;
+            this.btnDeleteExport.Click += new System.EventHandler(this.btnDeleteExport_Click);
             // 
             // btnAddExport
             // 
@@ -203,6 +211,7 @@
             this.btnAddExport.TabIndex = 25;
             this.btnAddExport.Text = "Thêm";
             this.btnAddExport.UseVisualStyleBackColor = true;
+            this.btnAddExport.Click += new System.EventHandler(this.btnAddExport_Click_1);
             // 
             // btnEditExport
             // 
@@ -212,6 +221,7 @@
             this.btnEditExport.TabIndex = 24;
             this.btnEditExport.Text = "Sửa";
             this.btnEditExport.UseVisualStyleBackColor = true;
+            this.btnEditExport.Click += new System.EventHandler(this.btnEditExport_Click);
             // 
             // btnClear
             // 
@@ -221,6 +231,7 @@
             this.btnClear.TabIndex = 23;
             this.btnClear.Text = "Dọn sạch bảng";
             this.btnClear.UseVisualStyleBackColor = true;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
             // btnLoadExports
             // 
@@ -230,6 +241,7 @@
             this.btnLoadExports.TabIndex = 22;
             this.btnLoadExports.Text = "Hiển thị";
             this.btnLoadExports.UseVisualStyleBackColor = true;
+            this.btnLoadExports.Click += new System.EventHandler(this.btnLoadExports_Click);
             // 
             // groupBox2
             // 
@@ -263,6 +275,7 @@
             this.dgvExports.RowTemplate.Height = 24;
             this.dgvExports.Size = new System.Drawing.Size(1032, 422);
             this.dgvExports.TabIndex = 21;
+            this.dgvExports.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvExports_CellContentClick);
             // 
             // status
             // 
@@ -326,6 +339,7 @@
             this.txtProductID.Name = "txtProductID";
             this.txtProductID.Size = new System.Drawing.Size(291, 22);
             this.txtProductID.TabIndex = 12;
+            this.txtProductID.TextChanged += new System.EventHandler(this.txtProductID_TextChanged);
             // 
             // txtQuantity
             // 
@@ -333,6 +347,7 @@
             this.txtQuantity.Name = "txtQuantity";
             this.txtQuantity.Size = new System.Drawing.Size(291, 22);
             this.txtQuantity.TabIndex = 13;
+            this.txtQuantity.ValueChanged += new System.EventHandler(this.txtQuantity_ValueChanged);
             // 
             // txtPrice
             // 
@@ -340,6 +355,7 @@
             this.txtPrice.Name = "txtPrice";
             this.txtPrice.Size = new System.Drawing.Size(291, 22);
             this.txtPrice.TabIndex = 15;
+            this.txtPrice.TextChanged += new System.EventHandler(this.txtPrice_TextChanged);
             // 
             // label5
             // 
@@ -385,6 +401,25 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Danh mục thông tin";
             // 
+            // lblTotalAmount
+            // 
+            this.lblTotalAmount.AutoSize = true;
+            this.lblTotalAmount.Location = new System.Drawing.Point(282, 187);
+            this.lblTotalAmount.Name = "lblTotalAmount";
+            this.lblTotalAmount.Size = new System.Drawing.Size(57, 16);
+            this.lblTotalAmount.TabIndex = 37;
+            this.lblTotalAmount.Text = "tong tien";
+            // 
+            // btnCaculateTotal
+            // 
+            this.btnCaculateTotal.Location = new System.Drawing.Point(25, 175);
+            this.btnCaculateTotal.Name = "btnCaculateTotal";
+            this.btnCaculateTotal.Size = new System.Drawing.Size(194, 40);
+            this.btnCaculateTotal.TabIndex = 36;
+            this.btnCaculateTotal.Text = "Tổng giá trị đơn hàng";
+            this.btnCaculateTotal.UseVisualStyleBackColor = true;
+            this.btnCaculateTotal.Click += new System.EventHandler(this.btnCaculateTotal_Click);
+            // 
             // groupBox4
             // 
             this.groupBox4.Controls.Add(this.dgvExportDetails);
@@ -404,6 +439,7 @@
             this.dgvExportDetails.RowTemplate.Height = 24;
             this.dgvExportDetails.Size = new System.Drawing.Size(474, 719);
             this.dgvExportDetails.TabIndex = 0;
+            this.dgvExportDetails.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvExportDetails_CellContentClick);
             // 
             // btnShowDetails
             // 
@@ -413,33 +449,11 @@
             this.btnShowDetails.TabIndex = 35;
             this.btnShowDetails.Text = "Hiển thị chi tiết đơn hàng";
             this.btnShowDetails.UseVisualStyleBackColor = true;
+            this.btnShowDetails.Click += new System.EventHandler(this.btnShowDetails_Click);
             // 
-            // btnCaculateTotal
+            // errorProvider1
             // 
-            this.btnCaculateTotal.Location = new System.Drawing.Point(25, 175);
-            this.btnCaculateTotal.Name = "btnCaculateTotal";
-            this.btnCaculateTotal.Size = new System.Drawing.Size(194, 40);
-            this.btnCaculateTotal.TabIndex = 36;
-            this.btnCaculateTotal.Text = "Tổng giá trị đơn hàng";
-            this.btnCaculateTotal.UseVisualStyleBackColor = true;
-            // 
-            // btnExportExcel
-            // 
-            this.btnExportExcel.Location = new System.Drawing.Point(6, 184);
-            this.btnExportExcel.Name = "btnExportExcel";
-            this.btnExportExcel.Size = new System.Drawing.Size(194, 40);
-            this.btnExportExcel.TabIndex = 37;
-            this.btnExportExcel.Text = "In đơn xuất hàng";
-            this.btnExportExcel.UseVisualStyleBackColor = true;
-            // 
-            // lblTotalAmount
-            // 
-            this.lblTotalAmount.AutoSize = true;
-            this.lblTotalAmount.Location = new System.Drawing.Point(282, 187);
-            this.lblTotalAmount.Name = "lblTotalAmount";
-            this.lblTotalAmount.Size = new System.Drawing.Size(57, 16);
-            this.lblTotalAmount.TabIndex = 37;
-            this.lblTotalAmount.Text = "tong tien";
+            this.errorProvider1.ContainerControl = this;
             // 
             // PhieuXuatKho
             // 
@@ -449,7 +463,6 @@
             this.Controls.Add(this.btnShowDetails);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox3);
-            this.Controls.Add(this.btnNew);
             this.Controls.Add(this.btnBackMenu);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
@@ -464,6 +477,7 @@
             this.groupBox1.PerformLayout();
             this.groupBox4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvExportDetails)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -480,7 +494,6 @@
         private System.Windows.Forms.DateTimePicker dtpExportDate;
         private System.Windows.Forms.ComboBox cbEmployeeID;
         private Guna.UI2.WinForms.Guna2DragControl guna2DragControl1;
-        private System.Windows.Forms.Button btnNew;
         private System.Windows.Forms.Button btnBackMenu;
         private System.Windows.Forms.Button btnDeleteExport;
         private System.Windows.Forms.Button btnAddExport;
@@ -509,5 +522,6 @@
         private System.Windows.Forms.Button btnShowDetails;
         private System.Windows.Forms.Button btnExportExcel;
         private System.Windows.Forms.Label lblTotalAmount;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
     }
 }

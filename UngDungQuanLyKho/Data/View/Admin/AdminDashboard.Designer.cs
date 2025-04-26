@@ -29,13 +29,13 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnImport = new System.Windows.Forms.Button();
             this.lblName = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.btnProductManager = new System.Windows.Forms.Button();
             this.btnExport = new System.Windows.Forms.Button();
             this.btnReportManager = new System.Windows.Forms.Button();
             this.btnAccountManager = new System.Windows.Forms.Button();
-            this.btnImport = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -51,13 +51,23 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(788, 450);
+            this.panel1.Size = new System.Drawing.Size(315, 450);
             this.panel1.TabIndex = 3;
+            // 
+            // btnImport
+            // 
+            this.btnImport.Location = new System.Drawing.Point(12, 232);
+            this.btnImport.Name = "btnImport";
+            this.btnImport.Size = new System.Drawing.Size(137, 49);
+            this.btnImport.TabIndex = 6;
+            this.btnImport.Text = "Quản lý nhập hàng";
+            this.btnImport.UseVisualStyleBackColor = true;
+            this.btnImport.Click += new System.EventHandler(this.btnImport_Click);
             // 
             // lblName
             // 
             this.lblName.AutoSize = true;
-            this.lblName.Location = new System.Drawing.Point(376, 159);
+            this.lblName.Location = new System.Drawing.Point(105, 60);
             this.lblName.Name = "lblName";
             this.lblName.Size = new System.Drawing.Size(31, 16);
             this.lblName.TabIndex = 5;
@@ -67,7 +77,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(283, 122);
+            this.label1.Location = new System.Drawing.Point(12, 23);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(227, 16);
             this.label1.TabIndex = 4;
@@ -75,7 +85,7 @@
             // 
             // btnProductManager
             // 
-            this.btnProductManager.Location = new System.Drawing.Point(173, 285);
+            this.btnProductManager.Location = new System.Drawing.Point(155, 112);
             this.btnProductManager.Name = "btnProductManager";
             this.btnProductManager.Size = new System.Drawing.Size(137, 49);
             this.btnProductManager.TabIndex = 3;
@@ -85,7 +95,7 @@
             // 
             // btnExport
             // 
-            this.btnExport.Location = new System.Drawing.Point(321, 285);
+            this.btnExport.Location = new System.Drawing.Point(155, 172);
             this.btnExport.Name = "btnExport";
             this.btnExport.Size = new System.Drawing.Size(137, 49);
             this.btnExport.TabIndex = 2;
@@ -95,7 +105,7 @@
             // 
             // btnReportManager
             // 
-            this.btnReportManager.Location = new System.Drawing.Point(469, 285);
+            this.btnReportManager.Location = new System.Drawing.Point(12, 172);
             this.btnReportManager.Name = "btnReportManager";
             this.btnReportManager.Size = new System.Drawing.Size(137, 49);
             this.btnReportManager.TabIndex = 1;
@@ -105,23 +115,13 @@
             // 
             // btnAccountManager
             // 
-            this.btnAccountManager.Location = new System.Drawing.Point(25, 285);
+            this.btnAccountManager.Location = new System.Drawing.Point(12, 112);
             this.btnAccountManager.Name = "btnAccountManager";
             this.btnAccountManager.Size = new System.Drawing.Size(137, 49);
             this.btnAccountManager.TabIndex = 0;
             this.btnAccountManager.Text = "Quản lý tài khoản";
             this.btnAccountManager.UseVisualStyleBackColor = true;
             this.btnAccountManager.Click += new System.EventHandler(this.btnAccountManager_Click);
-            // 
-            // btnImport
-            // 
-            this.btnImport.Location = new System.Drawing.Point(617, 285);
-            this.btnImport.Name = "btnImport";
-            this.btnImport.Size = new System.Drawing.Size(137, 49);
-            this.btnImport.TabIndex = 6;
-            this.btnImport.Text = "Quản lý nhập hàng";
-            this.btnImport.UseVisualStyleBackColor = true;
-            this.btnImport.Click += new System.EventHandler(this.btnImport_Click);
             // 
             // AdminDashboard
             // 
