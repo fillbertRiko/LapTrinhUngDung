@@ -521,3 +521,14 @@ BEGIN
     ORDER BY ImportDate DESC;
 END
 go
+
+--procedure xem san pham ton kho thap
+CREATE OR ALTER PROCEDURE usp_GetLowStockProducts
+AS
+BEGIN
+    SET NOCOUNT ON;
+
+    SELECT ProductName, Quantity, Category, Unit, MinQuantity
+    FROM Products
+    WHERE MinQuantity < 5;
+END;

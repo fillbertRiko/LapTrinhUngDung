@@ -77,25 +77,18 @@ namespace UngDungQuanLyKho.Data.View.Admin
         }
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            ProductModel productModel = new ProductModel();
-            productModel.AddProduct(txtProductName.Text, txtCategory.Text, txtUnit.Text, int.Parse(txtQuantity.Text), int.Parse(txtMinQuantity.Text), int.Parse(txtLocationID.Text));
-            LoadProducts(); // Cập nhật danh sách sản phẩm
+            
         }
 
         private void btnEdit_Click(object sender, EventArgs e)
         {
-            int productId = Convert.ToInt32(dgvProducts.SelectedRows[0].Cells["ProductID"].Value);
-            ProductModel productModel = new ProductModel();
-            productModel.UpdateProduct(productId, txtProductName.Text, txtCategory.Text, txtUnit.Text, int.Parse(txtQuantity.Text), int.Parse(txtMinQuantity.Text), int.Parse(txtLocationID.Text));
-            LoadProducts();
+            
+
         }
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
-            int productId = Convert.ToInt32(dgvProducts.SelectedRows[0].Cells["ProductID"].Value);
-            ProductModel productModel = new ProductModel();
-            productModel.DeleteProduct(productId);
-            LoadProducts();
+            
         }
 
         private void btnStockReport_Click(object sender, EventArgs e)
@@ -314,17 +307,32 @@ namespace UngDungQuanLyKho.Data.View.Admin
 
         private void btnAdd_Click_1(object sender, EventArgs e)
         {
+            ProductModel productModel = new ProductModel();
+            productModel.AddProduct(txtProductName.Text, txtCategory.Text, txtUnit.Text, int.Parse(txtQuantity.Text), int.Parse(txtMinQuantity.Text), int.Parse(txtLocationID.Text));
+            LoadProducts(); // Cập nhật danh sách sản phẩm
 
+            //thong bao 
+            MessageBox.Show("Thêm sản phẩm thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void btnEdit_Click_1(object sender, EventArgs e)
         {
-
+            int productId = Convert.ToInt32(dgvProducts.SelectedRows[0].Cells["ProductID"].Value);
+            ProductModel productModel = new ProductModel();
+            productModel.UpdateProduct(productId, txtProductName.Text, txtCategory.Text, txtUnit.Text, int.Parse(txtQuantity.Text), int.Parse(txtMinQuantity.Text), int.Parse(txtLocationID.Text));
+            LoadProducts();
+            //thong bao
+            MessageBox.Show("Cập nhật sản phẩm thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void btnDelete_Click_1(object sender, EventArgs e)
         {
-
+            int productId = Convert.ToInt32(dgvProducts.SelectedRows[0].Cells["ProductID"].Value);
+            ProductModel productModel = new ProductModel();
+            productModel.DeleteProduct(productId);
+            LoadProducts();
+            //thong bao
+            MessageBox.Show("Xóa sản phẩm thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         // Sự kiện khi click vào nội dung trong dgvProducts
