@@ -1,0 +1,97 @@
+[33m2069c86[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m Ntgiang49
+[33meef1475[m Update Interface
+[33mcaf5a40[m Lưu thay đổi trước khi chuyển nhánh
+[33mb334718[m Ntgiang49
+[33m78a98d8[m Merge pull request #10 from fillbertRiko/DuongHuy/Backup-bak
+[33meb8ef4c[m[33m ([m[1;31morigin/DuongHuy/Backup-bak[m[33m, [m[1;32mDuongHuy/Add-model[m[33m)[m docs(server): Backup database Backup file bak
+[33m6167739[m Merge pull request #9 from fillbertRiko/DuongHuy/Add-model
+[33m06f5eb1[m[33m ([m[1;31morigin/DuongHuy/Add-model[m[33m, [m[1;32mDuongHuy/Fix-form-load[m[33m)[m build(app): Update form add model and view
+[33m08bee45[m[33m ([m[1;31morigin/DuongHuy/Fix-form-load[m[33m, [m[1;32mDuongHuy/Set-data[m[33m)[m fix(app): Fix form Fix form to correct
+[33mc5e2af3[m Merge pull request #8 from fillbertRiko/DuongHuy/Set-data
+[33m16b5186[m[33m ([m[1;31morigin/DuongHuy/Set-data[m[33m)[m fix(app): add file bak Backup file bak
+[33m9081aa1[m fix(tools): Add new call Datagridview
+[33m104f3d8[m fix(app): fix modify.cs change route modify.cs
+[33m0bdd5e5[m fix(app): fix sql command fix to not hardcode into single sql file
+[33m8ff0f71[m fix(app): fix call sqlServerClient fix call sql commant
+[33m33e02c9[m Update :form
+[33m76212b1[m Update 3 form(Nhap, xuat, luu chuyen)and compeleted code in menu
+[33m959b081[m @fillberRiko
+[33m6728555[m @fillbertRiko
+[33mb80d75f[m Merge branch 'main' of https://github.com/fillbertRiko/LapTrinhUngDung
+[33m48b155d[m update:
+[33mb616bbc[m Update some file
+[33m2b3a4e4[m Update some file
+[33m986628e[m update
+[33m21cdb3e[m Update project with login form
+[33m500faad[m Clear file
+[33md8c0fd2[m Bug4
+[33mbdd71fb[m Bug2
+[33m84f7fde[m Merge branch 'main' of https://github.com/fillbertRiko/LapTrinhUngDung
+[33m0c2f0c6[m update
+[33m29154f5[m Add file to folder
+[33mcef796c[m Add Folder
+[33mbd47bb5[m What
+[33m8ad610f[m Update something
+[33m86c3e7f[m Bug1
+[33m5a8f826[m update
+[33md432442[m Bug
+[33mec52091[m Bug
+[33mb9786a8[m update
+[33m1e32395[m Update project follow MVC models
+[33mace6a33[m Update project follow MVC models
+[33m260866a[m Update README.md
+[33ma1c23d2[m Update README.md
+[33me104097[m update: form
+[33m54d330c[m Update Authendication Account
+[33m1f35ed9[m Update Authendication
+[33m03fc491[m update : form ,table
+[33m1849620[m Update again
+[33m0da4354[m Update database
+[33m3010304[m Update Database
+[33m3f06394[m update : form3
+[33md84fc88[m Update Design Analysis
+[33m973e944[m Update  table
+[33m7655c9f[m Merge branch 'main' of https://github.com/fillbertRiko/LapTrinhUngDung
+[33m465ce25[m Update data table
+[33mb8df712[m Update
+[33mdef6b97[m Update form1
+[33m5682472[m Update WarehouseManagement.mdf
+[33m50f9218[m Add database
+[33m64a3c3e[m Merge branch 'main' of https://github.com/fillbertRiko/LapTrinhUngDung
+[33mf237175[m Update func
+[33m4085b97[m update : billing table
+[33m89cb41c[m update bill
+[33m813cef2[m Update form using sql cmt
+[33m6ba3ddd[m update
+[33ma79d5ff[m update invoice board
+[33m542e60a[m Update dotnet-desktop.yml
+[33m201da51[m Update dotnet-desktop.yml
+[33md6feb87[m Update dotnet-desktop.yml
+[33ma33e87a[m Update dotnet-desktop.yml
+[33m969859c[m Update dotnet-desktop.yml
+[33m34cf889[m Update dotnet-desktop.yml
+[33m8d5cb26[m Fix dotnet and msbuild
+[33m7c3a094[m Update SQLQuery.sql
+[33m74ba81d[m[33m ([m[1;31morigin/Hien[m[33m, [m[1;31morigin/Duc[m[33m)[m Merge branch 'main' of https://github.com/fillbertRiko/LapTrinhUngDung
+[33m4f76cbe[m Update Sql
+[33m3947e09[m[33m ([m[1;31morigin/Hao_milk[m[33m)[m update
+[33m702a795[m update
+[33m4e9f9bc[m Update SQLQuery1.sql
+[33m093ce70[m Update
+[33m828e123[m Update README.md
+[33mbacbb86[m log in
+[33m4e11b1c[m Create git.ignore
+[33m1f7a7e0[m Upload project
+[33m395e6f6[m Delete du_an_qlvt directory
+[33m9e3106e[m Merge pull request #3 from fillbertRiko/Huy
+[33m118ce9d[m[33m ([m[1;31morigin/Huy[m[33m)[m Init
+[33mb95302b[m Merge pull request #2 from fillbertRiko/Huy
+[33m4e155f5[m Update sql into project
+[33me769b35[m Update sql into project
+[33m89b4e0e[m Create dotnet-desktop.yml
+[33ma59e1d4[m Merge pull request #1 from fillbertRiko/Giang
+[33m2436e60[m giang
+[33m4b5e046[m giang1
+[33m1e152cb[m Update README.md
+[33m69cae08[m Update README.md
+[33md2065d7[m Initial commit
