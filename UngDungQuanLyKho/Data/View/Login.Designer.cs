@@ -39,13 +39,14 @@
             this.label2 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(135, 19);
+            this.pictureBox1.Location = new System.Drawing.Point(135, 25);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(376, 221);
@@ -60,7 +61,7 @@
             this.linkLabel_QuenMatKhau.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.linkLabel_QuenMatKhau.Location = new System.Drawing.Point(481, 480);
             this.linkLabel_QuenMatKhau.Name = "linkLabel_QuenMatKhau";
-            this.linkLabel_QuenMatKhau.Size = new System.Drawing.Size(109, 18);
+            this.linkLabel_QuenMatKhau.Size = new System.Drawing.Size(132, 22);
             this.linkLabel_QuenMatKhau.TabIndex = 3;
             this.linkLabel_QuenMatKhau.TabStop = true;
             this.linkLabel_QuenMatKhau.Text = "Quên mật khẩu";
@@ -132,7 +133,7 @@
             this.label1.Location = new System.Drawing.Point(35, 271);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(78, 17);
+            this.label1.Size = new System.Drawing.Size(88, 20);
             this.label1.TabIndex = 9;
             this.label1.Text = "Đăng nhập";
             // 
@@ -142,7 +143,7 @@
             this.label2.Location = new System.Drawing.Point(35, 384);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(66, 17);
+            this.label2.Size = new System.Drawing.Size(75, 20);
             this.label2.TabIndex = 10;
             this.label2.Text = "Mật khẩu";
             // 
@@ -165,8 +166,15 @@
             this.guna2Elipse1.BorderRadius = 20;
             this.guna2Elipse1.TargetControl = this;
             // 
+            // guna2DragControl1
+            // 
+            this.guna2DragControl1.DockIndicatorTransparencyValue = 0.6D;
+            this.guna2DragControl1.TargetControl = this;
+            this.guna2DragControl1.UseTransparentDrag = true;
+            // 
             // Login
             // 
+            this.AcceptButton = this.button_DangNhap;
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(645, 646);
@@ -202,5 +210,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button1;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
+        private Guna.UI2.WinForms.Guna2DragControl guna2DragControl1;
     }
 }

@@ -1,32 +1,7 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "H:\\T\u00E0i li\u1EC7u h\u1ECDc t\u1EADp\\2025\\L\u1EADp tr\u00ECnh \u1EE9ng d\u1EE5ng\\Project\\LapTrinhUngDung\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{3B7720EC-5EE9-4D4F-9BBE-58B4A35A543F}|UngDungQuanLyKho\\UngDungQuanLyKho.csproj|h:\\t\u00E0i li\u1EC7u h\u1ECDc t\u1EADp\\2025\\l\u1EADp tr\u00ECnh \u1EE9ng d\u1EE5ng\\project\\laptrinhungdung\\ungdungquanlykho\\data\\models\\importmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3B7720EC-5EE9-4D4F-9BBE-58B4A35A543F}|UngDungQuanLyKho\\UngDungQuanLyKho.csproj|solutionrelative:ungdungquanlykho\\data\\models\\importmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3B7720EC-5EE9-4D4F-9BBE-58B4A35A543F}|UngDungQuanLyKho\\UngDungQuanLyKho.csproj|H:\\T\u00E0i li\u1EC7u h\u1ECDc t\u1EADp\\2025\\L\u1EADp tr\u00ECnh \u1EE9ng d\u1EE5ng\\Project\\LapTrinhUngDung\\ungdungquanlykho\\data\\models\\exportmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3B7720EC-5EE9-4D4F-9BBE-58B4A35A543F}|UngDungQuanLyKho\\UngDungQuanLyKho.csproj|solutionrelative:ungdungquanlykho\\data\\models\\exportmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3B7720EC-5EE9-4D4F-9BBE-58B4A35A543F}|UngDungQuanLyKho\\UngDungQuanLyKho.csproj|h:\\t\u00E0i li\u1EC7u h\u1ECDc t\u1EADp\\2025\\l\u1EADp tr\u00ECnh \u1EE9ng d\u1EE5ng\\project\\laptrinhungdung\\ungdungquanlykho\\data\\view\\admin\\stockstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3B7720EC-5EE9-4D4F-9BBE-58B4A35A543F}|UngDungQuanLyKho\\UngDungQuanLyKho.csproj|solutionrelative:ungdungquanlykho\\data\\view\\admin\\stockstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3B7720EC-5EE9-4D4F-9BBE-58B4A35A543F}|UngDungQuanLyKho\\UngDungQuanLyKho.csproj|h:\\t\u00E0i li\u1EC7u h\u1ECDc t\u1EADp\\2025\\l\u1EADp tr\u00ECnh \u1EE9ng d\u1EE5ng\\project\\laptrinhungdung\\ungdungquanlykho\\data\\view\\admin\\admindashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{3B7720EC-5EE9-4D4F-9BBE-58B4A35A543F}|UngDungQuanLyKho\\UngDungQuanLyKho.csproj|solutionrelative:ungdungquanlykho\\data\\view\\admin\\admindashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3B7720EC-5EE9-4D4F-9BBE-58B4A35A543F}|UngDungQuanLyKho\\UngDungQuanLyKho.csproj|h:\\t\u00E0i li\u1EC7u h\u1ECDc t\u1EADp\\2025\\l\u1EADp tr\u00ECnh \u1EE9ng d\u1EE5ng\\project\\laptrinhungdung\\ungdungquanlykho\\data\\view\\menu\\phieuxuatkho.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3B7720EC-5EE9-4D4F-9BBE-58B4A35A543F}|UngDungQuanLyKho\\UngDungQuanLyKho.csproj|solutionrelative:ungdungquanlykho\\data\\view\\menu\\phieuxuatkho.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3B7720EC-5EE9-4D4F-9BBE-58B4A35A543F}|UngDungQuanLyKho\\UngDungQuanLyKho.csproj|H:\\T\u00E0i li\u1EC7u h\u1ECDc t\u1EADp\\2025\\L\u1EADp tr\u00ECnh \u1EE9ng d\u1EE5ng\\Project\\LapTrinhUngDung\\ungdungquanlykho\\data\\view\\menu\\phieuxuatkho.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{3B7720EC-5EE9-4D4F-9BBE-58B4A35A543F}|UngDungQuanLyKho\\UngDungQuanLyKho.csproj|solutionrelative:ungdungquanlykho\\data\\view\\menu\\phieuxuatkho.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    }
-  ],
+  "WorkspaceRootPath": "D:\\lap_trinh_ung_dung\\L\u1EADp tr\u00ECnh \u1EE9ng d\u1EE5ng\\LapTrinhUngDung\\",
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -34,87 +9,15 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ImportModel.cs",
-              "DocumentMoniker": "H:\\T\u00E0i li\u1EC7u h\u1ECDc t\u1EADp\\2025\\L\u1EADp tr\u00ECnh \u1EE9ng d\u1EE5ng\\Project\\LapTrinhUngDung\\UngDungQuanLyKho\\Data\\Models\\ImportModel.cs",
-              "RelativeDocumentMoniker": "UngDungQuanLyKho\\Data\\Models\\ImportModel.cs",
-              "ToolTip": "H:\\T\u00E0i li\u1EC7u h\u1ECDc t\u1EADp\\2025\\L\u1EADp tr\u00ECnh \u1EE9ng d\u1EE5ng\\Project\\LapTrinhUngDung\\UngDungQuanLyKho\\Data\\Models\\ImportModel.cs",
-              "RelativeToolTip": "UngDungQuanLyKho\\Data\\Models\\ImportModel.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABIAAABGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-26T04:40:44.988Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "StockStatus.cs",
-              "DocumentMoniker": "H:\\T\u00E0i li\u1EC7u h\u1ECDc t\u1EADp\\2025\\L\u1EADp tr\u00ECnh \u1EE9ng d\u1EE5ng\\Project\\LapTrinhUngDung\\UngDungQuanLyKho\\Data\\View\\Admin\\StockStatus.cs",
-              "RelativeDocumentMoniker": "UngDungQuanLyKho\\Data\\View\\Admin\\StockStatus.cs",
-              "ToolTip": "H:\\T\u00E0i li\u1EC7u h\u1ECDc t\u1EADp\\2025\\L\u1EADp tr\u00ECnh \u1EE9ng d\u1EE5ng\\Project\\LapTrinhUngDung\\UngDungQuanLyKho\\Data\\View\\Admin\\StockStatus.cs",
-              "RelativeToolTip": "UngDungQuanLyKho\\Data\\View\\Admin\\StockStatus.cs",
-              "ViewState": "AgIAACcAAAAAAAAAAADwvzEAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-26T04:35:40.195Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "AdminDashboard.cs [Design]",
-              "DocumentMoniker": "H:\\T\u00E0i li\u1EC7u h\u1ECDc t\u1EADp\\2025\\L\u1EADp tr\u00ECnh \u1EE9ng d\u1EE5ng\\Project\\LapTrinhUngDung\\UngDungQuanLyKho\\Data\\View\\Admin\\AdminDashboard.cs",
-              "RelativeDocumentMoniker": "UngDungQuanLyKho\\Data\\View\\Admin\\AdminDashboard.cs",
-              "ToolTip": "H:\\T\u00E0i li\u1EC7u h\u1ECDc t\u1EADp\\2025\\L\u1EADp tr\u00ECnh \u1EE9ng d\u1EE5ng\\Project\\LapTrinhUngDung\\UngDungQuanLyKho\\Data\\View\\Admin\\AdminDashboard.cs [Design]",
-              "RelativeToolTip": "UngDungQuanLyKho\\Data\\View\\Admin\\AdminDashboard.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-26T04:34:23.626Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ExportModel.cs",
-              "DocumentMoniker": "H:\\T\u00E0i li\u1EC7u h\u1ECDc t\u1EADp\\2025\\L\u1EADp tr\u00ECnh \u1EE9ng d\u1EE5ng\\Project\\LapTrinhUngDung\\UngDungQuanLyKho\\Data\\Models\\ExportModel.cs",
-              "RelativeDocumentMoniker": "UngDungQuanLyKho\\Data\\Models\\ExportModel.cs",
-              "ToolTip": "H:\\T\u00E0i li\u1EC7u h\u1ECDc t\u1EADp\\2025\\L\u1EADp tr\u00ECnh \u1EE9ng d\u1EE5ng\\Project\\LapTrinhUngDung\\UngDungQuanLyKho\\Data\\Models\\ExportModel.cs",
-              "RelativeToolTip": "UngDungQuanLyKho\\Data\\Models\\ExportModel.cs",
-              "ViewState": "AgIAANkAAAAAAAAAAAAiwHsBAABKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-26T04:14:52.397Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "PhieuXuatKho.cs",
-              "DocumentMoniker": "H:\\T\u00E0i li\u1EC7u h\u1ECDc t\u1EADp\\2025\\L\u1EADp tr\u00ECnh \u1EE9ng d\u1EE5ng\\Project\\LapTrinhUngDung\\UngDungQuanLyKho\\Data\\View\\MENU\\PhieuXuatKho.cs",
-              "RelativeDocumentMoniker": "UngDungQuanLyKho\\Data\\View\\MENU\\PhieuXuatKho.cs",
-              "ToolTip": "H:\\T\u00E0i li\u1EC7u h\u1ECDc t\u1EADp\\2025\\L\u1EADp tr\u00ECnh \u1EE9ng d\u1EE5ng\\Project\\LapTrinhUngDung\\UngDungQuanLyKho\\Data\\View\\MENU\\PhieuXuatKho.cs",
-              "RelativeToolTip": "UngDungQuanLyKho\\Data\\View\\MENU\\PhieuXuatKho.cs",
-              "ViewState": "AgIAAHcBAAAAAAAAAAAgwI4BAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-26T04:07:17.9Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "PhieuXuatKho.cs [Design]",
-              "DocumentMoniker": "H:\\T\u00E0i li\u1EC7u h\u1ECDc t\u1EADp\\2025\\L\u1EADp tr\u00ECnh \u1EE9ng d\u1EE5ng\\Project\\LapTrinhUngDung\\UngDungQuanLyKho\\Data\\View\\MENU\\PhieuXuatKho.cs",
-              "RelativeDocumentMoniker": "UngDungQuanLyKho\\Data\\View\\MENU\\PhieuXuatKho.cs",
-              "ToolTip": "H:\\T\u00E0i li\u1EC7u h\u1ECDc t\u1EADp\\2025\\L\u1EADp tr\u00ECnh \u1EE9ng d\u1EE5ng\\Project\\LapTrinhUngDung\\UngDungQuanLyKho\\Data\\View\\MENU\\PhieuXuatKho.cs [Design]",
-              "RelativeToolTip": "UngDungQuanLyKho\\Data\\View\\MENU\\PhieuXuatKho.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-26T02:30:06.444Z",
-              "EditorCaption": " [Design]"
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
             }
           ]
         }

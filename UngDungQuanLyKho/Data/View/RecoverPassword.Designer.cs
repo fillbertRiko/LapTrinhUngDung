@@ -30,7 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RecoverPassword));
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pb1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.linkLabel_XoaNoiDung = new System.Windows.Forms.LinkLabel();
             this.linkLabel_QuayLai = new System.Windows.Forms.LinkLabel();
@@ -38,25 +38,26 @@
             this.label_Show = new System.Windows.Forms.Label();
             this.textBox_Email = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2CustomGradientPanel1 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
+            this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.button1 = new System.Windows.Forms.Button();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
-            this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.pb1)).BeginInit();
             this.guna2CustomGradientPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // pictureBox1
+            // pb1
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(525, 226);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.pb1.BackColor = System.Drawing.Color.Transparent;
+            this.pb1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pb1.Image = ((System.Drawing.Image)(resources.GetObject("pb1.Image")));
+            this.pb1.Location = new System.Drawing.Point(0, 0);
+            this.pb1.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.pb1.Name = "pb1";
+            this.pb1.Size = new System.Drawing.Size(525, 226);
+            this.pb1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pb1.TabIndex = 0;
+            this.pb1.TabStop = false;
             // 
             // label1
             // 
@@ -149,7 +150,7 @@
             // 
             this.guna2CustomGradientPanel1.Controls.Add(this.guna2HtmlLabel1);
             this.guna2CustomGradientPanel1.Controls.Add(this.button1);
-            this.guna2CustomGradientPanel1.Controls.Add(this.pictureBox1);
+            this.guna2CustomGradientPanel1.Controls.Add(this.pb1);
             this.guna2CustomGradientPanel1.Controls.Add(this.linkLabel_QuayLai);
             this.guna2CustomGradientPanel1.Controls.Add(this.textBox_Email);
             this.guna2CustomGradientPanel1.Controls.Add(this.label1);
@@ -164,6 +165,17 @@
             this.guna2CustomGradientPanel1.Name = "guna2CustomGradientPanel1";
             this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(525, 659);
             this.guna2CustomGradientPanel1.TabIndex = 12;
+            // 
+            // guna2HtmlLabel1
+            // 
+            this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.White;
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(183, 258);
+            this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(209, 34);
+            this.guna2HtmlLabel1.TabIndex = 13;
+            this.guna2HtmlLabel1.Text = "Quên mật khẩu";
             // 
             // button1
             // 
@@ -184,16 +196,11 @@
             this.guna2Elipse1.BorderRadius = 20;
             this.guna2Elipse1.TargetControl = this;
             // 
-            // guna2HtmlLabel1
+            // guna2DragControl1
             // 
-            this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.White;
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(183, 258);
-            this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(209, 34);
-            this.guna2HtmlLabel1.TabIndex = 13;
-            this.guna2HtmlLabel1.Text = "Quên mật khẩu";
+            this.guna2DragControl1.DockIndicatorTransparencyValue = 0.6D;
+            this.guna2DragControl1.TargetControl = this.pb1;
+            this.guna2DragControl1.UseTransparentDrag = true;
             // 
             // RecoverPassword
             // 
@@ -207,7 +214,7 @@
             this.Name = "RecoverPassword";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Register";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb1)).EndInit();
             this.guna2CustomGradientPanel1.ResumeLayout(false);
             this.guna2CustomGradientPanel1.PerformLayout();
             this.ResumeLayout(false);
@@ -216,7 +223,7 @@
 
         #endregion
 
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pb1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.LinkLabel linkLabel_XoaNoiDung;
         private System.Windows.Forms.LinkLabel linkLabel_QuayLai;
@@ -227,5 +234,6 @@
         private System.Windows.Forms.Button button1;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
+        private Guna.UI2.WinForms.Guna2DragControl guna2DragControl1;
     }
 }
