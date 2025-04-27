@@ -30,19 +30,21 @@
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnImport = new System.Windows.Forms.Button();
-            this.lblName = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.btnProductManager = new System.Windows.Forms.Button();
             this.btnExport = new System.Windows.Forms.Button();
             this.btnReportManager = new System.Windows.Forms.Button();
             this.btnAccountManager = new System.Windows.Forms.Button();
+            this.btnLocation = new System.Windows.Forms.Button();
+            this.btnLogout = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.btnLogout);
+            this.panel1.Controls.Add(this.btnLocation);
             this.panel1.Controls.Add(this.btnImport);
-            this.panel1.Controls.Add(this.lblName);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.btnProductManager);
             this.panel1.Controls.Add(this.btnExport);
@@ -64,24 +66,15 @@
             this.btnImport.UseVisualStyleBackColor = true;
             this.btnImport.Click += new System.EventHandler(this.btnImport_Click);
             // 
-            // lblName
-            // 
-            this.lblName.AutoSize = true;
-            this.lblName.Location = new System.Drawing.Point(105, 60);
-            this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(31, 16);
-            this.lblName.TabIndex = 5;
-            this.lblName.Text = "Tên";
-            this.lblName.Click += new System.EventHandler(this.lblName_Click);
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 23);
+            this.label1.Location = new System.Drawing.Point(44, 59);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(227, 16);
             this.label1.TabIndex = 4;
             this.label1.Text = "Chào mừng bạn đến với trang quản trị";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // btnProductManager
             // 
@@ -123,6 +116,26 @@
             this.btnAccountManager.UseVisualStyleBackColor = true;
             this.btnAccountManager.Click += new System.EventHandler(this.btnAccountManager_Click);
             // 
+            // btnLocation
+            // 
+            this.btnLocation.Location = new System.Drawing.Point(155, 232);
+            this.btnLocation.Name = "btnLocation";
+            this.btnLocation.Size = new System.Drawing.Size(137, 49);
+            this.btnLocation.TabIndex = 7;
+            this.btnLocation.Text = "Quản lý khu vực";
+            this.btnLocation.UseVisualStyleBackColor = true;
+            this.btnLocation.Click += new System.EventHandler(this.btnLocation_Click);
+            // 
+            // btnLogout
+            // 
+            this.btnLogout.Location = new System.Drawing.Point(91, 348);
+            this.btnLogout.Name = "btnLogout";
+            this.btnLogout.Size = new System.Drawing.Size(137, 49);
+            this.btnLogout.TabIndex = 8;
+            this.btnLogout.Text = "Đăng xuất";
+            this.btnLogout.UseVisualStyleBackColor = true;
+            this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
+            // 
             // AdminDashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -148,8 +161,9 @@
         private System.Windows.Forms.Button btnExport;
         private System.Windows.Forms.Button btnReportManager;
         private System.Windows.Forms.Button btnAccountManager;
-        private System.Windows.Forms.Label lblName;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnImport;
+        private System.Windows.Forms.Button btnLogout;
+        private System.Windows.Forms.Button btnLocation;
     }
 }

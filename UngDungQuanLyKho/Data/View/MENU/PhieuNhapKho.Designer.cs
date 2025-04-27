@@ -57,16 +57,18 @@
             this.btnClear = new System.Windows.Forms.Button();
             this.btnShowData = new System.Windows.Forms.Button();
             this.btnBackMenu = new System.Windows.Forms.Button();
-            this.btnNew = new System.Windows.Forms.Button();
             this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.cbbSupplier = new System.Windows.Forms.ComboBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.btnExitForm = new System.Windows.Forms.Button();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.txtQuantity)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvImports)).BeginInit();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -138,6 +140,7 @@
             this.txtProductID.Name = "txtProductID";
             this.txtProductID.Size = new System.Drawing.Size(291, 22);
             this.txtProductID.TabIndex = 8;
+            this.txtProductID.TextChanged += new System.EventHandler(this.txtProductID_TextChanged);
             // 
             // dtpImportDate
             // 
@@ -147,14 +150,16 @@
             this.dtpImportDate.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.dtpImportDate.Size = new System.Drawing.Size(291, 22);
             this.dtpImportDate.TabIndex = 9;
+            this.dtpImportDate.ValueChanged += new System.EventHandler(this.dtpImportDate_ValueChanged);
             // 
             // cbEmployeeID
             // 
             this.cbEmployeeID.FormattingEnabled = true;
             this.cbEmployeeID.Location = new System.Drawing.Point(158, 104);
             this.cbEmployeeID.Name = "cbEmployeeID";
-            this.cbEmployeeID.Size = new System.Drawing.Size(147, 24);
+            this.cbEmployeeID.Size = new System.Drawing.Size(291, 24);
             this.cbEmployeeID.TabIndex = 10;
+            this.cbEmployeeID.SelectedIndexChanged += new System.EventHandler(this.cbEmployeeID_SelectedIndexChanged);
             // 
             // textBox3
             // 
@@ -162,6 +167,7 @@
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(291, 22);
             this.textBox3.TabIndex = 12;
+            this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
             // txtQuantity
             // 
@@ -169,6 +175,7 @@
             this.txtQuantity.Name = "txtQuantity";
             this.txtQuantity.Size = new System.Drawing.Size(291, 22);
             this.txtQuantity.TabIndex = 13;
+            this.txtQuantity.ValueChanged += new System.EventHandler(this.txtQuantity_ValueChanged);
             // 
             // txtPrice
             // 
@@ -176,6 +183,7 @@
             this.txtPrice.Name = "txtPrice";
             this.txtPrice.Size = new System.Drawing.Size(291, 22);
             this.txtPrice.TabIndex = 15;
+            this.txtPrice.TextChanged += new System.EventHandler(this.txtPrice_TextChanged);
             // 
             // dgvImports
             // 
@@ -269,9 +277,9 @@
             // 
             // btnDelete
             // 
-            this.btnDelete.Location = new System.Drawing.Point(903, 36);
+            this.btnDelete.Location = new System.Drawing.Point(802, 21);
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(75, 23);
+            this.btnDelete.Size = new System.Drawing.Size(156, 35);
             this.btnDelete.TabIndex = 26;
             this.btnDelete.Text = "Xoá";
             this.btnDelete.UseVisualStyleBackColor = true;
@@ -279,9 +287,9 @@
             // 
             // btnAdd
             // 
-            this.btnAdd.Location = new System.Drawing.Point(659, 36);
+            this.btnAdd.Location = new System.Drawing.Point(446, 21);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(75, 23);
+            this.btnAdd.Size = new System.Drawing.Size(156, 35);
             this.btnAdd.TabIndex = 25;
             this.btnAdd.Text = "Thêm";
             this.btnAdd.UseVisualStyleBackColor = true;
@@ -289,9 +297,9 @@
             // 
             // btnUpdate
             // 
-            this.btnUpdate.Location = new System.Drawing.Point(788, 36);
+            this.btnUpdate.Location = new System.Drawing.Point(624, 21);
             this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(75, 23);
+            this.btnUpdate.Size = new System.Drawing.Size(156, 35);
             this.btnUpdate.TabIndex = 24;
             this.btnUpdate.Text = "Sửa";
             this.btnUpdate.UseVisualStyleBackColor = true;
@@ -299,9 +307,9 @@
             // 
             // btnClear
             // 
-            this.btnClear.Location = new System.Drawing.Point(399, 36);
+            this.btnClear.Location = new System.Drawing.Point(268, 21);
             this.btnClear.Name = "btnClear";
-            this.btnClear.Size = new System.Drawing.Size(181, 23);
+            this.btnClear.Size = new System.Drawing.Size(156, 35);
             this.btnClear.TabIndex = 23;
             this.btnClear.Text = "Dọn sạch bảng";
             this.btnClear.UseVisualStyleBackColor = true;
@@ -309,9 +317,9 @@
             // 
             // btnShowData
             // 
-            this.btnShowData.Location = new System.Drawing.Point(189, 36);
+            this.btnShowData.Location = new System.Drawing.Point(90, 21);
             this.btnShowData.Name = "btnShowData";
-            this.btnShowData.Size = new System.Drawing.Size(75, 23);
+            this.btnShowData.Size = new System.Drawing.Size(156, 35);
             this.btnShowData.TabIndex = 22;
             this.btnShowData.Text = "Hiển thị";
             this.btnShowData.UseVisualStyleBackColor = true;
@@ -321,21 +329,11 @@
             // 
             this.btnBackMenu.Location = new System.Drawing.Point(931, 20);
             this.btnBackMenu.Name = "btnBackMenu";
-            this.btnBackMenu.Size = new System.Drawing.Size(135, 54);
+            this.btnBackMenu.Size = new System.Drawing.Size(135, 109);
             this.btnBackMenu.TabIndex = 23;
             this.btnBackMenu.Text = "Quay Về Menu";
             this.btnBackMenu.UseVisualStyleBackColor = true;
             this.btnBackMenu.Click += new System.EventHandler(this.btnBackMenu_Click);
-            // 
-            // btnNew
-            // 
-            this.btnNew.Location = new System.Drawing.Point(931, 157);
-            this.btnNew.Name = "btnNew";
-            this.btnNew.Size = new System.Drawing.Size(135, 54);
-            this.btnNew.TabIndex = 25;
-            this.btnNew.Text = "Thêm Phiếu Nhập Mới";
-            this.btnNew.UseVisualStyleBackColor = true;
-            this.btnNew.Click += new System.EventHandler(this.btnNew_Click);
             // 
             // guna2DragControl1
             // 
@@ -349,6 +347,7 @@
             this.cbbSupplier.Name = "cbbSupplier";
             this.cbbSupplier.Size = new System.Drawing.Size(291, 24);
             this.cbbSupplier.TabIndex = 26;
+            this.cbbSupplier.SelectedIndexChanged += new System.EventHandler(this.cbbSupplier_SelectedIndexChanged);
             // 
             // groupBox1
             // 
@@ -382,6 +381,20 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Thông tin nhập hàng";
             // 
+            // btnExitForm
+            // 
+            this.btnExitForm.Location = new System.Drawing.Point(931, 137);
+            this.btnExitForm.Name = "btnExitForm";
+            this.btnExitForm.Size = new System.Drawing.Size(135, 109);
+            this.btnExitForm.TabIndex = 29;
+            this.btnExitForm.Text = "Thoát phiếu nhập";
+            this.btnExitForm.UseVisualStyleBackColor = true;
+            this.btnExitForm.Click += new System.EventHandler(this.btnExitForm_Click);
+            // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
+            // 
             // PhieuNhapKho
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -389,14 +402,14 @@
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(1078, 761);
+            this.Controls.Add(this.btnExitForm);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.btnNew);
             this.Controls.Add(this.btnBackMenu);
             this.Controls.Add(this.groupBox2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Name = "PhieuNhapKho";
-            this.Text = "6";
+            this.Text = "Phiếu nhập hàng";
             ((System.ComponentModel.ISupportInitialize)(this.txtQuantity)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvImports)).EndInit();
             this.groupBox2.ResumeLayout(false);
@@ -404,6 +417,7 @@
             this.groupBox1.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -431,7 +445,6 @@
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.Button btnUpdate;
         private System.Windows.Forms.Button btnBackMenu;
-        private System.Windows.Forms.Button btnNew;
         private System.Windows.Forms.DataGridViewTextBoxColumn status;
         private System.Windows.Forms.DataGridViewTextBoxColumn ImportID;
         private System.Windows.Forms.DataGridViewTextBoxColumn ProductID;
@@ -443,5 +456,7 @@
         private System.Windows.Forms.ComboBox cbbSupplier;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.Button btnExitForm;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
     }
 }

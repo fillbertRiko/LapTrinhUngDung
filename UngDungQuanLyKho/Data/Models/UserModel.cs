@@ -174,6 +174,7 @@ namespace UngDungQuanLyKho.Data.Models
 
         public DataTable SearchUsers(string keyword)
         {
+            DataTable dt = new DataTable();
             try
             {
                 using (SqlConnection conn = Connection.GetSqlConnection())
@@ -186,18 +187,16 @@ namespace UngDungQuanLyKho.Data.Models
 
                         using (SqlDataAdapter adapter = new SqlDataAdapter(cmd))
                         {
-                            DataTable dt = new DataTable();
                             adapter.Fill(dt);
-                            return dt;
                         }
                     }
                 }
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Lỗi khi tìm kiếm người dùng: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return new DataTable(); // Trả về bảng trống nếu có lỗi để tránh null
+                MessageBox.Show($"Lỗi khi tìm kiếm người dùng: {ex.Message}", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+            return dt;
         }
 
 
@@ -306,6 +305,8 @@ namespace UngDungQuanLyKho.Data.Models
             }
             return false;
         }
+        
+
 
     }
 }

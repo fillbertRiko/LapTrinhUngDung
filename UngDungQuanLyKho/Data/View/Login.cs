@@ -72,5 +72,10 @@ namespace UngDungQuanLyKho.Data.View
                 e.Cancel = true;
             }
         }
+
+        private void Login_Load(object sender, EventArgs e)
+        {
+            textBox_Password.PasswordChar = '*';
+        }
     }
 }

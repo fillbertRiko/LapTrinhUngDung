@@ -20,22 +20,27 @@ namespace UngDungQuanLyKho.Data.Models
 
         public DataTable GetProducts()
         {
-            using (SqlConnection conn = Connection.GetSqlConnection())
+            DataTable dt = new DataTable();
+            try
             {
-                conn.Open();
-                using (SqlCommand cmd = new SqlCommand("usp_GetProducts", conn))
+                using (SqlConnection conn = Connection.GetSqlConnection())
                 {
-                    // Cấu hình command là stored procedure
-                    cmd.CommandType = CommandType.StoredProcedure;
-
-                    using (SqlDataAdapter adapter = new SqlDataAdapter(cmd))
+                    conn.Open();
+                    using (SqlCommand cmd = new SqlCommand("usp_GetProducts", conn))
                     {
-                        DataTable dt = new DataTable();
-                        adapter.Fill(dt);
-                        return dt;
+                        cmd.CommandType = CommandType.StoredProcedure;
+                        using (SqlDataAdapter adapter = new SqlDataAdapter(cmd))
+                        {
+                            adapter.Fill(dt);
+                        }
                     }
                 }
             }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Lỗi khi tải danh sách sản phẩm: {ex.Message}", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            return dt;
         }
 
         public DataTable SearchProducts(string keyword)
@@ -56,42 +61,62 @@ namespace UngDungQuanLyKho.Data.Models
                 }
             }
         }
-        public void AddProduct(string name, string category, string unit, int quantity, int minQuantity, int locationId)
+        public bool AddProduct(string name, string category, string unit, int quantity, int minQuantity, int locationId)
         {
-            using (SqlConnection conn = Connection.GetSqlConnection())
+            try
             {
-                conn.Open();
-                using (SqlCommand cmd = new SqlCommand("usp_AddProduct", conn))
+                using (SqlConnection conn = Connection.GetSqlConnection())
                 {
-                    cmd.CommandType = CommandType.StoredProcedure;
-                    cmd.Parameters.AddWithValue("@ProductName", name);
-                    cmd.Parameters.AddWithValue("@Category", category);
-                    cmd.Parameters.AddWithValue("@Unit", unit);
-                    cmd.Parameters.AddWithValue("@Quantity", quantity);
-                    cmd.Parameters.AddWithValue("@MinQuantity", minQuantity);
-                    cmd.Parameters.AddWithValue("@LocationID", locationId);
-                    cmd.ExecuteNonQuery();
+                    conn.Open();
+                    using (SqlCommand cmd = new SqlCommand("usp_AddProduct", conn))
+                    {
+                        cmd.CommandType = CommandType.StoredProcedure;
+                        cmd.Parameters.AddWithValue("@ProductName", name);
+                        cmd.Parameters.AddWithValue("@Category", category);
+                        cmd.Parameters.AddWithValue("@Unit", unit);
+                        cmd.Parameters.AddWithValue("@Quantity", quantity);
+                        cmd.Parameters.AddWithValue("@MinQuantity", minQuantity);
+                        cmd.Parameters.AddWithValue("@LocationID", locationId);
+
+                        int rowsAffected = cmd.ExecuteNonQuery();
+                        return rowsAffected > 0; // Trả về `true` nếu thêm thành công
+                    }
                 }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Lỗi khi thêm sản phẩm: {ex.Message}", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
             }
         }
 
-        public void UpdateProduct(int id, string name, string category, string unit, int quantity, int minQuantity, int locationId)
+        public bool UpdateProduct(int id, string name, string category, string unit, int quantity, int minQuantity, int locationId)
         {
-            using (SqlConnection conn = Connection.GetSqlConnection())
+            try
             {
-                conn.Open();
-                using (SqlCommand cmd = new SqlCommand("usp_UpdateProduct", conn))
+                using (SqlConnection conn = Connection.GetSqlConnection())
                 {
-                    cmd.CommandType = CommandType.StoredProcedure;
-                    cmd.Parameters.AddWithValue("@ProductID", id);
-                    cmd.Parameters.AddWithValue("@ProductName", name);
-                    cmd.Parameters.AddWithValue("@Category", category);
-                    cmd.Parameters.AddWithValue("@Unit", unit);
-                    cmd.Parameters.AddWithValue("@Quantity", quantity);
-                    cmd.Parameters.AddWithValue("@MinQuantity", minQuantity);
-                    cmd.Parameters.AddWithValue("@LocationID", locationId);
-                    cmd.ExecuteNonQuery();
+                    conn.Open();
+                    using (SqlCommand cmd = new SqlCommand("usp_UpdateProduct", conn))
+                    {
+                        cmd.CommandType = CommandType.StoredProcedure;
+                        cmd.Parameters.AddWithValue("@ProductID", id);
+                        cmd.Parameters.AddWithValue("@ProductName", name);
+                        cmd.Parameters.AddWithValue("@Category", category);
+                        cmd.Parameters.AddWithValue("@Unit", unit);
+                        cmd.Parameters.AddWithValue("@Quantity", quantity);
+                        cmd.Parameters.AddWithValue("@MinQuantity", minQuantity);
+                        cmd.Parameters.AddWithValue("@LocationID", locationId);
+
+                        int rowsAffected = cmd.ExecuteNonQuery();
+                        return rowsAffected > 0;
+                    }
                 }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Lỗi khi cập nhật sản phẩm: {ex.Message}", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
             }
         }
 

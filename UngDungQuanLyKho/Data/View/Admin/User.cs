@@ -114,29 +114,46 @@ namespace UngDungQuanLyKho.Data.View.Admin
             SearchUsers();
         }
 
+        private System.Windows.Forms.Timer searchTimer = new System.Windows.Forms.Timer();
+
         private void txtSearch_TextChanged(object sender, EventArgs e)
         {
-            SearchUsers();
+            searchTimer.Stop(); // Dừng timer cũ nếu có
+            searchTimer.Interval = 500; // Đợi 500ms trước khi tìm kiếm
+            searchTimer.Tick += (s, ev) =>
+            {
+                searchTimer.Stop();
+                SearchUsers();
+            };
+            searchTimer.Start();
         }
+
 
         private void SearchUsers()
         {
             string keyword = txtSearch.Text.Trim();
             UserModel userModel = new UserModel();
 
-            // Nếu ô tìm kiếm trống, tải lại toàn bộ danh sách người dùng
-            if (string.IsNullOrEmpty(keyword))
+            try
             {
-                LoadUsers();
-            }
-            else
-            {
-                dtUsers = userModel.SearchUsers(keyword) ?? new DataTable();
-                currentPage = 1;
-                totalPages = (dtUsers.Rows.Count > 0) ?
-                             (int)Math.Ceiling((double)dtUsers.Rows.Count / pageSize) : 1;
+                if (string.IsNullOrEmpty(keyword))
+                {
+                    LoadUsers(); // Nếu ô tìm kiếm trống, tải lại danh sách đầy đủ
+                }
+                else
+                {
+                    dtUsers = userModel.SearchUsers(keyword) ?? new DataTable();
+                    currentPage = 1;
+                    totalPages = (dtUsers.Rows.Count > 0)
+                                ? (int)Math.Ceiling((double)dtUsers.Rows.Count / pageSize)
+                                : 1;
 
-                DisplayPage(currentPage);
+                    DisplayPage(currentPage); // Hiển thị trang kết quả đầu tiên
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Lỗi khi tìm kiếm người dùng: {ex.Message}", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 

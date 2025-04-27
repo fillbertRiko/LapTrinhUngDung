@@ -532,3 +532,60 @@ BEGIN
     FROM Products
     WHERE MinQuantity < 5;
 END;
+go
+--procedure lay danh sach vi tri
+CREATE PROCEDURE usp_GetLocations
+AS
+BEGIN
+    SET NOCOUNT ON;
+    SELECT LocationID, LocationName, Area FROM dbo.Locations ORDER BY LocationName;
+END
+go
+
+--them moi vi tri
+CREATE PROCEDURE usp_AddLocation
+    @LocationName VARCHAR(255),
+    @Area VARCHAR(255)
+AS
+BEGIN
+    INSERT INTO dbo.Locations (LocationName, Area)
+    VALUES (@LocationName, @Area);
+END
+go
+
+--cap nhat thong tin vi tri
+CREATE PROCEDURE usp_UpdateLocation
+    @LocationID INT,
+    @LocationName VARCHAR(255),
+    @Area VARCHAR(255)
+AS
+BEGIN
+    UPDATE dbo.Locations
+    SET LocationName = @LocationName, Area = @Area
+    WHERE LocationID = @LocationID;
+END
+go
+
+--xoa lkhoi danh sach
+CREATE PROCEDURE usp_DeleteLocation
+    @LocationID INT
+AS
+BEGIN
+    DELETE FROM dbo.Locations WHERE LocationID = @LocationID;
+END
+go
+
+CREATE PROCEDURE usp_SearchUsers
+    @Keyword NVARCHAR(100)
+AS
+BEGIN
+    SET NOCOUNT ON;
+
+    SELECT UserID, Username, FullName, Role
+    FROM dbo.Users
+    WHERE 
+        Username LIKE '%' + @Keyword + '%' OR
+        FullName LIKE '%' + @Keyword + '%' OR
+        Role LIKE '%' + @Keyword + '%'
+    ORDER BY FullName;
+END

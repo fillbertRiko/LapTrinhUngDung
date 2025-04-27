@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml.Linq;
 using UngDungQuanLyKho.Data.Models;
+using static System.Windows.Forms.MonthCalendar;
 
 namespace UngDungQuanLyKho.Data.View.Admin
 {
@@ -279,50 +280,71 @@ namespace UngDungQuanLyKho.Data.View.Admin
             }
         }
 
-        // Xử lý cho txtLocationID: nhập mã vị trí phải là số nguyên và không được để trống
-        private void txtLocationID_TextChanged(object sender, EventArgs e)
+        private void btnAdd_Click_1(object sender, EventArgs e)
         {
-            if (string.IsNullOrWhiteSpace(txtLocationID.Text))
+            // Kiểm tra dữ liệu đầu vào
+            if (string.IsNullOrWhiteSpace(txtProductName.Text) ||
+                string.IsNullOrWhiteSpace(txtCategory.Text) ||
+                string.IsNullOrWhiteSpace(txtUnit.Text) ||
+                !int.TryParse(txtQuantity.Text, out int quantity) ||
+                !int.TryParse(txtMinQuantity.Text, out int minQuantity) ||
+                cbbLocation.SelectedValue == null)
             {
-                txtLocationID.BackColor = Color.LightPink;
-                if (errorProvider1 != null)
-                    errorProvider1.SetError(txtLocationID, "Vui lòng nhập mã vị trí.");
+                MessageBox.Show("Vui lòng nhập đầy đủ và chính xác thông tin sản phẩm.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            // Lấy `LocationID` từ `ComboBox`
+            int locationID = Convert.ToInt32(cbbLocation.SelectedValue);
+
+            // Gọi phương thức để thêm sản phẩm
+            ProductModel productModel = new ProductModel();
+            bool success = productModel.AddProduct(txtProductName.Text, txtCategory.Text, txtUnit.Text, quantity, minQuantity, locationID);
+
+            if (success)
+            {
+                LoadProducts(); // Cập nhật danh sách sản phẩm
+                MessageBox.Show("Thêm sản phẩm thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else
             {
-                if (!int.TryParse(txtLocationID.Text, out int temp))
-                {
-                    txtLocationID.BackColor = Color.LightPink;
-                    if (errorProvider1 != null)
-                        errorProvider1.SetError(txtLocationID, "Mã vị trí phải là số nguyên.");
-                }
-                else
-                {
-                    txtLocationID.BackColor = Color.White;
-                    if (errorProvider1 != null)
-                        errorProvider1.SetError(txtLocationID, string.Empty);
-                }
+                MessageBox.Show("Lỗi khi thêm sản phẩm!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-        }
 
-        private void btnAdd_Click_1(object sender, EventArgs e)
-        {
-            ProductModel productModel = new ProductModel();
-            productModel.AddProduct(txtProductName.Text, txtCategory.Text, txtUnit.Text, int.Parse(txtQuantity.Text), int.Parse(txtMinQuantity.Text), int.Parse(txtLocationID.Text));
-            LoadProducts(); // Cập nhật danh sách sản phẩm
-
-            //thong bao 
-            MessageBox.Show("Thêm sản phẩm thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void btnEdit_Click_1(object sender, EventArgs e)
         {
+            if (dgvProducts.SelectedRows.Count == 0)
+            {
+                MessageBox.Show("Vui lòng chọn một sản phẩm để sửa.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
             int productId = Convert.ToInt32(dgvProducts.SelectedRows[0].Cells["ProductID"].Value);
+
+            if (!int.TryParse(txtQuantity.Text, out int quantity) ||
+                !int.TryParse(txtMinQuantity.Text, out int minQuantity) ||
+                cbbLocation.SelectedValue == null)
+            {
+                MessageBox.Show("Vui lòng nhập đầy đủ và chính xác thông tin sản phẩm.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            int locationID = Convert.ToInt32(cbbLocation.SelectedValue);
+
             ProductModel productModel = new ProductModel();
-            productModel.UpdateProduct(productId, txtProductName.Text, txtCategory.Text, txtUnit.Text, int.Parse(txtQuantity.Text), int.Parse(txtMinQuantity.Text), int.Parse(txtLocationID.Text));
-            LoadProducts();
-            //thong bao
-            MessageBox.Show("Cập nhật sản phẩm thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            bool success = productModel.UpdateProduct(productId, txtProductName.Text, txtCategory.Text, txtUnit.Text, quantity, minQuantity, locationID);
+
+            if (success)
+            {
+                LoadProducts();
+                MessageBox.Show("Cập nhật sản phẩm thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                MessageBox.Show("Lỗi khi cập nhật sản phẩm!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void btnDelete_Click_1(object sender, EventArgs e)
@@ -350,8 +372,21 @@ namespace UngDungQuanLyKho.Data.View.Admin
                 txtUnit.Text = row.Cells["Unit"].Value?.ToString() ?? "";
                 txtQuantity.Text = row.Cells["Quantity"].Value?.ToString() ?? "";
                 txtMinQuantity.Text = row.Cells["MinQuantity"].Value?.ToString() ?? "";
-                txtLocationID.Text = row.Cells["LocationID"].Value?.ToString() ?? "";
+                cbbLocation.Text = row.Cells["LocationID"].Value?.ToString() ?? "";
             }
-        }        
+        }
+
+        private void LoadLocations()
+        {
+            ImportModel importModel = new ImportModel();
+            cbbLocation.DataSource = importModel.GetLocations();
+            cbbLocation.DisplayMember = "LocationName";
+            cbbLocation.ValueMember = "LocationID";
+        }
+
+        private void cbbArea_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            MessageBox.Show("Bạn đã chọn: " + cbbLocation.SelectedItem.ToString());
+        }
     }
 }

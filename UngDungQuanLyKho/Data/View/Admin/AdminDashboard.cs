@@ -98,5 +98,31 @@ namespace UngDungQuanLyKho.Data.View.Admin
             childForm.MdiParent = this;
             childForm.Show();
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnLogout_Click(object sender, EventArgs e)
+        {
+            DialogResult confirmLogout = MessageBox.Show("Bạn có chắc chắn muốn đăng xuất?", "Xác nhận đăng xuất",
+                MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+
+            if (confirmLogout == DialogResult.Yes)
+            {
+                Login loginForm = new Login();
+                loginForm.Show();
+
+                // Đóng form hiện tại (AdminDashboard)
+                this.Close();
+            }
+        }
+
+        private void btnLocation_Click(object sender, EventArgs e)
+        {
+            Location locationForm = new Location();
+            locationForm.ShowDialog(); // Form sẽ chặn thao tác với form chính cho đến khi đóng
+        }
     }
 }

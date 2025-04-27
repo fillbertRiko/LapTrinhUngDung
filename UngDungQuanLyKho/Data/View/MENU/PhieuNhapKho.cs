@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Data;
 using System.Data.SqlClient;
+using System.Drawing;
 using System.Windows.Forms;
 using UngDungQuanLyKho.Data.Database;
 using UngDungQuanLyKho.Data.Models;
@@ -26,7 +27,7 @@ namespace UngDungQuanLyKho.Data.View.MENU
             btnUpdate.Click += btnUpdate_Click;
             btnDelete.Click += btnDelete_Click;
             btnBackMenu.Click += btnBackMenu_Click;
-            btnNew.Click += btnNew_Click;
+            //btnNew.Click += btnNew_Click;
 
             // Khi Form load, gọi LoadData
             this.Load += PhieuNhapKho_Load;
@@ -267,6 +268,114 @@ namespace UngDungQuanLyKho.Data.View.MENU
             catch (Exception ex)
             {
                 MessageBox.Show($"Lỗi khi tải danh sách phiếu nhập: {ex.Message}", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void btnExitForm_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Bạn có chắc muốn thoát không?", "Xác nhận",
+                MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (result == DialogResult.Yes)
+            {
+                this.Close();
+            }
+        }
+
+        private void txtProductID_TextChanged(object sender, EventArgs e)
+        {
+            ImportModel importModel = new ImportModel();
+            if (!importModel.ValidateProductID(txtProductID.Text, out string errorMessage))
+            {
+                txtProductID.BackColor = Color.LightPink;
+                errorProvider1.SetError(txtProductID, errorMessage);
+            }
+            else
+            {
+                txtProductID.BackColor = Color.White;
+                errorProvider1.SetError(txtProductID, string.Empty);
+            }
+        }
+
+        private void dtpImportDate_ValueChanged(object sender, EventArgs e)
+        {
+            ImportModel importModel = new ImportModel();
+            if (!importModel.ValidateImportDate(dtpImportDate.Value, out string errorMessage))
+            {
+                errorProvider1.SetError(dtpImportDate, errorMessage);
+            }
+            else
+            {
+                errorProvider1.SetError(dtpImportDate, string.Empty);
+            }
+        }
+
+        private void cbEmployeeID_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            ImportModel importModel = new ImportModel();
+            if (!importModel.ValidateEmployeeSelection(cbEmployeeID.SelectedValue, out string errorMessage))
+            {
+                errorProvider1.SetError(cbEmployeeID, errorMessage);
+            }
+            else
+            {
+                errorProvider1.SetError(cbEmployeeID, string.Empty);
+            }
+        }
+
+        private void cbbSupplier_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            ImportModel importModel = new ImportModel();
+            if (!importModel.ValidateSupplierSelection(cbbSupplier.SelectedValue, out string errorMessage))
+            {
+                errorProvider1.SetError(cbbSupplier, errorMessage);
+            }
+            else
+            {
+                errorProvider1.SetError(cbbSupplier, string.Empty);
+            }
+        }
+
+        private void textBox3_TextChanged(object sender, EventArgs e)
+        {
+            ImportModel importModel = new ImportModel();
+            if (!importModel.ValidateTextInput(textBox3.Text, out string errorMessage))
+            {
+                textBox3.BackColor = Color.LightPink;
+                errorProvider1.SetError(textBox3, errorMessage);
+            }
+            else
+            {
+                textBox3.BackColor = Color.White;
+                errorProvider1.SetError(textBox3, string.Empty);
+            }
+        }
+
+        private void txtQuantity_ValueChanged(object sender, EventArgs e)
+        {
+            ImportModel importModel = new ImportModel();
+            if (!importModel.ValidateQuantity((int)txtQuantity.Value, out string errorMessage))
+            {
+                errorProvider1.SetError(txtQuantity, errorMessage);
+            }
+            else
+            {
+                errorProvider1.SetError(txtQuantity, string.Empty);
+            }
+        }
+
+        private void txtPrice_TextChanged(object sender, EventArgs e)
+        {
+            ImportModel importModel = new ImportModel();
+            if (!importModel.ValidatePrice(txtPrice.Text, out string errorMessage))
+            {
+                txtPrice.BackColor = Color.LightPink;
+                errorProvider1.SetError(txtPrice, errorMessage);
+            }
+            else
+            {
+                txtPrice.BackColor = Color.White;
+                errorProvider1.SetError(txtPrice, string.Empty);
             }
         }
     }

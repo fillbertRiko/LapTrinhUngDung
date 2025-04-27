@@ -218,6 +218,7 @@
     <Compile Include="Data\Models\EmployeeModel.cs" />
     <Compile Include="Data\Models\ExportModel.cs" />
     <Compile Include="Data\Models\ImportModel.cs" />
+    <Compile Include="Data\Models\Location.cs" />
     <Compile Include="Data\Models\ProductModel.cs" />
     <Compile Include="Data\Models\UserModel.cs" />
     <Compile Include="Data\Repositories\EmployeeRepository.cs" />
@@ -232,6 +233,12 @@
     </Compile>
     <Compile Include="Data\View\Admin\Customers.Designer.cs">
       <DependentUpon>Customers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Data\View\Admin\Location.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Data\View\Admin\Location.Designer.cs">
+      <DependentUpon>Location.cs</DependentUpon>
     </Compile>
     <Compile Include="Data\View\Admin\Products.cs">
       <SubType>Form</SubType>
@@ -306,6 +313,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Data\View\Admin\Customers.resx">
       <DependentUpon>Customers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Data\View\Admin\Location.resx">
+      <DependentUpon>Location.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Data\View\Admin\Products.resx">
       <DependentUpon>Products.cs</DependentUpon>

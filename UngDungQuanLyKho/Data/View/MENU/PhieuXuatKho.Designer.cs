@@ -98,7 +98,7 @@
             // 
             // btnExportExcel
             // 
-            this.btnExportExcel.Location = new System.Drawing.Point(6, 184);
+            this.btnExportExcel.Location = new System.Drawing.Point(111, 187);
             this.btnExportExcel.Name = "btnExportExcel";
             this.btnExportExcel.Size = new System.Drawing.Size(194, 40);
             this.btnExportExcel.TabIndex = 37;
@@ -174,7 +174,7 @@
             this.cbEmployeeID.FormattingEnabled = true;
             this.cbEmployeeID.Location = new System.Drawing.Point(158, 104);
             this.cbEmployeeID.Name = "cbEmployeeID";
-            this.cbEmployeeID.Size = new System.Drawing.Size(147, 24);
+            this.cbEmployeeID.Size = new System.Drawing.Size(291, 24);
             this.cbEmployeeID.TabIndex = 10;
             this.cbEmployeeID.SelectedIndexChanged += new System.EventHandler(this.cbEmployeeID_SelectedIndexChanged);
             // 
@@ -187,7 +187,7 @@
             // 
             this.btnBackMenu.Location = new System.Drawing.Point(931, 26);
             this.btnBackMenu.Name = "btnBackMenu";
-            this.btnBackMenu.Size = new System.Drawing.Size(135, 54);
+            this.btnBackMenu.Size = new System.Drawing.Size(135, 114);
             this.btnBackMenu.TabIndex = 30;
             this.btnBackMenu.Text = "Quay Về Menu";
             this.btnBackMenu.UseVisualStyleBackColor = true;
@@ -195,9 +195,9 @@
             // 
             // btnDeleteExport
             // 
-            this.btnDeleteExport.Location = new System.Drawing.Point(903, 36);
+            this.btnDeleteExport.Location = new System.Drawing.Point(823, 21);
             this.btnDeleteExport.Name = "btnDeleteExport";
-            this.btnDeleteExport.Size = new System.Drawing.Size(75, 23);
+            this.btnDeleteExport.Size = new System.Drawing.Size(129, 38);
             this.btnDeleteExport.TabIndex = 26;
             this.btnDeleteExport.Text = "Xoá";
             this.btnDeleteExport.UseVisualStyleBackColor = true;
@@ -205,9 +205,9 @@
             // 
             // btnAddExport
             // 
-            this.btnAddExport.Location = new System.Drawing.Point(659, 36);
+            this.btnAddExport.Location = new System.Drawing.Point(467, 21);
             this.btnAddExport.Name = "btnAddExport";
-            this.btnAddExport.Size = new System.Drawing.Size(75, 23);
+            this.btnAddExport.Size = new System.Drawing.Size(129, 38);
             this.btnAddExport.TabIndex = 25;
             this.btnAddExport.Text = "Thêm";
             this.btnAddExport.UseVisualStyleBackColor = true;
@@ -215,9 +215,9 @@
             // 
             // btnEditExport
             // 
-            this.btnEditExport.Location = new System.Drawing.Point(788, 36);
+            this.btnEditExport.Location = new System.Drawing.Point(645, 21);
             this.btnEditExport.Name = "btnEditExport";
-            this.btnEditExport.Size = new System.Drawing.Size(75, 23);
+            this.btnEditExport.Size = new System.Drawing.Size(129, 38);
             this.btnEditExport.TabIndex = 24;
             this.btnEditExport.Text = "Sửa";
             this.btnEditExport.UseVisualStyleBackColor = true;
@@ -225,9 +225,9 @@
             // 
             // btnClear
             // 
-            this.btnClear.Location = new System.Drawing.Point(399, 36);
+            this.btnClear.Location = new System.Drawing.Point(289, 21);
             this.btnClear.Name = "btnClear";
-            this.btnClear.Size = new System.Drawing.Size(181, 23);
+            this.btnClear.Size = new System.Drawing.Size(129, 38);
             this.btnClear.TabIndex = 23;
             this.btnClear.Text = "Dọn sạch bảng";
             this.btnClear.UseVisualStyleBackColor = true;
@@ -235,9 +235,9 @@
             // 
             // btnLoadExports
             // 
-            this.btnLoadExports.Location = new System.Drawing.Point(189, 36);
+            this.btnLoadExports.Location = new System.Drawing.Point(111, 21);
             this.btnLoadExports.Name = "btnLoadExports";
-            this.btnLoadExports.Size = new System.Drawing.Size(75, 23);
+            this.btnLoadExports.Size = new System.Drawing.Size(129, 38);
             this.btnLoadExports.TabIndex = 22;
             this.btnLoadExports.Text = "Hiển thị";
             this.btnLoadExports.UseVisualStyleBackColor = true;
@@ -404,7 +404,7 @@
             // lblTotalAmount
             // 
             this.lblTotalAmount.AutoSize = true;
-            this.lblTotalAmount.Location = new System.Drawing.Point(282, 187);
+            this.lblTotalAmount.Location = new System.Drawing.Point(316, 199);
             this.lblTotalAmount.Name = "lblTotalAmount";
             this.lblTotalAmount.Size = new System.Drawing.Size(57, 16);
             this.lblTotalAmount.TabIndex = 37;
@@ -412,7 +412,7 @@
             // 
             // btnCaculateTotal
             // 
-            this.btnCaculateTotal.Location = new System.Drawing.Point(25, 175);
+            this.btnCaculateTotal.Location = new System.Drawing.Point(39, 187);
             this.btnCaculateTotal.Name = "btnCaculateTotal";
             this.btnCaculateTotal.Size = new System.Drawing.Size(194, 40);
             this.btnCaculateTotal.TabIndex = 36;
@@ -443,9 +443,9 @@
             // 
             // btnShowDetails
             // 
-            this.btnShowDetails.Location = new System.Drawing.Point(931, 93);
+            this.btnShowDetails.Location = new System.Drawing.Point(931, 146);
             this.btnShowDetails.Name = "btnShowDetails";
-            this.btnShowDetails.Size = new System.Drawing.Size(125, 64);
+            this.btnShowDetails.Size = new System.Drawing.Size(135, 105);
             this.btnShowDetails.TabIndex = 35;
             this.btnShowDetails.Text = "Hiển thị chi tiết đơn hàng";
             this.btnShowDetails.UseVisualStyleBackColor = true;
